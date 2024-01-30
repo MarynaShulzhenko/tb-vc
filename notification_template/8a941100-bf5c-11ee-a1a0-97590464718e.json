@@ -1,0 +1,41 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "email",
+              "color" : "#C8F8F4"
+            },
+            "actionButtonConfig" : {
+              "enabled" : true,
+              "text" : "test button",
+              "linkType" : "DASHBOARD",
+              "dashboardId" : "3aacdc10-be8c-11ee-a1a0-97590464718e",
+              "dashboardState" : "default",
+              "setEntityIdInState" : true
+            }
+          },
+          "body" : "Sorry, it's test message",
+          "enabled" : true,
+          "subject" : "Hi!"
+        }
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "8a941100-bf5c-11ee-a1a0-97590464718e"
+    },
+    "name" : "tes notification template",
+    "notificationType" : "GENERAL"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "entityType" : "NOTIFICATION_RULE",
+  "entity" : {
+    "additionalConfig" : {
+      "description" : ""
+    },
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "9b5e5090-bf5c-11ee-a1a0-97590464718e"
+    },
+    "name" : "test",
+    "recipientsConfig" : {
+      "targets" : [ "3a710b90-be8c-11ee-a1a0-97590464718e" ],
+      "triggerType" : "INTEGRATION_LIFECYCLE_EVENT"
+    },
+    "templateId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "3a813830-be8c-11ee-a1a0-97590464718e"
+    },
+    "triggerConfig" : {
+      "triggerType" : "INTEGRATION_LIFECYCLE_EVENT",
+      "integrationTypes" : [ ],
+      "integrations" : null,
+      "notifyOn" : [ "STOPPED" ],
+      "onlyOnError" : false,
+      "triggerType" : "INTEGRATION_LIFECYCLE_EVENT"
+    },
+    "triggerType" : "INTEGRATION_LIFECYCLE_EVENT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

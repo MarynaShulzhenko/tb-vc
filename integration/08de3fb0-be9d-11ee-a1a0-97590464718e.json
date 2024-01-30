@@ -1,0 +1,74 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "clientConfiguration" : {
+        "host" : "broker.hivemq.com",
+        "port" : 1883,
+        "cleanSession" : true,
+        "retainedMessage" : false,
+        "ssl" : false,
+        "connectTimeoutSec" : 10,
+        "clientId" : "",
+        "maxBytesInMessage" : 32368,
+        "credentials" : {
+          "type" : "basic",
+          "username" : "username",
+          "password" : "pass"
+        }
+      },
+      "topicFilters" : [ {
+        "filter" : "tb/mqtt-integration-tutorial/sensors/SN-001/temperature",
+        "qos" : 1
+      } ],
+      "downlinkTopicPattern" : "${topic}",
+      "metadata" : { }
+    },
+    "debugMode" : true,
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "08d36a40-be9d-11ee-a1a0-97590464718e"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "08de3fb0-be9d-11ee-a1a0-97590464718e"
+    },
+    "name" : "MQTT integration",
+    "remote" : false,
+    "routingKey" : "18d934be-8472-163c-eb32-cf7e239eeb0f",
+    "secret" : "u74iazsnq6v9cax71tey",
+    "type" : "MQTT"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "08de3fb0-be9d-11ee-a1a0-97590464718e"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "ca1bc210-bf5b-11ee-a1a0-97590464718e"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_thingsboard101-desktop",
+      "lastUpdateTs" : 1706529596349,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

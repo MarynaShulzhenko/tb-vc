@@ -1,0 +1,33 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : "Kyiv",
+    "country" : "Ukraine",
+    "customerId" : null,
+    "email" : "customerA@test.io",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "00ae3b40-be9f-11ee-a1a0-97590464718e"
+    },
+    "name" : "customer a",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : "+380951684591",
+    "state" : null,
+    "title" : "customer a",
+    "zip" : "01001"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

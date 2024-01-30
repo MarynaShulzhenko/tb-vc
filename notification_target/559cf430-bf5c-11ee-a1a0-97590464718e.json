@@ -1,0 +1,23 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "PLATFORM_USERS",
+      "description" : null,
+      "usersFilter" : {
+        "type" : "USER_LIST",
+        "usersIds" : [ "4236f1a0-be8c-11ee-a1a0-97590464718e", "2019e6f0-be9f-11ee-a1a0-97590464718e" ]
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "559cf430-bf5c-11ee-a1a0-97590464718e"
+    },
+    "name" : "test notification recipients group"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
