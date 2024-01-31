@@ -1,0 +1,40 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : false
+            },
+            "actionButtonConfig" : {
+              "enabled" : true,
+              "text" : "Go to integration",
+              "linkType" : "LINK",
+              "link" : "/integrations/${integrationId}"
+            }
+          },
+          "body" : "Integration '${integrationName}' failed to start:<br/>${error}",
+          "enabled" : true,
+          "subject" : "${integrationType} integration start failure"
+        }
+      }
+    },
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "3a813830-be8c-11ee-a1a0-97590464718e"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "3a813830-be8c-11ee-a1a0-97590464718e"
+    },
+    "name" : "Integration start failure notification",
+    "notificationType" : "INTEGRATION_LIFECYCLE_EVENT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
