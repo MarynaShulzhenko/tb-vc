@@ -26,7 +26,10 @@
       "actions" : { }
     },
     "edgeGroupAll" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "00b3b980-be9f-11ee-a1a0-97590464718e"
+    },
     "groupAll" : false,
     "id" : {
       "entityType" : "ENTITY_GROUP",
@@ -53,16 +56,16 @@
     },
     "tenantId" : {
       "entityType" : "TENANT",
-      "id" : "3a510070-be8c-11ee-a1a0-97590464718e"
+      "id" : "236d97e0-c0e6-11ee-a508-e5481da4b10f"
     },
     "userGroupId" : {
       "entityType" : "ENTITY_GROUP",
       "id" : "00b3b980-be9f-11ee-a1a0-97590464718e"
     },
-    "createdTime" : 1706530061600,
+    "createdTime" : 1706780588688,
     "id" : {
       "entityType" : "GROUP_PERMISSION",
-      "id" : "00b4f200-be9f-11ee-a1a0-97590464718e"
+      "id" : "4e7cd900-c0e6-11ee-a508-e5481da4b10f"
     },
     "name" : "GENERIC_[00b3b980-be9f-11ee-a1a0-97590464718e]_[00b47cd0-be9f-11ee-a1a0-97590464718e]",
     "public" : false

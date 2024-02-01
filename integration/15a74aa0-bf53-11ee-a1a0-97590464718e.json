@@ -21,7 +21,10 @@
     "downlinkConverterId" : null,
     "edgeTemplate" : false,
     "enabled" : true,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "INTEGRATION",
+      "id" : "15a74aa0-bf53-11ee-a1a0-97590464718e"
+    },
     "id" : {
       "entityType" : "INTEGRATION",
       "id" : "15a74aa0-bf53-11ee-a1a0-97590464718e"
@@ -51,7 +54,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"success\":true}",
       "key" : "integration_status_thingsboard101-desktop",
-      "lastUpdateTs" : 1706609374891,
+      "lastUpdateTs" : 1706780606486,
       "longValue" : null,
       "strValue" : null
     } ]

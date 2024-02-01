@@ -21,7 +21,10 @@
       }
     },
     "etag" : "eb39d2b2fd181df2de6d98179a4df852656e998394e66c15a1f60188811dbf38",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "66055a30-be97-11ee-a1a0-97590464718e"
+    },
     "fileName" : "icons8-iot-65 (1).png",
     "id" : {
       "entityType" : "TB_RESOURCE",

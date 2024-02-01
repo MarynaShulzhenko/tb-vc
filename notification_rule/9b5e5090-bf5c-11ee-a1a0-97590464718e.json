@@ -5,7 +5,10 @@
       "description" : ""
     },
     "enabled" : true,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "9b5e5090-bf5c-11ee-a1a0-97590464718e"
+    },
     "id" : {
       "entityType" : "NOTIFICATION_RULE",
       "id" : "9b5e5090-bf5c-11ee-a1a0-97590464718e"

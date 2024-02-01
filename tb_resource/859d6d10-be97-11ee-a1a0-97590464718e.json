@@ -21,7 +21,10 @@
       }
     },
     "etag" : "e447f8fa1cc02b21900fef37be5a247b095314d79f0692872865c1542f328f5e",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "859d6d10-be97-11ee-a1a0-97590464718e"
+    },
     "fileName" : "icons8-settings.svg",
     "id" : {
       "entityType" : "TB_RESOURCE",

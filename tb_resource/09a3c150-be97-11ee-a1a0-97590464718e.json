@@ -21,7 +21,10 @@
       }
     },
     "etag" : "d25385b7251b9a3df40d69b62b8e6e2233a8216549dd238aae40e465744e3390",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "09a3c150-be97-11ee-a1a0-97590464718e"
+    },
     "fileName" : "henrik-donnestad-t2Sai-AqIpI-unsplash.jpg",
     "id" : {
       "entityType" : "TB_RESOURCE",

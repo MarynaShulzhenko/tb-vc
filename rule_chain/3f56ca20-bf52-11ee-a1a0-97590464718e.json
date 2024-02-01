@@ -6,7 +6,10 @@
     },
     "configuration" : null,
     "debugMode" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "3f56ca20-bf52-11ee-a1a0-97590464718e"
+    },
     "firstRuleNodeId" : null,
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -97,7 +100,7 @@
         "checkForSingleEntity" : true,
         "direction" : "TO",
         "entityType" : "DEVICE",
-        "entityId" : "40c887d0-3835-11ee-b6c5-dd8cce90d040",
+        "entityId" : "236d97e0-c0e6-11ee-a508-e5481da4b10f",
         "relationType" : "Contains"
       },
       "configurationVersion" : 1,
@@ -983,7 +986,7 @@
         "layoutY" : 816
       },
       "configuration" : {
-        "ruleChainId" : "41152130-3835-11ee-b6c5-dd8cce90d040"
+        "ruleChainId" : "236d97e0-c0e6-11ee-a508-e5481da4b10f"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -1045,7 +1048,7 @@
           "type" : "group",
           "entityGroupId" : {
             "entityType" : "ENTITY_GROUP",
-            "id" : "40cdb7f0-3835-11ee-b6c5-dd8cce90d040"
+            "id" : "236d97e0-c0e6-11ee-a508-e5481da4b10f"
           }
         },
         "aggMappings" : [ {
@@ -1158,7 +1161,7 @@
           "type" : "group",
           "entityGroupId" : {
             "entityType" : "ENTITY_GROUP",
-            "id" : "40cdb7f0-3835-11ee-b6c5-dd8cce90d040"
+            "id" : "236d97e0-c0e6-11ee-a508-e5481da4b10f"
           }
         },
         "alarmsCountMappings" : [ {
@@ -1480,9 +1483,9 @@
       "configuration" : {
         "templateId" : {
           "entityType" : "NOTIFICATION_TEMPLATE",
-          "id" : "436b5e00-40cc-11ee-874b-e5953d9ed9f6"
+          "id" : "236d97e0-c0e6-11ee-a508-e5481da4b10f"
         },
-        "targets" : [ "40d86650-3835-11ee-b6c5-dd8cce90d040" ]
+        "targets" : [ "236d97e0-c0e6-11ee-a508-e5481da4b10f" ]
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
