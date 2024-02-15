@@ -1,0 +1,37 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : null,
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "baseUrl" : "http://office.thingsboard.io:30351",
+      "httpEndpoint" : "http://office.thingsboard.io:30351/api/v1/integrations/http/b6df0278-c92d-39ae-c2ab-5b76e0e11c94",
+      "enableSecurity" : false,
+      "headersFilter" : { },
+      "replaceNoContentToOk" : false
+    },
+    "debugMode" : true,
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "a3012490-3c52-11ee-81f5-4dedeb105574"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "a3085080-3c52-11ee-81f5-4dedeb105574"
+    },
+    "name" : "test",
+    "remote" : true,
+    "routingKey" : "b6df0278-c92d-39ae-c2ab-5b76e0e11c94",
+    "secret" : "buckuf4ax43a4o9lfvzz",
+    "type" : "HTTP"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
