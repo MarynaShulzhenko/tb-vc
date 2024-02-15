@@ -1,0 +1,91 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "SNMP",
+        "authenticationPassphrase" : null,
+        "authenticationProtocol" : null,
+        "community" : "public",
+        "contextName" : null,
+        "engineId" : null,
+        "host" : "10.7.0.223",
+        "port" : 162,
+        "privacyPassphrase" : null,
+        "privacyProtocol" : null,
+        "protocolVersion" : "V2C",
+        "securityName" : null,
+        "username" : null
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "049463b0-c732-11ee-a92b-b7dcc3c60d04"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "0aa4aa80-c732-11ee-a92b-b7dcc3c60d04"
+    },
+    "label" : "",
+    "name" : "SNMP TRAP",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "SNMP TRAP"
+  },
+  "credentials" : {
+    "credentialsId" : "lp3mc7uykinvgo5j5mko",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1707991151481,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1707991146493,
+      "longValue" : 1707991146493,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1707993563473,
+      "longValue" : 1707993560459,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1707993560464,
+      "longValue" : 1707993560463,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}
