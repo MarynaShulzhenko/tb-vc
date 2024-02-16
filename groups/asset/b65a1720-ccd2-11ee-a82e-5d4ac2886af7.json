@@ -1,0 +1,41 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : null,
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "asset_profile",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : { }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : null,
+    "groupAll" : true,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "b65a1720-ccd2-11ee-a82e-5d4ac2886af7"
+    },
+    "name" : "All",
+    "ownerId" : {
+      "entityType" : "TENANT",
+      "id" : "b64de220-ccd2-11ee-a82e-5d4ac2886af7"
+    },
+    "type" : "ASSET"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "groupEntities" : true
+}

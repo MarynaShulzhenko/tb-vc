@@ -1,0 +1,27 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "c8dae050-ccd2-11ee-a82e-5d4ac2886af7"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "c8db7c90-ccd2-11ee-a82e-5d4ac2886af7"
+    },
+    "label" : null,
+    "name" : "Main_b602916b78dd",
+    "ownerId" : null,
+    "type" : "TbServiceQueue"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
