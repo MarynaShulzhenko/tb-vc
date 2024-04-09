@@ -1,0 +1,32 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "a._",
+    "name" : "BgImg - 3",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "static",
+      "sizeX" : 5,
+      "sizeY" : 2,
+      "resources" : [ ],
+      "templateHtml" : "<img id=\"bgimg\" src=\"\" height=\"100%\" width=\"100%\" />\n",
+      "templateCss" : "",
+      "controllerScript" : "self.onInit = function() {\n\n    self.ctx.varsRegex = /\\$\\{([^\\}]*)\\}/g;\n    var imageUrl = self.ctx.settings.backgroundImageUrl;\n    $(\"#bgimg\").css(\"display\",\"none\");\n    //$(\"#bgimg\").attr(\"src\",imageUrl);\n    self.ctx.$container.css('background', 'url(\"'+imageUrl+'\") no-repeat');\n    self.ctx.$container.css('backgroundSize', 'cover');\n    self.ctx.$container.css('backgroundPosition', '100%');\n}\n\nself.actionSources = function() {\n    return {\n        'elementClick': {\n            name: 'widget-action.element-click',\n            multiple: true\n        }\n    };\n}\n\nself.onDestroy = function() {\n}\n",
+      "settingsSchema" : "{\n    \"schema\": {\n        \"type\": \"object\",\n        \"title\": \"Settings\",\n        \"required\": [\"backgroundImageUrl\"],\n        \"properties\": {\n            \"backgroundImageUrl\": {\n                \"title\": \"Background Image\",\n                \"type\": \"string\"\n            }\n        }\n    },\n    \"form\": [\n        {\n            \"key\": \"backgroundImageUrl\",\n            \"type\": \"image\"\n        }\n    ]\n}",
+      "dataKeySettingsSchema" : "{}\n",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"static\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":true,\"backgroundColor\":\"rgba(255,255,255,0)\",\"color\":\"#000000\",\"padding\":\"0px\",\"settings\":{},\"title\":\"BG Img\",\"dropShadow\":false,\"showTitleIcon\":false,\"iconColor\":\"#000000\",\"iconSize\":\"24px\",\"titleTooltip\":\"\",\"enableFullscreen\":false,\"widgetStyle\":{},\"titleStyle\":{\"fontSize\":\"16px\",\"fontWeight\":400},\"showLegend\":false,\"titleIcon\":\"\"}"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "bf87f040-b90b-11ee-a8a2-f514cf18b6ea"
+    },
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

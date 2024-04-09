@@ -1,0 +1,81 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "device_profile",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "label",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : {
+        "actionCellButton" : [ {
+          "name" : "test",
+          "icon" : "settings",
+          "useShowWidgetActionFunction" : null,
+          "showWidgetActionFunction" : "return true;",
+          "type" : "openDashboard",
+          "targetDashboardStateId" : "",
+          "setEntityId" : true,
+          "stateEntityParamName" : null,
+          "openNewBrowserTab" : true,
+          "targetDashboardId" : "96e4d610-ca83-11ee-8548-0faf725bd3c2",
+          "openInSeparateDialog" : false,
+          "openInPopover" : false,
+          "id" : "600aa55c-2031-b0c2-d21e-6f25d14a9fe4"
+        }, {
+          "name" : "ewwerewew",
+          "icon" : "more_horiz",
+          "useShowWidgetActionFunction" : null,
+          "showWidgetActionFunction" : "return true;",
+          "type" : "openDashboard",
+          "targetDashboardStateId" : "default",
+          "setEntityId" : true,
+          "stateEntityParamName" : null,
+          "openNewBrowserTab" : false,
+          "targetDashboardId" : "7e6a9480-668d-11ee-8179-5548c8539eee",
+          "openInSeparateDialog" : false,
+          "openInPopover" : false,
+          "id" : "a771671c-4f23-426d-cb24-000e05739b74"
+        } ],
+        "rowClick" : [ ]
+      }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "35744690-6827-11ee-8bad-d3767d151e76"
+    },
+    "groupAll" : false,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "35744690-6827-11ee-8bad-d3767d151e76"
+    },
+    "name" : "Air Quality Monitoring",
+    "ownerId" : {
+      "entityType" : "TENANT",
+      "id" : "40c887d0-3835-11ee-b6c5-dd8cce90d040"
+    },
+    "type" : "DEVICE"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "groupEntities" : true
+}

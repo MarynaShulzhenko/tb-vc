@@ -1,0 +1,23 @@
+{
+  "entityType" : "ROLE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "name" : "Read Only",
+    "permissions" : [ "READ", "READ_ATTRIBUTES", "READ_CREDENTIALS", "READ_TELEMETRY" ],
+    "type" : "GROUP",
+    "additionalInfo" : null,
+    "id" : {
+      "entityType" : "ROLE",
+      "id" : "dba36590-da33-11ee-9a31-1b662ab400e9"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

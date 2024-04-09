@@ -1,0 +1,28 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : ""
+    },
+    "customerId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "c36dc0d0-9a5d-11ee-bbf6-d798df21ce44"
+    },
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "c36dc0d0-9a5d-11ee-bbf6-d798df21ce44"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "New widgets (Industrial widgets) 3.6.2 03",
+    "ownerId" : null,
+    "title" : "New widgets (Industrial widgets) 3.6.2 03"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

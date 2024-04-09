@@ -1,0 +1,42 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "baseUrl" : "https://tbqa.cloud",
+      "httpEndpoint" : "https://tbqa.cloud/api/v1/integrations/http/f1db5b5d-a1a1-a5e9-efc0-544f6789013e",
+      "enableSecurity" : false,
+      "headersFilter" : { },
+      "replaceNoContentToOk" : false
+    },
+    "debugMode" : true,
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "d7bdeb60-40cf-11ee-be4b-434ecc9fc7b7"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : false,
+    "externalId" : {
+      "entityType" : "INTEGRATION",
+      "id" : "d7e5beb0-40cf-11ee-be4b-434ecc9fc7b7"
+    },
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "d7e5beb0-40cf-11ee-be4b-434ecc9fc7b7"
+    },
+    "name" : "http Integration",
+    "remote" : false,
+    "routingKey" : "f1db5b5d-a1a1-a5e9-efc0-544f6789013e",
+    "secret" : "5gd6hfnzizeskij83cl2",
+    "type" : "HTTP"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

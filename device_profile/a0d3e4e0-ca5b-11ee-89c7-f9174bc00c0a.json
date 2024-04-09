@@ -1,0 +1,55 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "e33bad50-4585-11ee-a7c8-6f8a117db57d"
+    },
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "a0d3e4e0-ca5b-11ee-89c7-f9174bc00c0a"
+    },
+    "image" : null,
+    "name" : "test snmp",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "SNMP",
+        "communicationConfigs" : [ {
+          "spec" : "TO_SERVER_RPC_REQUEST",
+          "mappings" : [ {
+            "dataType" : "LONG",
+            "key" : "test-key",
+            "oid" : "1.2.6.1.2.1.2.2.1.4.3"
+          } ],
+          "spec" : "TO_SERVER_RPC_REQUEST"
+        } ],
+        "retries" : 0,
+        "timeoutMs" : 500
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "SNMP",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

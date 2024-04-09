@@ -1,0 +1,40 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : null,
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "title",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : { }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "488b72d0-797f-11ee-826d-cbc709fb0c79"
+    },
+    "groupAll" : true,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "488b72d0-797f-11ee-826d-cbc709fb0c79"
+    },
+    "name" : "All",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "48850a30-797f-11ee-826d-cbc709fb0c79"
+    },
+    "type" : "DASHBOARD"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "groupEntities" : true
+}

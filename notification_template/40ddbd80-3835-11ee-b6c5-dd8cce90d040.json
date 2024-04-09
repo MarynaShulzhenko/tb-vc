@@ -1,0 +1,48 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "person",
+              "color" : "#757575"
+            },
+            "actionButtonConfig" : {
+              "enabled" : false
+            }
+          },
+          "body" : "${userEmail} assigned alarm on ${alarmOriginatorEntityType} '${alarmOriginatorName}' to ${assigneeEmail}",
+          "enabled" : true,
+          "subject" : "Alarm '${alarmType}' (${alarmSeverity}) was assigned to user"
+        },
+        "MOBILE_APP" : {
+          "method" : "MOBILE_APP",
+          "additionalConfig" : {
+            "onClick" : null
+          },
+          "body" : "${userEmail} assigned alarm on ${alarmOriginatorEntityType} '${alarmOriginatorName}' to ${assigneeEmail}",
+          "enabled" : true,
+          "subject" : "Alarm ${alarmType} ${alarmSeverity} was asgn"
+        }
+      }
+    },
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "40ddbd80-3835-11ee-b6c5-dd8cce90d040"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "40ddbd80-3835-11ee-b6c5-dd8cce90d040"
+    },
+    "name" : "Alarm assigned notification",
+    "notificationType" : "ALARM_ASSIGNMENT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

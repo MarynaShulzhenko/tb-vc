@@ -1,0 +1,30 @@
+{
+  "entityType" : "ROLE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : {
+      "entityType" : "ROLE",
+      "id" : "c967ef20-5623-11ee-95c1-67aae3e9de38"
+    },
+    "name" : "all-all",
+    "permissions" : {
+      "ALL" : [ "ALL" ]
+    },
+    "type" : "GENERIC",
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "id" : {
+      "entityType" : "ROLE",
+      "id" : "c967ef20-5623-11ee-95c1-67aae3e9de38"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

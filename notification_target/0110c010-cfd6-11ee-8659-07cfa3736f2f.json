@@ -1,0 +1,28 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "SLACK",
+      "conversation" : {
+        "email" : null,
+        "id" : "C05BDRE2HFY",
+        "name" : "random",
+        "type" : "PUBLIC_CHANNEL",
+        "wholeName" : "random",
+        "title" : "random"
+      },
+      "conversationType" : "PUBLIC_CHANNEL",
+      "description" : "test notification slack"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "0110c010-cfd6-11ee-8659-07cfa3736f2f"
+    },
+    "name" : "mashu slack"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

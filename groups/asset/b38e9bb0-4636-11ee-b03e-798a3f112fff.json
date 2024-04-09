@@ -1,0 +1,46 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "asset_profile",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : { }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "b38e9bb0-4636-11ee-b03e-798a3f112fff"
+    },
+    "groupAll" : false,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "b38e9bb0-4636-11ee-b03e-798a3f112fff"
+    },
+    "name" : "new-device-design",
+    "ownerId" : {
+      "entityType" : "TENANT",
+      "id" : "40c887d0-3835-11ee-b6c5-dd8cce90d040"
+    },
+    "type" : "ASSET"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "groupEntities" : true
+}

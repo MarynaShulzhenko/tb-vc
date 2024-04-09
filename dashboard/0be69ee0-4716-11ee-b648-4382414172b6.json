@@ -1,0 +1,1176 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "38cfcbb0-7082-ae28-89d9-49881d5b88c7" : {
+          "typeFullFqn" : "system.entity_admin_widgets.device_admin_table",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1693314150991,
+                  "endTimeMs" : 1693400550991
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(204, 244, 205, 0.68)",
+            "color" : "rgb(11, 149, 36)",
+            "padding" : "14px",
+            "settings" : {
+              "enableSearch" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "entityName",
+              "displayEntityName" : true,
+              "displayEntityType" : true,
+              "entitiesTitle" : "Device admin table",
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityLabel" : false,
+              "useRowStyleFunction" : false
+            },
+            "title" : "Device admin table",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "Simulated",
+              "entityAliasId" : "221877be-20e1-e1ce-297f-87fa1cf57cef",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitleIcon" : true,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(221, 67, 67, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : {
+              "headerButton" : [ {
+                "name" : "Add device",
+                "icon" : "add",
+                "type" : "customPretty",
+                "customHtml" : "<form #addDeviceForm=\"ngForm\" [formGroup]=\"addDeviceFormGroup\"\n      (ngSubmit)=\"save()\" style=\"width: 480px;\">\n  <mat-toolbar fxLayout=\"row\" color=\"primary\">\n    <h2>Add device</h2>\n    <span fxFlex></span>\n    <button mat-icon-button\n            (click)=\"cancel()\"\n            type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n      <div class=\"mat-padding\" fxLayout=\"column\">\n            <mat-form-field class=\"mat-block\">\n                <mat-label>Device name</mat-label>\n                <input matInput formControlName=\"deviceName\" required>\n                <mat-error *ngIf=\"addDeviceFormGroup.get('deviceName').hasError('required')\">\n                    Device name is required.\n                </mat-error>\n            </mat-form-field>\n            <div fxLayout=\"row\" fxLayoutGap=\"8px\">\n                <tb-entity-subtype-autocomplete\n                    fxFlex=\"50\"\n                    formControlName=\"deviceType\"\n                    [required]=\"true\"\n                    [entityType]=\"'DEVICE'\"\n                ></tb-entity-subtype-autocomplete>\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Label</mat-label>\n                    <input matInput formControlName=\"deviceLabel\">\n                </mat-form-field>\n            </div>\n            <div formGroupName=\"attributes\" fxLayout=\"row\" fxLayoutGap=\"8px\">\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Latitude</mat-label>\n                    <input type=\"number\" step=\"any\" matInput formControlName=\"latitude\">\n                </mat-form-field>\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Longitude</mat-label>\n                    <input type=\"number\" step=\"any\" matInput formControlName=\"longitude\">\n                </mat-form-field>\n            </div>\n      </div>  \n  </div>\n  <div mat-dialog-actions fxLayout=\"row\">\n    <span fxFlex></span>\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            style=\"margin-right: 20px;\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || addDeviceForm.invalid || !addDeviceForm.dirty\">\n      Create\n    </button>\n  </div>\n</form>\n",
+                "customCss" : "",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nopenAddDeviceDialog();\n\nfunction openAddDeviceDialog() {\n    customDialog.customDialog(htmlTemplate, AddDeviceDialogController).subscribe();\n}\n\nfunction AddDeviceDialogController(instance) {\n    let vm = instance;\n    \n    vm.addDeviceFormGroup = vm.fb.group({\n      deviceName: ['', [vm.validators.required]],\n      deviceType: ['', [vm.validators.required]],\n      deviceLabel: [''],\n      attributes: vm.fb.group({\n          latitude: [null],\n          longitude: [null]\n      })      \n    });\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        vm.addDeviceFormGroup.markAsPristine();\n        let device = {\n            name: vm.addDeviceFormGroup.get('deviceName').value,\n            type: vm.addDeviceFormGroup.get('deviceType').value,\n            label: vm.addDeviceFormGroup.get('deviceLabel').value\n        };\n        deviceService.saveDevice(device).subscribe(\n            function (device) {\n                saveAttributes(device.id).subscribe(\n                    function () {\n                        widgetContext.updateAliases();\n                        vm.dialogRef.close(null);\n                    }\n                );\n            }\n        );\n    };\n    \n    function saveAttributes(entityId) {\n        let attributes = vm.addDeviceFormGroup.get('attributes').value;\n        let attributesArray = [];\n        for (let key in attributes) {\n            attributesArray.push({key: key, value: attributes[key]});\n        }\n        if (attributesArray.length > 0) {\n            return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n        } else {\n            return widgetContext.rxjs.of([]);\n        }\n    }\n}",
+                "customResources" : [ ],
+                "id" : "70837a9d-c3de-a9a7-03c5-dccd14998758"
+              } ],
+              "actionCellButton" : [ {
+                "name" : "Edit device",
+                "icon" : "edit",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "customPretty",
+                "customHtml" : "<form #editDeviceForm=\"ngForm\" [formGroup]=\"editDeviceFormGroup\"\n      (ngSubmit)=\"save()\" style=\"width: 480px;\">\n  <mat-toolbar fxLayout=\"row\" color=\"primary\">\n    <h2>Edit device</h2>\n    <span fxFlex></span>\n    <button mat-icon-button\n            (click)=\"cancel()\"\n            type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n      <div class=\"mat-padding\" fxLayout=\"column\">\n            <mat-form-field class=\"mat-block\">\n                <mat-label>Device name</mat-label>\n                <input matInput formControlName=\"deviceName\" required>\n                <mat-error *ngIf=\"editDeviceFormGroup.get('deviceName').hasError('required')\">\n                    Device name is required.\n                </mat-error>\n            </mat-form-field>\n            <div fxLayout=\"row\" fxLayoutGap=\"8px\">\n                <tb-entity-subtype-autocomplete\n                    fxFlex=\"50\"\n                    formControlName=\"deviceType\"\n                    [required]=\"true\"\n                    [entityType]=\"'DEVICE'\"\n                ></tb-entity-subtype-autocomplete>\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Label</mat-label>\n                    <input matInput formControlName=\"deviceLabel\">\n                </mat-form-field>\n            </div>\n            <div formGroupName=\"attributes\" fxLayout=\"row\" fxLayoutGap=\"8px\">\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Latitude</mat-label>\n                    <input type=\"number\" step=\"any\" matInput formControlName=\"latitude\">\n                </mat-form-field>\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Longitude</mat-label>\n                    <input type=\"number\" step=\"any\" matInput formControlName=\"longitude\">\n                </mat-form-field>\n            </div>\n      </div>  \n  </div>\n  <div mat-dialog-actions fxLayout=\"row\">\n    <span fxFlex></span>\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            style=\"margin-right: 20px;\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || editDeviceForm.invalid || !editDeviceForm.dirty\">\n      Update\n    </button>\n  </div>\n</form>\n",
+                "customCss" : "",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nopenEditDeviceDialog();\n\nfunction openEditDeviceDialog() {\n    customDialog.customDialog(htmlTemplate, EditDeviceDialogController).subscribe();\n}\n\nfunction EditDeviceDialogController(instance) {\n    let vm = instance;\n    \n    vm.device = null;\n    vm.attributes = {};\n    \n    vm.editDeviceFormGroup = vm.fb.group({\n      deviceName: ['', [vm.validators.required]],\n      deviceType: ['', [vm.validators.required]],\n      deviceLabel: [''],\n      attributes: vm.fb.group({\n          latitude: [null],\n          longitude: [null]\n      })      \n    });\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        vm.editDeviceFormGroup.markAsPristine();\n        if (vm.editDeviceFormGroup.get('deviceType').value !== vm.device.type) {\n            delete vm.device.deviceProfileId;\n        }\n        vm.device.name = vm.editDeviceFormGroup.get('deviceName').value,\n        vm.device.type = vm.editDeviceFormGroup.get('deviceType').value,\n        vm.device.label = vm.editDeviceFormGroup.get('deviceLabel').value\n        deviceService.saveDevice(vm.device).subscribe(\n            function () {\n                saveAttributes().subscribe(\n                    function () {\n                        widgetContext.updateAliases();\n                        vm.dialogRef.close(null);\n                    }\n                );\n            }\n        );\n    };\n    \n    getEntityInfo();\n    \n    function getEntityInfo() {\n        deviceService.getDevice(entityId.id).subscribe(\n            function (device) {\n                attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE',\n                                                    ['latitude', 'longitude']).subscribe(\n                   function (attributes) {\n                        for (let i = 0; i < attributes.length; i++) {\n                            vm.attributes[attributes[i].key] = attributes[i].value; \n                        }\n                        vm.device = device;\n                        vm.editDeviceFormGroup.patchValue(\n                            {\n                                deviceName: vm.device.name,\n                                deviceType: vm.device.type,\n                                deviceLabel: vm.device.label,\n                                attributes: {\n                                    latitude: vm.attributes.latitude,\n                                    longitude: vm.attributes.longitude\n                                }\n                            }, {emitEvent: false}\n                        );\n                   } \n                );\n            }\n        );    \n    }\n    \n    function saveAttributes() {\n        let attributes = vm.editDeviceFormGroup.get('attributes').value;\n        let attributesArray = [];\n        for (let key in attributes) {\n            attributesArray.push({key: key, value: attributes[key]});\n        }\n        if (attributesArray.length > 0) {\n            return attributeService.saveEntityAttributes(entityId, 'SERVER_SCOPE', attributesArray);\n        } else {\n            return widgetContext.rxjs.of([]);\n        }\n    }\n}",
+                "customResources" : [ ],
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "93931e52-5d7c-903e-67aa-b9435df44ff4"
+              }, {
+                "name" : "Delete device",
+                "icon" : "delete",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\nlet deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\n\nopenDeleteDeviceDialog();\n\nfunction openDeleteDeviceDialog() {\n    let title = \"Are you sure you want to delete the device \" + entityName +  \"?\";\n    let content = \"Be careful, after the confirmation, the device and all related data will become unrecoverable!\";\n    dialogs.confirm(title, content, 'Cancel', 'Delete').subscribe(\n        function (result) {\n            if (result) {\n                deleteDevice();\n            }\n        }\n    );\n}\n\nfunction deleteDevice() {\n    deviceService.deleteDevice(entityId.id).subscribe(\n        function () {\n            widgetContext.updateAliases();\n        }\n    );\n}\n",
+                "id" : "ec2708f6-9ff0-186b-e4fc-7635ebfa3074"
+              } ]
+            },
+            "titleColor" : "#DD3737",
+            "enableDataExport" : false,
+            "margin" : "14px",
+            "borderRadius" : "14px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "38cfcbb0-7082-ae28-89d9-49881d5b88c7"
+        },
+        "1fed6e0a-afa7-d113-ce5b-2f39fc41d55a" : {
+          "typeFullFqn" : "system.entity_admin_widgets.asset_admin_table",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1693314181207,
+                  "endTimeMs" : 1693400581207
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(197, 253, 252)",
+            "color" : "rgba(223, 84, 84, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "entitiesTitle" : "Asset admin table45498",
+              "enableSearch" : false,
+              "enableSelectColumnDisplay" : false,
+              "enableStickyHeader" : false,
+              "enableStickyAction" : true,
+              "showCellActionsMenu" : false,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : true,
+              "entityNameColumnTitle" : "name",
+              "displayEntityLabel" : false,
+              "displayEntityType" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 12,
+              "defaultSortOrder" : "entityName",
+              "useRowStyleFunction" : false
+            },
+            "title" : "Asset admin table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "Simulated",
+              "entityAliasId" : "e52f092c-940e-e118-b9e1-ac063a01fbb7",
+              "dataKeys" : [ {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Label",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.1793034792741992
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitleIcon" : true,
+            "titleIcon" : "more_horiz",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : {
+              "headerButton" : [ {
+                "name" : "Add asset",
+                "icon" : "add",
+                "type" : "customPretty",
+                "customHtml" : "<form #addAssetForm=\"ngForm\" [formGroup]=\"addAssetFormGroup\"\n      (ngSubmit)=\"save()\" style=\"width: 480px;\">\n  <mat-toolbar fxLayout=\"row\" color=\"primary\">\n    <h2>Add asset</h2>\n    <span fxFlex></span>\n    <button mat-icon-button\n            (click)=\"cancel()\"\n            type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n      <div class=\"mat-padding\" fxLayout=\"column\">\n            <mat-form-field class=\"mat-block\">\n                <mat-label>Asset name</mat-label>\n                <input matInput formControlName=\"assetName\" required>\n                <mat-error *ngIf=\"addAssetFormGroup.get('assetName').hasError('required')\">\n                    Asset name is required.\n                </mat-error>\n            </mat-form-field>\n            <div fxLayout=\"row\" fxLayoutGap=\"8px\">\n                <tb-entity-subtype-autocomplete\n                    fxFlex=\"50\"\n                    formControlName=\"assetType\"\n                    [required]=\"true\"\n                    [entityType]=\"'ASSET'\"\n                ></tb-entity-subtype-autocomplete>\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Label</mat-label>\n                    <input matInput formControlName=\"assetLabel\">\n                </mat-form-field>\n            </div>\n            <div formGroupName=\"attributes\" fxLayout=\"row\" fxLayoutGap=\"8px\">\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Latitude</mat-label>\n                    <input type=\"number\" step=\"any\" matInput formControlName=\"latitude\">\n                </mat-form-field>\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Longitude</mat-label>\n                    <input type=\"number\" step=\"any\" matInput formControlName=\"longitude\">\n                </mat-form-field>\n            </div>\n      </div>  \n  </div>\n  <div mat-dialog-actions fxLayout=\"row\">\n    <span fxFlex></span>\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            style=\"margin-right: 20px;\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || addAssetForm.invalid || !addAssetForm.dirty\">\n      Create\n    </button>\n  </div>\n</form>\n",
+                "customCss" : "",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nopenAddAssetDialog();\n\nfunction openAddAssetDialog() {\n    customDialog.customDialog(htmlTemplate, AddAssetDialogController).subscribe();\n}\n\nfunction AddAssetDialogController(instance) {\n    let vm = instance;\n    \n    vm.addAssetFormGroup = vm.fb.group({\n      assetName: ['', [vm.validators.required]],\n      assetType: ['', [vm.validators.required]],\n      assetLabel: [''],\n      attributes: vm.fb.group({\n          latitude: [null],\n          longitude: [null]\n      })      \n    });\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        vm.addAssetFormGroup.markAsPristine();\n        let asset = {\n            name: vm.addAssetFormGroup.get('assetName').value,\n            type: vm.addAssetFormGroup.get('assetType').value,\n            label: vm.addAssetFormGroup.get('assetLabel').value\n        };\n        assetService.saveAsset(asset).subscribe(\n            function (asset) {\n                saveAttributes(asset.id).subscribe(\n                    function () {\n                        widgetContext.updateAliases();\n                        vm.dialogRef.close(null);\n                    }\n                );\n            }\n        );\n    };\n    \n    function saveAttributes(entityId) {\n        let attributes = vm.addAssetFormGroup.get('attributes').value;\n        let attributesArray = [];\n        for (let key in attributes) {\n            attributesArray.push({key: key, value: attributes[key]});\n        }\n        if (attributesArray.length > 0) {\n            return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n        } else {\n            return widgetContext.rxjs.of([]);\n        }\n    }\n}",
+                "customResources" : [ ],
+                "id" : "70837a9d-c3de-a9a7-03c5-dccd14998758"
+              } ],
+              "actionCellButton" : [ {
+                "name" : "Edit asset",
+                "icon" : "edit",
+                "type" : "customPretty",
+                "customHtml" : "<form #editAssetForm=\"ngForm\" [formGroup]=\"editAssetFormGroup\"\n      (ngSubmit)=\"save()\" style=\"width: 480px;\">\n  <mat-toolbar fxLayout=\"row\" color=\"primary\">\n    <h2>Edit asset</h2>\n    <span fxFlex></span>\n    <button mat-icon-button\n            (click)=\"cancel()\"\n            type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n      <div class=\"mat-padding\" fxLayout=\"column\">\n            <mat-form-field class=\"mat-block\">\n                <mat-label>Asset name</mat-label>\n                <input matInput formControlName=\"assetName\" required>\n                <mat-error *ngIf=\"editAssetFormGroup.get('assetName').hasError('required')\">\n                    Asset name is required.\n                </mat-error>\n            </mat-form-field>\n            <div fxLayout=\"row\" fxLayoutGap=\"8px\">\n                <tb-entity-subtype-autocomplete\n                    fxFlex=\"50\"\n                    formControlName=\"assetType\"\n                    [required]=\"true\"\n                    [entityType]=\"'ASSET'\"\n                ></tb-entity-subtype-autocomplete>\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Label</mat-label>\n                    <input matInput formControlName=\"assetLabel\">\n                </mat-form-field>\n            </div>\n            <div formGroupName=\"attributes\" fxLayout=\"row\" fxLayoutGap=\"8px\">\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Latitude</mat-label>\n                    <input type=\"number\" step=\"any\" matInput formControlName=\"latitude\">\n                </mat-form-field>\n                <mat-form-field fxFlex=\"50\" class=\"mat-block\">\n                    <mat-label>Longitude</mat-label>\n                    <input type=\"number\" step=\"any\" matInput formControlName=\"longitude\">\n                </mat-form-field>\n            </div>\n      </div>  \n  </div>\n  <div mat-dialog-actions fxLayout=\"row\">\n    <span fxFlex></span>\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            type=\"submit\"\n            style=\"margin-right: 20px;\"\n            [disabled]=\"(isLoading$ | async) || editAssetForm.invalid || !editAssetForm.dirty\">\n      Update\n    </button>\n  </div>\n</form>\n",
+                "customCss" : "",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\nlet attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nopenEditAssetDialog();\n\nfunction openEditAssetDialog() {\n    customDialog.customDialog(htmlTemplate, EditAssetDialogController).subscribe();\n}\n\nfunction EditAssetDialogController(instance) {\n    let vm = instance;\n    \n    vm.asset = null;\n    vm.attributes = {};\n    \n    vm.editAssetFormGroup = vm.fb.group({\n      assetName: ['', [vm.validators.required]],\n      assetType: ['', [vm.validators.required]],\n      assetLabel: [''],\n      attributes: vm.fb.group({\n          latitude: [null],\n          longitude: [null]\n      })      \n    });\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        vm.editAssetFormGroup.markAsPristine();\n        vm.asset.name = vm.editAssetFormGroup.get('assetName').value,\n        vm.asset.type = vm.editAssetFormGroup.get('assetType').value,\n        vm.asset.label = vm.editAssetFormGroup.get('assetLabel').value\n        assetService.saveAsset(vm.asset).subscribe(\n            function () {\n                saveAttributes().subscribe(\n                    function () {\n                        widgetContext.updateAliases();\n                        vm.dialogRef.close(null);\n                    }\n                );\n            }\n        );\n    };\n    \n    getEntityInfo();\n    \n    function getEntityInfo() {\n        assetService.getAsset(entityId.id).subscribe(\n            function (asset) {\n                attributeService.getEntityAttributes(entityId, 'SERVER_SCOPE',\n                                                    ['latitude', 'longitude']).subscribe(\n                   function (attributes) {\n                        for (let i = 0; i < attributes.length; i++) {\n                            vm.attributes[attributes[i].key] = attributes[i].value; \n                        }\n                        vm.asset = asset;\n                        vm.editAssetFormGroup.patchValue(\n                            {\n                                assetName: vm.asset.name,\n                                assetType: vm.asset.type,\n                                assetLabel: vm.asset.label,\n                                attributes: {\n                                    latitude: vm.attributes.latitude,\n                                    longitude: vm.attributes.longitude\n                                }\n                            }, {emitEvent: false}\n                        );\n                   } \n                );\n            }\n        );    \n    }\n    \n    function saveAttributes() {\n        let attributes = vm.editAssetFormGroup.get('attributes').value;\n        let attributesArray = [];\n        for (let key in attributes) {\n            attributesArray.push({key: key, value: attributes[key]});\n        }\n        if (attributesArray.length > 0) {\n            return attributeService.saveEntityAttributes(entityId, 'SERVER_SCOPE', attributesArray);\n        } else {\n            return widgetContext.rxjs.of([]);\n        }\n    }\n}",
+                "customResources" : [ ],
+                "id" : "93931e52-5d7c-903e-67aa-b9435df44ff4"
+              }, {
+                "name" : "Delete asset",
+                "icon" : "delete",
+                "type" : "custom",
+                "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\nlet assetService = $injector.get(widgetContext.servicesMap.get('assetService'));\n\nopenDeleteAssetDialog();\n\nfunction openDeleteAssetDialog() {\n    let title = \"Are you sure you want to delete the asset \" + entityName +  \"?\";\n    let content = \"Be careful, after the confirmation, the asset and all related data will become unrecoverable!\";\n    dialogs.confirm(title, content, 'Cancel', 'Delete').subscribe(\n        function (result) {\n            if (result) {\n                deleteAsset();\n            }\n        }\n    );\n}\n\nfunction deleteAsset() {\n    assetService.deleteAsset(entityId.id).subscribe(\n        function () {\n            widgetContext.updateAliases();\n        }\n    );\n}\n",
+                "id" : "ec2708f6-9ff0-186b-e4fc-7635ebfa3074"
+              } ]
+            },
+            "titleFont" : {
+              "size" : 2,
+              "sizeUnit" : "em",
+              "family" : "serif",
+              "weight" : "bolder",
+              "style" : "italic",
+              "lineHeight" : "2"
+            },
+            "titleColor" : "#DD9999",
+            "enableDataExport" : true,
+            "margin" : "4px",
+            "borderRadius" : "4px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : null,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "1fed6e0a-afa7-d113-ce5b-2f39fc41d55a"
+        },
+        "87667339-0527-633c-83d2-2dccd42ac8b1" : {
+          "typeFullFqn" : "system.files.reports",
+          "type" : "static",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 7.5,
+          "sizeY" : 4.5,
+          "config" : {
+            "timewindow" : {
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 86400000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(241, 215, 215)",
+            "color" : "rgba(215, 83, 83, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "title" : "Reports",
+              "displayCreatedTime" : true,
+              "displayType" : true,
+              "displayCustomer" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "name",
+              "noDataDisplayMessage" : "alternative message",
+              "forceDefaultType" : "report"
+            },
+            "title" : "Reports",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "Simulated",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Sin",
+                "color" : "#2196f3",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.472295003170325,
+                "funcBody" : "return Math.round(1000*Math.sin(time/5000));"
+              }, {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Cos",
+                "color" : "#4caf50",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.8926244886945558,
+                "funcBody" : "return Math.round(1000*Math.cos(time/5000));"
+              }, {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#f44336",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.6401141393938932,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "monospace",
+              "weight" : "normal",
+              "style" : "italic",
+              "lineHeight" : "2"
+            },
+            "titleColor" : "#E45151",
+            "showTitleIcon" : true,
+            "titleTooltip" : "123546",
+            "margin" : "4px",
+            "borderRadius" : "4px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "titleIcon" : "people",
+            "iconColor" : "rgba(211, 94, 94, 0.87)",
+            "iconSize" : "24px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "87667339-0527-633c-83d2-2dccd42ac8b1"
+        },
+        "d67c9f76-7d8d-83c7-1d86-77eff2c0cd4c" : {
+          "typeFullFqn" : "system.files.files",
+          "type" : "static",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 7.5,
+          "sizeY" : 4.5,
+          "config" : {
+            "timewindow" : {
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 86400000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(49, 72, 220)",
+            "color" : "rgba(237, 26, 26, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "displayCreatedTime" : true,
+              "displayCustomer" : true,
+              "title" : "Files",
+              "displayType" : true
+            },
+            "title" : "Files",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "Simulated",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Sin",
+                "color" : "#2196f3",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.472295003170325,
+                "funcBody" : "return Math.round(1000*Math.sin(time/5000));"
+              }, {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Cos",
+                "color" : "#4caf50",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.8926244886945558,
+                "funcBody" : "return Math.round(1000*Math.cos(time/5000));"
+              }, {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#f44336",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.6401141393938932,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "actions" : { },
+            "titleFont" : {
+              "size" : 2,
+              "sizeUnit" : "em",
+              "family" : "Roboto",
+              "weight" : "bolder",
+              "style" : "italic",
+              "lineHeight" : "2"
+            },
+            "titleColor" : "#EF8C8C",
+            "showTitleIcon" : true,
+            "titleTooltip" : "",
+            "margin" : "14px",
+            "borderRadius" : "14px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "titleIcon" : "thermostat",
+            "iconColor" : "rgba(248, 105, 105, 0.87)",
+            "iconSize" : "24px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d67c9f76-7d8d-83c7-1d86-77eff2c0cd4c"
+        },
+        "49e355d6-b9b7-3cbc-9722-57cdf3286ce1" : {
+          "typeFullFqn" : "system.gpio_widgets.raspberry_pi_gpio_panel",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 7,
+          "sizeY" : 10.5,
+          "config" : {
+            "showTitle" : true,
+            "backgroundColor" : "#EAC7C7",
+            "color" : "rgba(196, 25, 25, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "gpioList" : [ {
+                "pin" : 1,
+                "label" : "3.3V",
+                "row" : 0,
+                "col" : 0,
+                "color" : "#fc9700",
+                "_uniqueKey" : 0
+              }, {
+                "pin" : 2,
+                "label" : "5V",
+                "row" : 0,
+                "col" : 1,
+                "color" : "#fb0000",
+                "_uniqueKey" : 1
+              }, {
+                "pin" : 3,
+                "label" : "GPIO 2 (I2C1_SDA)",
+                "row" : 1,
+                "col" : 0,
+                "color" : "#02fefb",
+                "_uniqueKey" : 2
+              }, {
+                "color" : "#fb0000",
+                "pin" : 4,
+                "label" : "5V",
+                "row" : 1,
+                "col" : 1
+              }, {
+                "color" : "#02fefb",
+                "pin" : 5,
+                "label" : "GPIO 3 (I2C1_SCL)",
+                "row" : 2,
+                "col" : 0
+              }, {
+                "color" : "#000000",
+                "pin" : 6,
+                "label" : "GND",
+                "row" : 2,
+                "col" : 1
+              }, {
+                "color" : "#00fd00",
+                "pin" : 7,
+                "label" : "GPIO 4 (GPCLK0)",
+                "row" : 3,
+                "col" : 0
+              }, {
+                "color" : "#fdfb00",
+                "pin" : 8,
+                "label" : "GPIO 14 (UART_TXD)",
+                "row" : 3,
+                "col" : 1
+              }, {
+                "color" : "#000000",
+                "pin" : 9,
+                "label" : "GND",
+                "row" : 4,
+                "col" : 0
+              }, {
+                "color" : "#fdfb00",
+                "pin" : 10,
+                "label" : "GPIO 15 (UART_RXD)",
+                "row" : 4,
+                "col" : 1
+              }, {
+                "color" : "#00fd00",
+                "pin" : 11,
+                "label" : "GPIO 17",
+                "row" : 5,
+                "col" : 0
+              }, {
+                "color" : "#00fd00",
+                "pin" : 12,
+                "label" : "GPIO 18",
+                "row" : 5,
+                "col" : 1
+              }, {
+                "color" : "#00fd00",
+                "pin" : 13,
+                "label" : "GPIO 27",
+                "row" : 6,
+                "col" : 0
+              }, {
+                "color" : "#000000",
+                "pin" : 14,
+                "label" : "GND",
+                "row" : 6,
+                "col" : 1
+              }, {
+                "color" : "#00fd00",
+                "pin" : 15,
+                "label" : "GPIO 22",
+                "row" : 7,
+                "col" : 0
+              }, {
+                "color" : "#00fd00",
+                "pin" : 16,
+                "label" : "GPIO 23",
+                "row" : 7,
+                "col" : 1
+              }, {
+                "color" : "#fc9700",
+                "pin" : 17,
+                "label" : "3.3V",
+                "row" : 8,
+                "col" : 0
+              }, {
+                "color" : "#00fd00",
+                "pin" : 18,
+                "label" : "GPIO 24",
+                "row" : 8,
+                "col" : 1
+              }, {
+                "color" : "#fd01fd",
+                "pin" : 19,
+                "label" : "GPIO 10 (SPI_MOSI)",
+                "row" : 9,
+                "col" : 0
+              }, {
+                "color" : "#000000",
+                "pin" : 20,
+                "label" : "GND",
+                "row" : 9,
+                "col" : 1
+              }, {
+                "color" : "#fd01fd",
+                "pin" : 21,
+                "label" : "GPIO 9 (SPI_MISO)",
+                "row" : 10,
+                "col" : 0
+              }, {
+                "color" : "#00fd00",
+                "pin" : 22,
+                "label" : "GPIO 25",
+                "row" : 10,
+                "col" : 1
+              }, {
+                "color" : "#fd01fd",
+                "pin" : 23,
+                "label" : "GPIO 11 (SPI_SCLK)",
+                "row" : 11,
+                "col" : 0
+              }, {
+                "color" : "#fd01fd",
+                "pin" : 24,
+                "label" : "GPIO 8 (SPI_CE0)",
+                "row" : 11,
+                "col" : 1
+              }, {
+                "color" : "#000000",
+                "pin" : 25,
+                "label" : "GND",
+                "row" : 12,
+                "col" : 0
+              }, {
+                "color" : "#fd01fd",
+                "pin" : 26,
+                "label" : "GPIO 7 (SPI_CE1)",
+                "row" : 12,
+                "col" : 1
+              }, {
+                "color" : "#ffffff",
+                "pin" : 27,
+                "label" : "ID_SD",
+                "row" : 13,
+                "col" : 0
+              }, {
+                "color" : "#ffffff",
+                "pin" : 28,
+                "label" : "ID_SC",
+                "row" : 13,
+                "col" : 1
+              }, {
+                "color" : "#00fd00",
+                "pin" : 29,
+                "label" : "GPIO 5",
+                "row" : 14,
+                "col" : 0
+              }, {
+                "color" : "#000000",
+                "pin" : 30,
+                "label" : "GND",
+                "row" : 14,
+                "col" : 1
+              }, {
+                "color" : "#00fd00",
+                "pin" : 31,
+                "label" : "GPIO 6",
+                "row" : 15,
+                "col" : 0
+              }, {
+                "color" : "#00fd00",
+                "pin" : 32,
+                "label" : "GPIO 12",
+                "row" : 15,
+                "col" : 1
+              }, {
+                "color" : "#00fd00",
+                "pin" : 33,
+                "label" : "GPIO 13",
+                "row" : 16,
+                "col" : 0
+              }, {
+                "color" : "#000000",
+                "pin" : 34,
+                "label" : "GND",
+                "row" : 16,
+                "col" : 1
+              }, {
+                "color" : "#00fd00",
+                "pin" : 35,
+                "label" : "GPIO 19",
+                "row" : 17,
+                "col" : 0
+              }, {
+                "color" : "#00fd00",
+                "pin" : 36,
+                "label" : "GPIO 16",
+                "row" : 17,
+                "col" : 1
+              }, {
+                "color" : "#00fd00",
+                "pin" : 37,
+                "label" : "GPIO 26",
+                "row" : 18,
+                "col" : 0
+              }, {
+                "color" : "#00fd00",
+                "pin" : 38,
+                "label" : "GPIO 20",
+                "row" : 18,
+                "col" : 1
+              }, {
+                "color" : "#000000",
+                "pin" : 39,
+                "label" : "GND",
+                "row" : 19,
+                "col" : 0
+              }, {
+                "color" : "#00fd00",
+                "pin" : 40,
+                "label" : "GPIO 21",
+                "row" : 19,
+                "col" : 1
+              } ],
+              "ledPanelBackgroundColor" : "#008a00"
+            },
+            "title" : "Raspberry Pi GPIO Panel",
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "function",
+              "entityAliasId" : "9585045b-7214-31fb-7d5d-45647f077211",
+              "dataKeys" : [ {
+                "name" : "humidity",
+                "type" : "timeseries",
+                "label" : "humidity",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6585990430661992
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1693318458571,
+                  "endTimeMs" : 1693404858571
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : 2,
+              "sizeUnit" : "rem",
+              "family" : "monospace",
+              "weight" : "normal",
+              "style" : "normal",
+              "lineHeight" : null
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "units" : "µm",
+            "decimals" : 2,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "49e355d6-b9b7-3cbc-9722-57cdf3286ce1"
+        },
+        "b11f6831-c7dc-6f78-4279-2cfb5514e263" : {
+          "typeFullFqn" : "system.gpio_widgets.gpio_panel",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 5,
+          "sizeY" : 2,
+          "config" : {
+            "showTitle" : true,
+            "backgroundColor" : "#310101",
+            "color" : "rgba(237, 124, 124, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "gpioList" : [ {
+                "pin" : 1,
+                "label" : "GPIO 1",
+                "row" : 0,
+                "col" : 0,
+                "color" : "#008000",
+                "_uniqueKey" : 0
+              }, {
+                "pin" : 2,
+                "label" : "GPIO 2",
+                "row" : 0,
+                "col" : 1,
+                "color" : "#ffff00",
+                "_uniqueKey" : 1
+              }, {
+                "pin" : 3,
+                "label" : "GPIO 3",
+                "row" : 1,
+                "col" : 0,
+                "color" : "#cf006f",
+                "_uniqueKey" : 2
+              } ],
+              "ledPanelBackgroundColor" : "#b71c1c"
+            },
+            "title" : "Basic GPIO Panel",
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "function",
+              "entityAliasId" : "9585045b-7214-31fb-7d5d-45647f077211",
+              "dataKeys" : [ {
+                "name" : "humidity",
+                "type" : "timeseries",
+                "label" : "humidity",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6167004869201611
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1693318633367,
+                  "endTimeMs" : 1693405033367
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "sans-serif",
+              "weight" : "bold",
+              "style" : "italic",
+              "lineHeight" : null
+            },
+            "showTitleIcon" : true,
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "enableDataExport" : true,
+            "margin" : "10px",
+            "borderRadius" : "10px",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "titleIcon" : "close",
+            "iconColor" : "rgba(237, 200, 200, 0.87)",
+            "iconSize" : "30px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "b11f6831-c7dc-6f78-4279-2cfb5514e263"
+        },
+        "8add2593-7062-2aae-5b47-f662941fac1b" : {
+          "typeFullFqn" : "system.gpio_widgets.basic_gpio_control",
+          "type" : "rpc",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 4,
+          "sizeY" : 2,
+          "config" : {
+            "targetDeviceAliases" : [ ],
+            "showTitle" : true,
+            "backgroundColor" : "#FABBBBF7",
+            "color" : "rgba(227, 33, 33, 0.87)",
+            "padding" : "10px",
+            "settings" : {
+              "parseGpioStatusFunction" : "return body[pin] === true;",
+              "gpioStatusChangeRequest" : {
+                "method" : "setGpioStatus",
+                "paramsBody" : "{\n   \"pin\": \"{$pin}\",\n   \"enabled\": \"{$enabled}\"\n}"
+              },
+              "requestTimeout" : 500,
+              "switchPanelBackgroundColor" : "#b71c1c",
+              "gpioStatusRequest" : {
+                "method" : "getGpioStatus",
+                "paramsBody" : "{}"
+              },
+              "gpioList" : [ {
+                "pin" : 1,
+                "label" : "GPIO 1",
+                "row" : 0,
+                "col" : 0,
+                "_uniqueKey" : 0
+              }, {
+                "pin" : 2,
+                "label" : "GPIO 2",
+                "row" : 0,
+                "col" : 1,
+                "_uniqueKey" : 1
+              }, {
+                "pin" : 3,
+                "label" : "GPIO 3",
+                "row" : 1,
+                "col" : 0,
+                "_uniqueKey" : 2
+              } ]
+            },
+            "title" : "Basic GPIO Control",
+            "datasources" : [ ],
+            "targetDeviceAliasIds" : [ "9585045b-7214-31fb-7d5d-45647f077211" ],
+            "titleFont" : {
+              "size" : 15,
+              "sizeUnit" : "px",
+              "family" : "monospace",
+              "weight" : "normal",
+              "style" : "italic",
+              "lineHeight" : null
+            },
+            "titleColor" : "#DF4242",
+            "showTitleIcon" : true,
+            "titleTooltip" : "Basic GPIO Control",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "enableDataExport" : true,
+            "margin" : "10px",
+            "borderRadius" : "10px",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "titleIcon" : "person",
+            "iconColor" : "rgba(233, 43, 43, 0.87)",
+            "iconSize" : "24px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "8add2593-7062-2aae-5b47-f662941fac1b"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "new-widget-design5",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "38cfcbb0-7082-ae28-89d9-49881d5b88c7" : {
+                  "sizeX" : 8,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "1fed6e0a-afa7-d113-ce5b-2f39fc41d55a" : {
+                  "sizeX" : 9,
+                  "sizeY" : 11,
+                  "row" : 0,
+                  "col" : 9
+                },
+                "87667339-0527-633c-83d2-2dccd42ac8b1" : {
+                  "sizeX" : 11,
+                  "sizeY" : 8,
+                  "row" : 11,
+                  "col" : 0
+                },
+                "d67c9f76-7d8d-83c7-1d86-77eff2c0cd4c" : {
+                  "sizeX" : 10,
+                  "sizeY" : 8,
+                  "row" : 11,
+                  "col" : 11
+                },
+                "49e355d6-b9b7-3cbc-9722-57cdf3286ce1" : {
+                  "sizeX" : 7,
+                  "sizeY" : 10,
+                  "row" : 19,
+                  "col" : 0
+                },
+                "b11f6831-c7dc-6f78-4279-2cfb5514e263" : {
+                  "sizeX" : 5,
+                  "sizeY" : 2,
+                  "row" : 19,
+                  "col" : 7
+                },
+                "8add2593-7062-2aae-5b47-f662941fac1b" : {
+                  "sizeX" : 12,
+                  "sizeY" : 6,
+                  "row" : 21,
+                  "col" : 7
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "9585045b-7214-31fb-7d5d-45647f077211" : {
+          "id" : "9585045b-7214-31fb-7d5d-45647f077211",
+          "alias" : "Device",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "c34760b0-4635-11ee-b648-4382414172b6"
+            }
+          }
+        },
+        "221877be-20e1-e1ce-297f-87fa1cf57cef" : {
+          "id" : "221877be-20e1-e1ce-297f-87fa1cf57cef",
+          "alias" : "Devices",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE"
+          }
+        },
+        "e52f092c-940e-e118-b9e1-ac063a01fbb7" : {
+          "id" : "e52f092c-940e-e118-b9e1-ac063a01fbb7",
+          "alias" : "Assets",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : true,
+            "entityType" : "ASSET"
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1693300651614,
+            "endTimeMs" : 1693387051614
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "customerId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "0be69ee0-4716-11ee-b648-4382414172b6"
+    },
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "0be69ee0-4716-11ee-b648-4382414172b6"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "new-widget-design5",
+    "ownerId" : null,
+    "title" : "new-widget-design5"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

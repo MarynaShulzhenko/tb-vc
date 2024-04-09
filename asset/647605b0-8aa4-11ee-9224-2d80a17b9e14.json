@@ -1,0 +1,30 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "0901ef40-4586-11ee-a7c8-6f8a117db57d"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : {
+      "entityType" : "ASSET",
+      "id" : "647605b0-8aa4-11ee-9224-2d80a17b9e14"
+    },
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "647605b0-8aa4-11ee-9224-2d80a17b9e14"
+    },
+    "label" : null,
+    "name" : "SequentialByOriginator_tb-rule-engine-isolated-0",
+    "ownerId" : null,
+    "type" : "TbServiceQueue"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

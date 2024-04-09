@@ -1,0 +1,25 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "PLATFORM_USERS",
+      "description" : "In case trigger entity (e.g. created device or alarm) is owned by customer, then recipients are this customer's users, otherwise tenant admins",
+      "usersFilter" : {
+        "type" : "ORIGINATOR_ENTITY_OWNER_USERS"
+      }
+    },
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "40d86650-3835-11ee-b6c5-dd8cce90d040"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "40d86650-3835-11ee-b6c5-dd8cce90d040"
+    },
+    "name" : "Users of the entity owner"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

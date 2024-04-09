@@ -1,0 +1,43 @@
+{
+  "entityType" : "NOTIFICATION_RULE",
+  "entity" : {
+    "additionalConfig" : {
+      "description" : "Send notification to tenant admins when an alarm is created"
+    },
+    "enabled" : true,
+    "externalId" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "40da1400-3835-11ee-b6c5-dd8cce90d040"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "40da1400-3835-11ee-b6c5-dd8cce90d040"
+    },
+    "name" : "New alarm",
+    "recipientsConfig" : {
+      "escalationTable" : {
+        "0" : [ "40d72dd0-3835-11ee-b6c5-dd8cce90d040" ]
+      },
+      "triggerType" : "ALARM"
+    },
+    "templateId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "40d99ed0-3835-11ee-b6c5-dd8cce90d040"
+    },
+    "triggerConfig" : {
+      "triggerType" : "ALARM",
+      "alarmSeverities" : null,
+      "alarmTypes" : null,
+      "clearRule" : {
+        "alarmStatuses" : [ ]
+      },
+      "notifyOn" : [ "CREATED" ],
+      "triggerType" : "ALARM"
+    },
+    "triggerType" : "ALARM"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

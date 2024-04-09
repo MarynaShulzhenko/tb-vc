@@ -1,0 +1,63 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "bug_report",
+              "color" : "#20E59D"
+            },
+            "actionButtonConfig" : {
+              "enabled" : true,
+              "text" : "test button",
+              "linkType" : "LINK",
+              "link" : "https://img.freepik.com/premium-vector/iot-internet-things-background_127544-469.jpg"
+            }
+          },
+          "body" : "Sorry, it's just a test message",
+          "enabled" : true,
+          "subject" : "Hi, ${recipientFirstName}!"
+        },
+        "EMAIL" : {
+          "method" : "EMAIL",
+          "body" : "<p>Sorry, it's just a test message</p>\n<p><img src=\"https://img.freepik.com/premium-vector/iot-internet-things-background_127544-469.jpg\" alt=\"\" width=\"626\" height=\"375\" /></p>",
+          "enabled" : true,
+          "subject" : "Hi, ${recipientFirstName}!"
+        },
+        "SLACK" : {
+          "method" : "SLACK",
+          "body" : "Hi, ${recipientFirstName}!\nSorry, it's just a test message",
+          "enabled" : true
+        },
+        "MOBILE_APP" : {
+          "method" : "MOBILE_APP",
+          "additionalConfig" : {
+            "onClick" : {
+              "enabled" : true,
+              "linkType" : "LINK",
+              "link" : "https://img.freepik.com/premium-vector/iot-internet-things-background_127544-469.jpg"
+            }
+          },
+          "body" : "Sorry, it's just a test message",
+          "enabled" : true,
+          "subject" : "Hi, ${recipientFirstName}!"
+        }
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "2432fd80-d0ba-11ee-acf3-83feb6c2fb42"
+    },
+    "name" : "test",
+    "notificationType" : "GENERAL"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

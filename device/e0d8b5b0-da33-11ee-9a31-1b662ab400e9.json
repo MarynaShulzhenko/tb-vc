@@ -1,0 +1,95 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "e07d9d60-da33-11ee-9a31-1b662ab400e9"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "e0d8b5b0-da33-11ee-9a31-1b662ab400e9"
+    },
+    "label" : null,
+    "name" : "Water meter",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "water-meter"
+  },
+  "credentials" : {
+    "credentialsId" : "SxoyLeXiMssGUO1HfWPF",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e08ba720-da33-11ee-9a31-1b662ab400e9"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "e0d8b5b0-da33-11ee-9a31-1b662ab400e9"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1709563303167,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1709563303167,
+      "longValue" : 1709563303161,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "type",
+      "lastUpdateTs" : 1709562684621,
+      "longValue" : null,
+      "strValue" : "water-meter"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.9,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1709562684621,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.6,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1709562684621,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

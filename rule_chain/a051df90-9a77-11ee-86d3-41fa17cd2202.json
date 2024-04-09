@@ -1,0 +1,201 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "a051df90-9a77-11ee-86d3-41fa17cd2202"
+    },
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "a051df90-9a77-11ee-86d3-41fa17cd2202"
+    },
+    "name" : "new test",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : null,
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 216,
+        "layoutY" : 215
+      },
+      "configuration" : {
+        "alarmStatusList" : [ "ACTIVE_ACK", "ACTIVE_UNACK" ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a075bb40-9a77-11ee-86d3-41fa17cd2202"
+      },
+      "name" : "wqe",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckAlarmStatusNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 214,
+        "layoutY" : 326
+      },
+      "configuration" : {
+        "inputValueKey" : "pulseCounter",
+        "outputValueKey" : "delta",
+        "useCache" : true,
+        "addPeriodBetweenMsgs" : false,
+        "periodValueKey" : "periodInMs",
+        "round" : null,
+        "tellFailureIfDeltaIsNegative" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a0765780-9a77-11ee-86d3-41fa17cd2202"
+      },
+      "name" : "qwe",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.CalculateDeltaNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 216,
+        "layoutY" : 268
+      },
+      "configuration" : {
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ]
+          } ],
+          "fetchLastLevelOnly" : false
+        },
+        "originatorSource" : "CUSTOMER",
+        "entityType" : null,
+        "entityNamePattern" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a076ccb0-9a77-11ee-86d3-41fa17cd2202"
+      },
+      "name" : "qew",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 218,
+        "layoutY" : 395
+      },
+      "configuration" : {
+        "groupNamePattern" : "qwe",
+        "createGroupIfNotExists" : false,
+        "removeFromCurrentGroups" : false,
+        "groupCacheExpiration" : 300
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a07741e0-9a77-11ee-86d3-41fa17cd2202"
+      },
+      "name" : "qwe",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbAddToGroupNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 218,
+        "layoutY" : 463
+      },
+      "configuration" : {
+        "periodValue" : 5,
+        "periodTimeUnit" : "MINUTES",
+        "outMsgType" : "POST_TELEMETRY_REQUEST",
+        "countAlarmsForChildEntities" : false,
+        "parentEntitiesQuery" : {
+          "type" : "group",
+          "entityGroupId" : {
+            "entityType" : "ENTITY_GROUP",
+            "id" : "35744690-6827-11ee-8bad-d3767d151e76"
+          }
+        },
+        "alarmsCountMappings" : [ {
+          "target" : "alarmsCount",
+          "typesList" : null,
+          "severityList" : null,
+          "statusList" : null,
+          "latestInterval" : 0
+        } ]
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a0779000-9a77-11ee-86d3-41fa17cd2202"
+      },
+      "name" : "qew",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.analytics.latest.alarm.TbAlarmsCountNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 219,
+        "layoutY" : 526
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a077de20-9a77-11ee-86d3-41fa17cd2202"
+      },
+      "name" : "qwe",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbAckNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

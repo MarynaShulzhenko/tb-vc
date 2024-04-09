@@ -1,0 +1,32 @@
+{
+  "entityType" : "CONVERTER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "scriptLang" : "TBEL",
+      "decoder" : null,
+      "tbelDecoder" : "/** Decoder **/\n\n// decode payload to JSON\nvar data = decodeToJson(payload);\n\n// Result object with device/asset attributes/telemetry data\n\nvar deviceName = data.deviceName;\nvar deviceType = data.deviceType;\nvar result = {\n   deviceName: deviceName,\n   deviceType: deviceType,\n   attributes: {},\n   telemetry: {\n       temperature: data.temperature,\n       humidity: data.humidity\n   }\n};\n\n/** Helper functions 'decodeToString' and 'decodeToJson' are already built-in **/\n\nreturn result;",
+      "encoder" : null,
+      "tbelEncoder" : null,
+      "updateOnlyKeys" : [ "manufacturer", "serialNumber", "temperature" ]
+    },
+    "debugMode" : true,
+    "edgeTemplate" : false,
+    "externalId" : {
+      "entityType" : "CONVERTER",
+      "id" : "a53fde80-56c0-11ee-9bc2-4ff56dfa2ba4"
+    },
+    "id" : {
+      "entityType" : "CONVERTER",
+      "id" : "a53fde80-56c0-11ee-9bc2-4ff56dfa2ba4"
+    },
+    "name" : "Uplink data converter for CoAP integration",
+    "type" : "UPLINK"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

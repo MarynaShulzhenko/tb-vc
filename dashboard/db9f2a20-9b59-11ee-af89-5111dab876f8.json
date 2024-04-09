@@ -1,0 +1,277 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "65446a0d-1b96-77b3-d194-a7aa4bce740e" : {
+          "typeFullFqn" : "system.home_page_widgets.getting_started",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Getting started",
+            "dropShadow" : true,
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "65446a0d-1b96-77b3-d194-a7aa4bce740e"
+        },
+        "d4effef7-6374-977e-3a62-fe378c032d26" : {
+          "typeFullFqn" : "system.home_page_widgets.quick_links",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "columns" : 3
+            },
+            "title" : "Quick links",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showLegend" : false,
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d4effef7-6374-977e-3a62-fe378c032d26"
+        },
+        "c1f11a1c-f2c5-8546-3fc2-332852f8113f" : {
+          "typeFullFqn" : "system.home_page_widgets.documentation_links",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "columns" : 3
+            },
+            "title" : "Documentation links",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showLegend" : false,
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "c1f11a1c-f2c5-8546-3fc2-332852f8113f"
+        },
+        "d9db9636-8c03-8c9e-5f46-75e63f2e6021" : {
+          "typeFullFqn" : "system.home_page_widgets.dashboards",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Dashboards",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showLegend" : false,
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d9db9636-8c03-8c9e-5f46-75e63f2e6021"
+        },
+        "c50fd726-4a02-e63d-da08-7e0bea9191e2" : {
+          "typeFullFqn" : "system.home_page_widgets.usage_info",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Usage info",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showLegend" : false,
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "c50fd726-4a02-e63d-da08-7e0bea9191e2"
+        },
+        "156e100a-987b-14cc-b14a-ae579bba824f" : {
+          "typeFullFqn" : "system.home_page_widgets.solution_templates",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "columns" : 3
+            },
+            "title" : "Solution templates",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showLegend" : false,
+            "enableDataExport" : true,
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "156e100a-987b-14cc-b14a-ae579bba824f"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Old widgets 18",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "65446a0d-1b96-77b3-d194-a7aa4bce740e" : {
+                  "sizeX" : 7,
+                  "sizeY" : 10,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "d4effef7-6374-977e-3a62-fe378c032d26" : {
+                  "sizeX" : 7,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 7
+                },
+                "c1f11a1c-f2c5-8546-3fc2-332852f8113f" : {
+                  "sizeX" : 7,
+                  "sizeY" : 3,
+                  "row" : 3,
+                  "col" : 7
+                },
+                "d9db9636-8c03-8c9e-5f46-75e63f2e6021" : {
+                  "sizeX" : 11,
+                  "sizeY" : 9,
+                  "row" : 10,
+                  "col" : 0
+                },
+                "c50fd726-4a02-e63d-da08-7e0bea9191e2" : {
+                  "sizeX" : 7,
+                  "sizeY" : 6,
+                  "row" : 0,
+                  "col" : 14
+                },
+                "156e100a-987b-14cc-b14a-ae579bba824f" : {
+                  "sizeX" : 17,
+                  "sizeY" : 4,
+                  "row" : 6,
+                  "col" : 7
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : { },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1702563930615,
+            "endTimeMs" : 1702650330615
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "customerId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "db9f2a20-9b59-11ee-af89-5111dab876f8"
+    },
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "db9f2a20-9b59-11ee-af89-5111dab876f8"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Old widgets 18 Home page widgets import",
+    "ownerId" : null,
+    "title" : "Old widgets 18 Home page widgets import"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

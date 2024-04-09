@@ -1,0 +1,59 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "clientConfiguration" : {
+        "port" : 10560,
+        "soBacklogOption" : 128,
+        "soRcvBuf" : 64,
+        "soSndBuf" : 64,
+        "soKeepaliveOption" : false,
+        "tcpNoDelay" : true,
+        "cacheSize" : 1000,
+        "timeToLiveInMinutes" : 1440,
+        "handlerConfiguration" : {
+          "handlerType" : "JSON",
+          "byteOrder" : "LITTLE_ENDIAN",
+          "maxFrameLength" : 128,
+          "lengthFieldOffset" : 4,
+          "lengthFieldLength" : 1,
+          "lengthAdjustment" : 0,
+          "initialBytesToStrip" : 5,
+          "failFast" : false,
+          "stripDelimiter" : true,
+          "messageSeparator" : "SYSTEM_LINE_SEPARATOR"
+        }
+      },
+      "metadata" : { }
+    },
+    "debugMode" : true,
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "d36aa8c0-9b22-11ee-af89-5111dab876f8"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : {
+      "entityType" : "INTEGRATION",
+      "id" : "d3958950-9b22-11ee-af89-5111dab876f8"
+    },
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "d3958950-9b22-11ee-af89-5111dab876f8"
+    },
+    "name" : "TCP integration",
+    "remote" : true,
+    "routingKey" : "5a072f57-0c9c-bc6d-7e16-5874f8737ec9",
+    "secret" : "nsbcc5329mr5uiyrut8b",
+    "type" : "TCP"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

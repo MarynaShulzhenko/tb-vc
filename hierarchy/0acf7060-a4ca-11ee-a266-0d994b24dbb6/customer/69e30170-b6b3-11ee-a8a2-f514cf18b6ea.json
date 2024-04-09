@@ -1,0 +1,42 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "0acf7060-a4ca-11ee-a266-0d994b24dbb6"
+    },
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "69e30170-b6b3-11ee-a8a2-f514cf18b6ea"
+    },
+    "name" : "subcustomer",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "0acf7060-a4ca-11ee-a266-0d994b24dbb6"
+    },
+    "parentCustomerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "0acf7060-a4ca-11ee-a266-0d994b24dbb6"
+    },
+    "phone" : null,
+    "state" : null,
+    "title" : "subcustomer",
+    "zip" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "clientConfiguration" : {
+        "connectTimeoutSec" : 10,
+        "connectionString" : "sdefrfsdgzfdg",
+        "consumerGroup" : "",
+        "iotHubName" : ""
+      }
+    },
+    "debugMode" : true,
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "9a763180-a002-11ee-a75c-a79c9ddf8589"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "241f0df0-d4b8-11ee-bb61-e3db8eecfda1"
+    },
+    "name" : "Azure Event Hub integration",
+    "remote" : false,
+    "routingKey" : "878ba593-6daf-69c1-4d15-b03f11977532",
+    "secret" : "cfe27lomsatfopyyp596",
+    "type" : "AZURE_EVENT_HUB"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":false,\"serviceId\":\"tb-ie-other-0\",\"error\":\"java.lang.IllegalArgumentException: Connection string has invalid key value pair: sdefrfsdgzfdg\\n\\tat com.azure.core.amqp.implementation.ConnectionStringProperties.<init>(ConnectionStringProperties.java:69)\\n\\tat com.azure.messaging.eventhubs.EventHubClientBuilder.connectionString(EventHubClientBuilder.java:251)\\n\\tat org.thingsboard.integration.azure.AzureEventHubIntegration.buildConsumerClient(AzureEventHubIntegration.java:240)\\n\\tat org.thingsboard.integration.azure.AzureEventHubIntegration.initReceiver(AzureEventHubIntegration.java:227)\\n\\tat org.thingsboard.integration.azure.AzureEventHubIntegration.init(AzureEventHubIntegration.java:83)\\n\\tat org.thingsboard.integration.api.AbstractIntegration.update(AbstractIntegration.java:116)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.processUpdateEvent(DefaultIntegrationManagerService.java:633)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.lambda$reInitIntegrations$13(DefaultIntegrationManagerService.java:729)\\n\\tat java.base/java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4770)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.reInitIntegrations(DefaultIntegrationManagerService.java:725)\\n\\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\\n\\tat java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)\\n\\tat java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\\n\\tat java.base/java.lang.Thread.run(Thread.java:829)\\n\"}",
+      "key" : "integration_status_tb-ie-other-0",
+      "lastUpdateTs" : 1712669046872,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
