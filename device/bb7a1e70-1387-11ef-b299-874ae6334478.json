@@ -1,0 +1,127 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "bb2a9ee0-1387-11ef-b299-874ae6334478"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "bb7a1e70-1387-11ef-b299-874ae6334478"
+    },
+    "label" : "Santa Monica",
+    "name" : "Air Quality Sensor 4",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "AQI Sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "E0zqwTCiooY60zzcaY7l",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "bb33c6a0-1387-11ef-b299-874ae6334478"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "bb7a1e70-1387-11ef-b299-874ae6334478"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1715880324475,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarmsCount",
+      "lastUpdateTs" : 1715880324642,
+      "longValue" : 2,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "batteryLevelThreshold",
+      "lastUpdateTs" : 1715865915915,
+      "longValue" : 30,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1715880324474,
+      "longValue" : 1715880324467,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1715865917365,
+      "longValue" : 14400000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1715865917382,
+      "longValue" : 1715865917374,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 34.021944,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1715865915915,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -118.481389,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1715865915915,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "state",
+      "lastUpdateTs" : 1715880324642,
+      "longValue" : null,
+      "strValue" : "critical"
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

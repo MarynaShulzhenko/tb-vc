@@ -1,0 +1,95 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "d68f9790-1836-11ef-aabb-d375c5e984f0"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "d6b68080-1836-11ef-aabb-d375c5e984f0"
+    },
+    "label" : null,
+    "name" : "HVAC",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "hvac"
+  },
+  "credentials" : {
+    "credentialsId" : "HaiGEt7NGip4s2xrnpkI",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "d698e660-1836-11ef-aabb-d375c5e984f0"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "d6b68080-1836-11ef-aabb-d375c5e984f0"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1716381555955,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1716381555955,
+      "longValue" : 1716381555953,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "type",
+      "lastUpdateTs" : 1716380928173,
+      "longValue" : null,
+      "strValue" : "hvac"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.35,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1716380928173,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.48,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1716380928173,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

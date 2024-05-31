@@ -1367,7 +1367,10 @@
       "filters" : { }
     },
     "customerId" : null,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "dc668e80-da33-11ee-9a31-1b662ab400e9"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "dc668e80-da33-11ee-9a31-1b662ab400e9"

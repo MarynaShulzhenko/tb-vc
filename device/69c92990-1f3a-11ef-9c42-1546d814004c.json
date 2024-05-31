@@ -1,0 +1,123 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "67b87200-1f3a-11ef-9c42-1546d814004c"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "69c92990-1f3a-11ef-9c42-1546d814004c"
+    },
+    "label" : "",
+    "name" : "389021001299",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Waste Sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "4RfaO3xANNu76nEQAk3f",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1717152122853,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1717152121753,
+      "longValue" : null,
+      "strValue" : "Village Circle, 2"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fullnessAlarmsCount",
+      "lastUpdateTs" : 1717152133572,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1717152122800,
+      "longValue" : 7200000,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isFull",
+      "lastUpdateTs" : 1717152133572,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isLowBattery",
+      "lastUpdateTs" : 1717152133572,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1717152122852,
+      "longValue" : 1717152122818,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 33.89506547,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1717152121753,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -118.38986,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1717152121753,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowBatteryAlarmsCount",
+      "lastUpdateTs" : 1717152133572,
+      "longValue" : 1,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

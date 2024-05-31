@@ -1,0 +1,122 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e73911e0-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "e732f760-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "e8529830-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "label" : "Smoke Sensor 1",
+    "name" : "Smoke Sensor 1",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e73911e0-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "softwareId" : null,
+    "type" : "Smoke Sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "mBPn7IGpQpW1MKhcXgyW",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e757bd70-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "e8529830-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1716891202881,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1716891202868,
+      "longValue" : 15768000000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1716891202881,
+      "longValue" : 1716891202874,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowBatteryCriticalThreshold",
+      "lastUpdateTs" : 1716891199834,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowBatteryMajorThreshold",
+      "lastUpdateTs" : 1716891199834,
+      "longValue" : 30,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "state",
+      "lastUpdateTs" : 1716891199899,
+      "longValue" : null,
+      "strValue" : "normal"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.4964,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1716891199834,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.7103,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1716891199834,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

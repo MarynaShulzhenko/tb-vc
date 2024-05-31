@@ -1,0 +1,143 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "4267fc50-1f3a-11ef-9c42-1546d814004c"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "431d1b80-1f3a-11ef-9c42-1546d814004c"
+    },
+    "label" : "Wheat 3",
+    "name" : "SI Soil Moisture 3",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "SI Soil Moisture Sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "T9FOvnC8Y0y9YtZIkGns",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "42be80c0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "431d1b80-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "FieldToMoistureSensor",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1717152065043,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAlarmsCount",
+      "lastUpdateTs" : 1717152080186,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1717152065026,
+      "longValue" : 15768000000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1717152065043,
+      "longValue" : 1717152065032,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 49.36006998903504,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1717152056688,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 32.11019918212899,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1717152056688,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowBatteryAlarmEnabled",
+      "lastUpdateTs" : 1717152056688,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 20.0,
+      "jsonValue" : null,
+      "key" : "lowBatteryThreshold",
+      "lastUpdateTs" : 1717152056688,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "majorAlarmsCount",
+      "lastUpdateTs" : 1717152080186,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 75.0,
+      "jsonValue" : null,
+      "key" : "maxMoistureThreshold",
+      "lastUpdateTs" : 1717152061327,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 25.0,
+      "jsonValue" : null,
+      "key" : "minMoistureThreshold",
+      "lastUpdateTs" : 1717152061327,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

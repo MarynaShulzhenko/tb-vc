@@ -1,0 +1,138 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e73911e0-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "e722a3b0-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "e82ac4e0-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "label" : "Restricted Area",
+    "name" : "Door Sensor 2",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e73911e0-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "softwareId" : null,
+    "type" : "Door Sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "8MjBnoHoNOJfPWjdwalK",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e757bd70-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "e82ac4e0-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1716891203305,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1716891203276,
+      "longValue" : 15768000000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1716891203305,
+      "longValue" : 1716891203283,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowBatteryCriticalThreshold",
+      "lastUpdateTs" : 1716891199593,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowBatteryMajorThreshold",
+      "lastUpdateTs" : 1716891199593,
+      "longValue" : 30,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxDoorOpenDurationCriticalThreshold",
+      "lastUpdateTs" : 1716891199593,
+      "longValue" : 60,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxDoorOpenDurationMajorThreshold",
+      "lastUpdateTs" : 1716891199593,
+      "longValue" : 30,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "state",
+      "lastUpdateTs" : 1716891218880,
+      "longValue" : null,
+      "strValue" : "critical"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.3585,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1716891199593,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.1273,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1716891199593,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

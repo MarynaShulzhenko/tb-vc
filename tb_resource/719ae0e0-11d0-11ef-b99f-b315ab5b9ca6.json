@@ -1,0 +1,44 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "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",
+    "descriptor" : {
+      "mediaType" : "image/png",
+      "width" : 148,
+      "height" : 148,
+      "size" : 2326,
+      "etag" : "ed696d22cf996dee6ba22d68d26e7f375377b7b7b1d6c1ac9e4bfdeac13e6a89",
+      "previewDescriptor" : {
+        "mediaType" : "image/png",
+        "width" : 148,
+        "height" : 148,
+        "size" : 2326,
+        "etag" : "ed696d22cf996dee6ba22d68d26e7f375377b7b7b1d6c1ac9e4bfdeac13e6a89"
+      }
+    },
+    "etag" : "ed696d22cf996dee6ba22d68d26e7f375377b7b7b1d6c1ac9e4bfdeac13e6a89",
+    "externalId" : null,
+    "fileName" : "temperature.png",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "719ae0e0-11d0-11ef-b99f-b315ab5b9ca6"
+    },
+    "link" : "/api/images/tenant/temperature.png",
+    "name" : "temperature.png",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/E5cBhYblvOttJ7aX6SHqaTFJbWpKDR2h",
+    "publicResourceKey" : "E5cBhYblvOttJ7aX6SHqaTFJbWpKDR2h",
+    "resourceKey" : "temperature.png",
+    "resourceType" : "IMAGE",
+    "title" : "temperature.png"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

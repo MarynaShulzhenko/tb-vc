@@ -1,0 +1,130 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "59478bc0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "5a415510-1f3a-11ef-9c42-1546d814004c"
+    },
+    "label" : "Room 106 Gateway",
+    "name" : "D00000060006",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "softwareId" : null,
+    "type" : "AL_Gateway"
+  },
+  "credentials" : {
+    "credentialsId" : "eopPGfGkEtVIKgPP8T8A",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "59cc7330-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5a415510-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1717152105190,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1717152105034,
+      "longValue" : 15768000000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1717152105190,
+      "longValue" : 1717152105159,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "room",
+      "lastUpdateTs" : 1717152095520,
+      "longValue" : null,
+      "strValue" : "Room 106"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.8226,
+      "jsonValue" : null,
+      "key" : "roomXPos",
+      "lastUpdateTs" : 1717152095520,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.1814,
+      "jsonValue" : null,
+      "key" : "roomYPos",
+      "lastUpdateTs" : 1717152095520,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.8226,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1717152095520,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.1048,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1717152095520,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "zone",
+      "lastUpdateTs" : 1717152095520,
+      "longValue" : null,
+      "strValue" : "Floor 1"
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

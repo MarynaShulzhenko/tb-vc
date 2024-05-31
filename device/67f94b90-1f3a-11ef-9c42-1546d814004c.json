@@ -1,0 +1,123 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "67b87200-1f3a-11ef-9c42-1546d814004c"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "67f94b90-1f3a-11ef-9c42-1546d814004c"
+    },
+    "label" : "",
+    "name" : "389021001305",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Waste Sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "YPao9AMohRBbY5Rqsdh8",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1717152122886,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1717152118611,
+      "longValue" : null,
+      "strValue" : "Manhattan Beach Blvd, 1601"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fullnessAlarmsCount",
+      "lastUpdateTs" : 1717152133572,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1717152122806,
+      "longValue" : 7200000,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isFull",
+      "lastUpdateTs" : 1717152133572,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isLowBattery",
+      "lastUpdateTs" : 1717152133572,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1717152122886,
+      "longValue" : 1717152122868,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 33.888286,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1717152118611,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -118.38513,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1717152118611,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowBatteryAlarmsCount",
+      "lastUpdateTs" : 1717152133572,
+      "longValue" : 0,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

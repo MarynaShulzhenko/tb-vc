@@ -1,0 +1,528 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "18 10th St",
+    "address2" : null,
+    "city" : "San Francisco",
+    "country" : "United States",
+    "customerId" : null,
+    "email" : "assisted.living.mfjfngbjbv@thingsboard.org",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "name" : "Assisted Living Company",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "CA",
+    "title" : "Assisted Living Company",
+    "zip" : "94103"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "59811250-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "598c0ed0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "5c1e5270-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Resident",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "5c403250-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Resident",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "5c61c410-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Resident",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "5c7a7c30-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Resident",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "5c930d40-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Resident",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "5cabc560-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Resident",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "5cc40850-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Resident",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "5cdbfd20-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Resident",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "59601cd0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "5cf63be0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "Resident",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : "18 10th St, San Francisco, CA 94103, United States"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "attendantPhoneNumber",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : "+13034310948"
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "batteryLevelAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "bodyTemperatureAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalPanicButtonThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 2,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "doorOpenAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "emergencyPhoneNumber",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : "+12133758342"
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "heartRateAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "majorPanicButtonThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxCriticalBodyTemperatureThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 38,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxCriticalDoorOpenThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 60,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxCriticalHeartRateThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 140,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxCriticalRoomHumidityThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 75,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxCriticalRoomIaqThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 300,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxCriticalRoomTemperatureThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 30,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxCriticalWindowOpenThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 120,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxMajorBodyTemperatureThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 37,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxMajorDoorOpenThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxMajorHeartRateThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 120,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxMajorRoomHumidityThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 70,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxMajorRoomIaqThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 150,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxMajorRoomTemperatureThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 28,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "maxMajorWindowOpenThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "minCriticalBatteryLevelThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 5,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 35.5,
+      "jsonValue" : null,
+      "key" : "minCriticalBodyTemperatureThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "minCriticalHeartRateThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 50,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "minCriticalRoomHumidityThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 25,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "minCriticalRoomTemperatureThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 16,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "minMajorBatteryLevelThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 15,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "minMajorBodyTemperatureThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 36,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "minMajorHeartRateThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 60,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "minMajorRoomHumidityThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 30,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "minMajorRoomTemperatureThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 18,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "noiseLevelAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "noiseLevelCriticalThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 100,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "noiseLevelMajorThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 80,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "nursePhoneNumber",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : "+15056983982"
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "panicButtonAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "roomHumidityAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "roomIaqAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "roomTemperatureAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "smokeAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "waterLeakAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "windowOpenAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "wristBandConnectionAlarmEnabled",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 60,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "wristBandConnectionThreshold",
+      "lastUpdateTs" : 1717152094057,
+      "longValue" : 60,
+      "strValue" : null
+    } ]
+  }
+}

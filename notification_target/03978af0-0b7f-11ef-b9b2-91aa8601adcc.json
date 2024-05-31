@@ -1,0 +1,22 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "PLATFORM_USERS",
+      "description" : "If rule trigger is an action that affects some user (e.g. alarm assigned to user) - this user",
+      "usersFilter" : {
+        "type" : "AFFECTED_USER"
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "03978af0-0b7f-11ef-b9b2-91aa8601adcc"
+    },
+    "name" : "Affected user"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

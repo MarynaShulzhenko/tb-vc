@@ -1,0 +1,25 @@
+{
+  "entityType" : "ROLE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "name" : "Smart Retail Administrator",
+    "permissions" : {
+      "ALL" : [ "ALL" ]
+    },
+    "type" : "GENERIC",
+    "additionalInfo" : null,
+    "id" : {
+      "entityType" : "ROLE",
+      "id" : "e6e06a90-1cda-11ef-bb2b-eb245d4ffb88"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

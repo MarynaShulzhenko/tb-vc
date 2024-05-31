@@ -1,0 +1,111 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "426da1a0-1f3a-11ef-9c42-1546d814004c"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "433e1100-1f3a-11ef-9c42-1546d814004c"
+    },
+    "label" : null,
+    "name" : "SI Water Meter 2",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "SI Water Meter"
+  },
+  "credentials" : {
+    "credentialsId" : "6dkiHPMfRzJ36PWjhuS7",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "42d2a500-1f3a-11ef-9c42-1546d814004c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "433e1100-1f3a-11ef-9c42-1546d814004c"
+    },
+    "type" : "FieldToWaterMeter",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1717152065033,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAlarmsCount",
+      "lastUpdateTs" : 1717152080172,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1717152064999,
+      "longValue" : 15768000000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1717152065033,
+      "longValue" : 1717152065010,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowBatteryAlarmEnabled",
+      "lastUpdateTs" : 1717152056901,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 30.0,
+      "jsonValue" : null,
+      "key" : "lowBatteryThreshold",
+      "lastUpdateTs" : 1717152056901,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "majorAlarmsCount",
+      "lastUpdateTs" : 1717152080172,
+      "longValue" : 1,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

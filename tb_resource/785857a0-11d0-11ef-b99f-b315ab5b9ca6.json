@@ -1,0 +1,44 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "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",
+    "descriptor" : {
+      "mediaType" : "image/png",
+      "width" : 148,
+      "height" : 148,
+      "size" : 2200,
+      "etag" : "7ed573da94e1bd41387a11aeb0940686e19c90507476f7788a82b38a239dce84",
+      "previewDescriptor" : {
+        "mediaType" : "image/png",
+        "width" : 148,
+        "height" : 148,
+        "size" : 2200,
+        "etag" : "7ed573da94e1bd41387a11aeb0940686e19c90507476f7788a82b38a239dce84"
+      }
+    },
+    "etag" : "7ed573da94e1bd41387a11aeb0940686e19c90507476f7788a82b38a239dce84",
+    "externalId" : null,
+    "fileName" : "sensors.png",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "785857a0-11d0-11ef-b99f-b315ab5b9ca6"
+    },
+    "link" : "/api/images/tenant/sensors.png",
+    "name" : "sensors.png",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/kYn6onua1FJGCdHw0bgqcK0XYqtY356B",
+    "publicResourceKey" : "kYn6onua1FJGCdHw0bgqcK0XYqtY356B",
+    "resourceKey" : "sensors.png",
+    "resourceType" : "IMAGE",
+    "title" : "sensors.png"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
