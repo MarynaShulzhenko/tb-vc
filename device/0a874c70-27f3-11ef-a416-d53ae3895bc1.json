@@ -1,0 +1,131 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "0a81ce30-27f3-11ef-a416-d53ae3895bc1"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "0a874c70-27f3-11ef-a416-d53ae3895bc1"
+    },
+    "label" : "",
+    "name" : "389021001291",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Waste Sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "URuG0pe85yvfYvLu0WpQ",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1718118249567,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1718111027937,
+      "longValue" : null,
+      "strValue" : "Oak Avenue, 2304"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fullnessAlarmsCount",
+      "lastUpdateTs" : 1718111036056,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1718118249567,
+      "longValue" : 1718118249564,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1718111029040,
+      "longValue" : 7200000,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isFull",
+      "lastUpdateTs" : 1718111036056,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "isLowBattery",
+      "lastUpdateTs" : 1718111036056,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1718111029062,
+      "longValue" : 1718111029052,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 33.8936843,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1718111027937,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -118.3965735,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1718111027937,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lowBatteryAlarmsCount",
+      "lastUpdateTs" : 1718111036056,
+      "longValue" : 1,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

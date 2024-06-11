@@ -1,0 +1,28 @@
+{
+  "entityType" : "ASSET_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "d05e4cd0-27f0-11ef-bfb3-cbf6848e1b4b"
+    },
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "d04853d0-27f0-11ef-bfb3-cbf6848e1b4b"
+    },
+    "description" : "Default asset profile",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "d0da81b0-27f0-11ef-bfb3-cbf6848e1b4b"
+    },
+    "image" : null,
+    "name" : "AQI City"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

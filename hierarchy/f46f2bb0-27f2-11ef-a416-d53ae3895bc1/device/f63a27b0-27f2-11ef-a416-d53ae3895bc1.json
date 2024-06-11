@@ -1,0 +1,82 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f46f2bb0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "f464f280-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "f63a27b0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "label" : "Mia Garcia",
+    "name" : "C00000065FE6",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f46f2bb0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "softwareId" : null,
+    "type" : "AL_Wristband"
+  },
+  "credentials" : {
+    "credentialsId" : "hCOv7niC5Th1rCdGF6vO",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "USER",
+      "id" : "f77cb9d0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "f63a27b0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "type" : "Use",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1718110999421,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1718110999382,
+      "longValue" : 15768000000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1718110999421,
+      "longValue" : 1718110999405,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

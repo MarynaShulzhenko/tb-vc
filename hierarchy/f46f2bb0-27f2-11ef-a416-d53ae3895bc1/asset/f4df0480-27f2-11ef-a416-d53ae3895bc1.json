@@ -1,0 +1,70 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "f4a3d040-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f46f2bb0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "f4df0480-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "label" : "Hall",
+    "name" : "Hall",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f46f2bb0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "type" : "AL_Room"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f48e4c70-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "f4df0480-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f4df0480-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "f7c13ce0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : 0.6838,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1718110991582,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.7419,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1718110991582,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f46f2bb0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "f464f280-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "f60fbc50-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "label" : "Luna Markez",
+    "name" : "C00000035FE3",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f46f2bb0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "softwareId" : null,
+    "type" : "AL_Wristband"
+  },
+  "credentials" : {
+    "credentialsId" : "MdZMSvy3rooYH2NNE3rX",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "USER",
+      "id" : "f7c13ce0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "f60fbc50-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "type" : "Use",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1718110999270,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarmsCount",
+      "lastUpdateTs" : 1718111022716,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1718110999232,
+      "longValue" : 15768000000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1718110999270,
+      "longValue" : 1718110999240,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

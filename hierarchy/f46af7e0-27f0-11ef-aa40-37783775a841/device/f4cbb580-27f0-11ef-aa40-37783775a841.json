@@ -1,0 +1,122 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f46af7e0-27f0-11ef-aa40-37783775a841"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "f457e510-27f0-11ef-aa40-37783775a841"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "f4cbb580-27f0-11ef-aa40-37783775a841"
+    },
+    "label" : "Meat",
+    "name" : "Freezer 1",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f46af7e0-27f0-11ef-aa40-37783775a841"
+    },
+    "softwareId" : null,
+    "type" : "Freezer"
+  },
+  "credentials" : {
+    "credentialsId" : "aDRTFqa6kKZrZAHyvwM4",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f4886af0-27f0-11ef-aa40-37783775a841"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "f4cbb580-27f0-11ef-aa40-37783775a841"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1718110136625,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "freezerHighTemperatureCriticalThreshold",
+      "lastUpdateTs" : 1718110132473,
+      "longValue" : -3,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "freezerHighTemperatureMajorThreshold",
+      "lastUpdateTs" : 1718110132473,
+      "longValue" : -10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1718110136595,
+      "longValue" : 15768000000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1718110136625,
+      "longValue" : 1718110136614,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "state",
+      "lastUpdateTs" : 1718110149925,
+      "longValue" : null,
+      "strValue" : "normal"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.0690506009660354,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1718110132473,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.7218696071835972,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1718110132473,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

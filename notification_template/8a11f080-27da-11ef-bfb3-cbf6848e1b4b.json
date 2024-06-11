@@ -1,0 +1,48 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "people",
+              "color" : "#757575"
+            },
+            "actionButtonConfig" : {
+              "enabled" : false
+            }
+          },
+          "body" : "${userEmail} ${action} comment: ${comment}",
+          "enabled" : true,
+          "subject" : "Comment on '${alarmType}' alarm"
+        },
+        "MOBILE_APP" : {
+          "method" : "MOBILE_APP",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : false
+            },
+            "onClick" : null
+          },
+          "body" : "${userEmail} ${action} comment: ${comment}",
+          "enabled" : true,
+          "subject" : "Comment on '${alarmType}' alarm"
+        }
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "8a11f080-27da-11ef-bfb3-cbf6848e1b4b"
+    },
+    "name" : "Alarm comment notification",
+    "notificationType" : "ALARM_COMMENT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

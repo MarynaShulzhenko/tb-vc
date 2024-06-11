@@ -1,0 +1,118 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : null,
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "first_name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "last_name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "email",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : { }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : null,
+    "groupAll" : false,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "f657acb0-27f0-11ef-aa40-37783775a841"
+    },
+    "name" : "Smart Retail Administrators",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f46af7e0-27f0-11ef-aa40-37783775a841"
+    },
+    "type" : "USER"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "groupEntities" : true,
+  "permissions" : [ {
+    "entityGroupId" : null,
+    "entityGroupType" : null,
+    "roleId" : {
+      "entityType" : "ROLE",
+      "id" : "f4264dc0-27f0-11ef-aa40-37783775a841"
+    },
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "89d92d40-27da-11ef-bfb3-cbf6848e1b4b"
+    },
+    "userGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "f657acb0-27f0-11ef-aa40-37783775a841"
+    },
+    "createdTime" : 1718110135043,
+    "id" : {
+      "entityType" : "GROUP_PERMISSION",
+      "id" : "f658e530-27f0-11ef-aa40-37783775a841"
+    },
+    "name" : "GENERIC_[f657acb0-27f0-11ef-aa40-37783775a841]_[f4264dc0-27f0-11ef-aa40-37783775a841]",
+    "public" : false
+  }, {
+    "entityGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "f62ddd90-27f0-11ef-aa40-37783775a841"
+    },
+    "entityGroupType" : "DASHBOARD",
+    "roleId" : {
+      "entityType" : "ROLE",
+      "id" : "f423dcc0-27f0-11ef-aa40-37783775a841"
+    },
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "89d92d40-27da-11ef-bfb3-cbf6848e1b4b"
+    },
+    "userGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "f657acb0-27f0-11ef-aa40-37783775a841"
+    },
+    "createdTime" : 1718110135050,
+    "id" : {
+      "entityType" : "GROUP_PERMISSION",
+      "id" : "f659f6a0-27f0-11ef-aa40-37783775a841"
+    },
+    "name" : "GROUP_[f657acb0-27f0-11ef-aa40-37783775a841]_[f423dcc0-27f0-11ef-aa40-37783775a841]_[f62ddd90-27f0-11ef-aa40-37783775a841]_[DASHBOARD]",
+    "public" : false
+  }, {
+    "entityGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "f64f2130-27f0-11ef-aa40-37783775a841"
+    },
+    "entityGroupType" : "DASHBOARD",
+    "roleId" : {
+      "entityType" : "ROLE",
+      "id" : "f423dcc0-27f0-11ef-aa40-37783775a841"
+    },
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "89d92d40-27da-11ef-bfb3-cbf6848e1b4b"
+    },
+    "userGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "f657acb0-27f0-11ef-aa40-37783775a841"
+    },
+    "createdTime" : 1718110135058,
+    "id" : {
+      "entityType" : "GROUP_PERMISSION",
+      "id" : "f65b2f20-27f0-11ef-aa40-37783775a841"
+    },
+    "name" : "GROUP_[f657acb0-27f0-11ef-aa40-37783775a841]_[f423dcc0-27f0-11ef-aa40-37783775a841]_[f64f2130-27f0-11ef-aa40-37783775a841]_[DASHBOARD]",
+    "public" : false
+  } ]
+}

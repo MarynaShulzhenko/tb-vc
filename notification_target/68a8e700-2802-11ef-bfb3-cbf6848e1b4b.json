@@ -1,0 +1,26 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "MICROSOFT_TEAMS",
+      "channelName" : "TB Test",
+      "description" : null,
+      "email" : null,
+      "firstName" : null,
+      "id" : "https://thingsboard.webhook.office.com/webhookb2/78e272d2-9b95-4020-a815-a01d1bbb71a6@411c0f3a-d374-43e2-addd-81aac49bc61a/IncomingWebhook/0a9dc380c1414283b343b356a42ddf8f/2599b8c4-7d1b-43f2-aa92-b06123bc7245",
+      "lastName" : null,
+      "title" : "TB Test",
+      "webhookUrl" : "https://thingsboard.webhook.office.com/webhookb2/78e272d2-9b95-4020-a815-a01d1bbb71a6@411c0f3a-d374-43e2-addd-81aac49bc61a/IncomingWebhook/0a9dc380c1414283b343b356a42ddf8f/2599b8c4-7d1b-43f2-aa92-b06123bc7245"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "68a8e700-2802-11ef-bfb3-cbf6848e1b4b"
+    },
+    "name" : "me_microsoft"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

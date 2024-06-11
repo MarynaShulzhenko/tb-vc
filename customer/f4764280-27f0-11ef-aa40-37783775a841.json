@@ -1,0 +1,48 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "41 Sutter St",
+    "address2" : null,
+    "city" : "San Francisco",
+    "country" : "United States",
+    "customerId" : null,
+    "email" : "retailerB.nq4av8gdis@thingsboard.org",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f4764280-27f0-11ef-aa40-37783775a841"
+    },
+    "name" : "Retail Company B",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "CA",
+    "title" : "Retail Company B",
+    "zip" : "94104"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f4764280-27f0-11ef-aa40-37783775a841"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "f49bcbe0-27f0-11ef-aa40-37783775a841"
+    },
+    "type" : "Owns",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1718110131930,
+      "longValue" : null,
+      "strValue" : "41 Sutter St, San Francisco, CA 94104, United States"
+    } ]
+  }
+}

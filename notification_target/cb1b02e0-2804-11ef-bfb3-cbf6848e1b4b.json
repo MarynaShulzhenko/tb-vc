@@ -1,0 +1,28 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "SLACK",
+      "conversation" : {
+        "email" : null,
+        "id" : "C05BDRE2HFY",
+        "name" : "random",
+        "type" : "PUBLIC_CHANNEL",
+        "wholeName" : "random",
+        "title" : "random"
+      },
+      "conversationType" : "PUBLIC_CHANNEL",
+      "description" : null
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "cb1b02e0-2804-11ef-bfb3-cbf6848e1b4b"
+    },
+    "name" : "me slack"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

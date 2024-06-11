@@ -1,0 +1,82 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "f4a3d040-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f46f2bb0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "f4d8c2f0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "label" : "Room 205",
+    "name" : "Room 205",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f46f2bb0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "type" : "AL_Room"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f499be20-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "f4d8c2f0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f4d8c2f0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "f5244ae0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f4d8c2f0-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "to" : {
+      "entityType" : "USER",
+      "id" : "f74c5b00-27f2-11ef-a416-d53ae3895bc1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : 0.6822,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1718110991542,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.1814,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1718110991542,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
