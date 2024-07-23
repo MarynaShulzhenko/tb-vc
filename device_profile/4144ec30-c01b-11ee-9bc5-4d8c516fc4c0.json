@@ -7,14 +7,17 @@
     "defaultQueueName" : null,
     "defaultRuleChainId" : null,
     "description" : "",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "4144ec30-c01b-11ee-9bc5-4d8c516fc4c0"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "1cfe70a0-48cc-11ef-bad9-171b159119fa"
+      "id" : "4144ec30-c01b-11ee-9bc5-4d8c516fc4c0"
     },
     "image" : null,
-    "name" : "test device profile for vc load att",
+    "name" : "device profile for test vc",
     "profileData" : {
       "alarms" : null,
       "configuration" : {

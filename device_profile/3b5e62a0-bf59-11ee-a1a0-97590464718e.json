@@ -6,15 +6,18 @@
     "defaultEdgeRuleChainId" : null,
     "defaultQueueName" : null,
     "defaultRuleChainId" : null,
-    "description" : "",
-    "externalId" : null,
+    "description" : "Default device profile",
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "3b5e62a0-bf59-11ee-a1a0-97590464718e"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "e1351860-48d2-11ef-9e8e-fb6c2cf436c8"
+      "id" : "3b5e62a0-bf59-11ee-a1a0-97590464718e"
     },
     "image" : null,
-    "name" : "profile",
+    "name" : "sensor",
     "profileData" : {
       "alarms" : null,
       "configuration" : {

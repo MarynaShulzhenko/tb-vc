@@ -1,20 +1,26 @@
 {
   "entityType" : "DEVICE_PROFILE",
   "entity" : {
-    "default" : true,
-    "defaultDashboardId" : null,
+    "default" : false,
+    "defaultDashboardId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "96e4d610-ca83-11ee-8548-0faf725bd3c2"
+    },
     "defaultEdgeRuleChainId" : null,
     "defaultQueueName" : null,
     "defaultRuleChainId" : null,
-    "description" : "Default device profile",
-    "externalId" : null,
+    "description" : "",
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "adc238a0-bc4b-11ee-b8d5-3bbd47cc78e4"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "d56b3a70-48cb-11ef-bad9-171b159119fa"
+      "id" : "adc238a0-bc4b-11ee-b8d5-3bbd47cc78e4"
     },
     "image" : null,
-    "name" : "default",
+    "name" : "test",
     "profileData" : {
       "alarms" : null,
       "configuration" : {

@@ -7,14 +7,17 @@
     "defaultQueueName" : null,
     "defaultRuleChainId" : null,
     "description" : "",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "47f7b490-c01b-11ee-9bc5-4d8c516fc4c0"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "da380090-48d2-11ef-9e8e-fb6c2cf436c8"
+      "id" : "47f7b490-c01b-11ee-9bc5-4d8c516fc4c0"
     },
     "image" : null,
-    "name" : "test device profile",
+    "name" : "device profile for test vc 01",
     "profileData" : {
       "alarms" : null,
       "configuration" : {
