@@ -1,0 +1,83 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "baseUrl" : "https://tbqa.cloud",
+      "httpEndpoint" : "https://tbqa.cloud/api/v1/integrations/particle/ad4d5ace-944d-0e0c-db9d-1e209a448963",
+      "enableSecurity" : false,
+      "headersFilter" : { },
+      "allowDownlink" : true,
+      "credentials" : {
+        "type" : "token",
+        "token" : "0c2baab892814b097ed685174e23a4c5a391b3a1"
+      },
+      "metadata" : { }
+    },
+    "debugMode" : true,
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "1edb4230-6f74-11ef-a09f-e90ea64d0631"
+    },
+    "downlinkConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "1edaa5f0-6f74-11ef-ac33-1586d7baa77c"
+    },
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "1f12ccf0-6f74-11ef-a09f-e90ea64d0631"
+    },
+    "name" : "Particle integration",
+    "remote" : false,
+    "routingKey" : "ad4d5ace-944d-0e0c-db9d-1e209a448963",
+    "secret" : "pbhk2t6n8ovkkzck0jqr",
+    "type" : "PARTICLE"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "1f12ccf0-6f74-11ef-a09f-e90ea64d0631"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "2ccfa570-6f74-11ef-a45e-35dcc6027058"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 20007
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-0",
+      "lastUpdateTs" : 1726061736351,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-1",
+      "lastUpdateTs" : 1726061737120,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-2",
+      "lastUpdateTs" : 1726061737139,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
