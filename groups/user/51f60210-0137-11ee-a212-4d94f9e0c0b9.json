@@ -1,0 +1,76 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "first_name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "last_name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "email",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : { }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "51f60210-0137-11ee-a212-4d94f9e0c0b9"
+    },
+    "groupAll" : false,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "51f60210-0137-11ee-a212-4d94f9e0c0b9"
+    },
+    "name" : "Customer Users",
+    "ownerId" : {
+      "entityType" : "TENANT",
+      "id" : "79f36d30-0064-11ee-bc2f-7f25383766f4"
+    },
+    "type" : "USER"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "groupEntities" : true,
+  "permissions" : [ {
+    "entityGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "3c95d8f0-0132-11ee-be75-959bde3b0638"
+    },
+    "entityGroupType" : "DASHBOARD",
+    "roleId" : {
+      "entityType" : "ROLE",
+      "id" : "00abe0c0-0072-11ee-8661-11659bb9c344"
+    },
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "79f36d30-0064-11ee-bc2f-7f25383766f4"
+    },
+    "userGroupId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "51f60210-0137-11ee-a212-4d94f9e0c0b9"
+    },
+    "createdTime" : 1685706802812,
+    "id" : {
+      "entityType" : "GROUP_PERMISSION",
+      "id" : "13468bc0-013c-11ee-b864-d528757047e3"
+    },
+    "name" : "GROUP_[51f60210-0137-11ee-a212-4d94f9e0c0b9]_[00abe0c0-0072-11ee-8661-11659bb9c344]_[3c95d8f0-0132-11ee-be75-959bde3b0638]_[DASHBOARD]",
+    "public" : false
+  } ]
+}

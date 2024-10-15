@@ -1,0 +1,65 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "clientConfiguration" : {
+        "host" : "broker.hivemq.com",
+        "port" : 1883,
+        "cleanSession" : true,
+        "retainedMessage" : false,
+        "ssl" : false,
+        "connectTimeoutSec" : 10,
+        "clientId" : "",
+        "maxBytesInMessage" : 32368,
+        "credentials" : {
+          "type" : "anonymous"
+        }
+      },
+      "topicFilters" : [ {
+        "filter" : "mashu/#",
+        "qos" : 1
+      } ],
+      "downlinkTopicPattern" : "${topic}",
+      "metadata" : { }
+    },
+    "debugMode" : true,
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "c0ca6f30-ea8b-11ee-8aeb-f1beda84b8b6"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "c0eb3da0-ea8b-11ee-8aeb-f1beda84b8b6"
+    },
+    "name" : "MQTT integration",
+    "remote" : false,
+    "routingKey" : "0fd983b9-acc0-c27f-277f-afe26a9e54c9",
+    "secret" : "jaxo5dztxi63ma7s8k9s",
+    "type" : "MQTT"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "c0eb3da0-ea8b-11ee-8aeb-f1beda84b8b6"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "ea1c5240-ece3-11ee-9a30-a12f0dc2368b"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 0
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

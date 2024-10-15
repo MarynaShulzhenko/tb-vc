@@ -1,0 +1,76 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "f86e6df0-f31a-11ee-bfe7-d554a4e9ea87"
+    },
+    "image" : null,
+    "name" : "ijho",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "LWM2M",
+        "bootstrap" : [ {
+          "securityMode" : "NO_SEC",
+          "binding" : "U",
+          "bootstrapServerAccountTimeout" : 0,
+          "bootstrapServerIs" : false,
+          "clientHoldOffTime" : 1,
+          "defaultMinPeriod" : 1,
+          "host" : "0.0.0.0",
+          "lifetime" : 300,
+          "notifIfDisabled" : true,
+          "port" : 5685,
+          "serverCertificate" : "",
+          "serverPublicKey" : "",
+          "shortServerId" : 123
+        } ],
+        "bootstrapServerUpdateEnable" : false,
+        "clientLwM2mSettings" : {
+          "clientOnlyObserveAfterConnect" : 1,
+          "defaultObjectIDVer" : null,
+          "edrxCycle" : null,
+          "fwUpdateResource" : null,
+          "fwUpdateStrategy" : 1,
+          "pagingTransmissionWindow" : null,
+          "powerMode" : "DRX",
+          "psmActivityTimer" : null,
+          "swUpdateResource" : null,
+          "swUpdateStrategy" : 1
+        },
+        "observeAttr" : {
+          "attribute" : [ ],
+          "attributeLwm2m" : { },
+          "keyName" : { },
+          "observe" : [ ],
+          "telemetry" : [ ]
+        }
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "LWM2M",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

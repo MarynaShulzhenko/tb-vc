@@ -1,0 +1,27 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "MICROSOFT_TEAMS",
+      "channelName" : "test",
+      "description" : null,
+      "email" : null,
+      "firstName" : null,
+      "id" : "https://prod-77.westeurope.logic.azure.com:443/workflows/921809de84b944d8a25a0f35261b7c04/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=HyvLnjrbZhOBvt5raEG5vxRfOSEKv7cjRxDKlNWTjhk",
+      "lastName" : null,
+      "title" : "test",
+      "useOldApi" : false,
+      "webhookUrl" : "https://prod-77.westeurope.logic.azure.com:443/workflows/921809de84b944d8a25a0f35261b7c04/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=HyvLnjrbZhOBvt5raEG5vxRfOSEKv7cjRxDKlNWTjhk"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "a12a0f11-8ad5-11ef-a59e-a9c993dbec14"
+    },
+    "name" : "mashu teams"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
