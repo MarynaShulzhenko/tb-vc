@@ -18,7 +18,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "51e06ca0-7f23-11ef-b8cb-2b23a12c2805"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "5227d5e0-7f23-11ef-b8cb-2b23a12c2805"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -30,32 +33,14 @@
     "softwareId" : null,
     "type" : "AQI Sensor"
   },
-  "credentials" : {
-    "credentialsId" : "apwHQ46rTFE2GHEqz4OM",
-    "credentialsType" : "ACCESS_TOKEN",
-    "credentialsValue" : null
-  },
-  "relations" : [ {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "51e6d540-7f23-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "5227d5e0-7f23-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Contains",
-    "typeGroup" : "COMMON",
-    "version" : 63742
-  } ],
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1727711943497,
+      "lastUpdateTs" : 1729684171307,
       "longValue" : null,
       "strValue" : null
     }, {

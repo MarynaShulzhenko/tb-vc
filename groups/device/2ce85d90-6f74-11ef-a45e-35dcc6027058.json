@@ -42,7 +42,10 @@
       }
     },
     "edgeGroupAll" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "2ce85d90-6f74-11ef-a45e-35dcc6027058"
+    },
     "groupAll" : false,
     "id" : {
       "entityType" : "ENTITY_GROUP",

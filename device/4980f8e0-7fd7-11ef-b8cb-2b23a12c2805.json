@@ -20,7 +20,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "7b2b44e0-661e-11ef-8d09-f75c78fbd9a9"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -32,201 +35,14 @@
     "softwareId" : null,
     "type" : "default"
   },
-  "credentials" : {
-    "credentialsId" : "U89xaCIw3QytYdonPVOM",
-    "credentialsType" : "ACCESS_TOKEN",
-    "credentialsValue" : null
-  },
-  "relations" : [ {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "498c91a0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74256
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "4997dc40-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74258
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49a28aa0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74260
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49ad3900-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74262
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49b72410-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74264
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49c1d270-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74266
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49cc0ba0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74268
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49d4e540-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74270
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49de8230-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74272
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49e7a9f0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74274
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49f16df0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74276
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49fa2080-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74278
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "4a03e480-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74280
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "4a0b85a0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74282
-  } ],
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1727775675958,
+      "lastUpdateTs" : 1729684170788,
       "longValue" : null,
       "strValue" : null
     }, {

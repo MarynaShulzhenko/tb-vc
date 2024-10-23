@@ -18,7 +18,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "4975ae40-7fd7-11ef-b8cb-2b23a12c2805"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "49fa2080-7fd7-11ef-b8cb-2b23a12c2805"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -30,45 +33,14 @@
     "softwareId" : null,
     "type" : "Water sensor"
   },
-  "credentials" : {
-    "credentialsId" : "CWqeKoRizxKrsSO9gFfY",
-    "credentialsType" : "ACCESS_TOKEN",
-    "credentialsValue" : null
-  },
-  "relations" : [ {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "497ba1b0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49fa2080-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Contains",
-    "typeGroup" : "COMMON",
-    "version" : 74277
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49fa2080-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74278
-  } ],
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1727775697224,
+      "lastUpdateTs" : 1729684171112,
       "longValue" : null,
       "strValue" : null
     }, {

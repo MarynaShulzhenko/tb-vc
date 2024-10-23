@@ -18,7 +18,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "7942f610-816b-11ef-9118-3d9ecbec8507"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "c4411ca0-816b-11ef-8c95-ef6bcf180907"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -30,32 +33,14 @@
     "softwareId" : null,
     "type" : "sensor"
   },
-  "credentials" : {
-    "credentialsId" : "506tAsPiEmlM1VYeRIKS",
-    "credentialsType" : "ACCESS_TOKEN",
-    "credentialsValue" : null
-  },
-  "relations" : [ {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "INTEGRATION",
-      "id" : "a619fee0-816b-11ef-8c95-ef6bcf180907"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "c4411ca0-816b-11ef-8c95-ef6bcf180907"
-    },
-    "type" : "ManagedByIntegration",
-    "typeGroup" : "COMMON",
-    "version" : 79431
-  } ],
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1727949168166,
+      "lastUpdateTs" : 1729684171413,
       "longValue" : null,
       "strValue" : null
     }, {

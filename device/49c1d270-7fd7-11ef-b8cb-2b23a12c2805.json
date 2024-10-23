@@ -18,7 +18,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "4969a050-7fd7-11ef-b8cb-2b23a12c2805"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "49c1d270-7fd7-11ef-b8cb-2b23a12c2805"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -30,45 +33,14 @@
     "softwareId" : null,
     "type" : "PH sensor"
   },
-  "credentials" : {
-    "credentialsId" : "SpsRRJu9tXnFabf9tggy",
-    "credentialsType" : "ACCESS_TOKEN",
-    "credentialsValue" : null
-  },
-  "relations" : [ {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "497ba1b0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49c1d270-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Contains",
-    "typeGroup" : "COMMON",
-    "version" : 74265
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "49c1d270-7fd7-11ef-b8cb-2b23a12c2805"
-    },
-    "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 74266
-  } ],
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1727775675966,
+      "lastUpdateTs" : 1729684170975,
       "longValue" : null,
       "strValue" : null
     }, {
