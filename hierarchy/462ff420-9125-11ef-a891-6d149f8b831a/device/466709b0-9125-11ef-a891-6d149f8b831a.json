@@ -33,11 +33,6 @@
     "softwareId" : null,
     "type" : "Temperature Sensor"
   },
-  "credentials" : {
-    "credentialsId" : "DiCRXI30TzbYFyqeejcY",
-    "credentialsType" : "ACCESS_TOKEN",
-    "credentialsValue" : null
-  },
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

@@ -30,19 +30,14 @@
     "softwareId" : null,
     "type" : "Tank"
   },
-  "credentials" : {
-    "credentialsId" : "eiqiJVdB8f20ybuC6X5P",
-    "credentialsType" : "ACCESS_TOKEN",
-    "credentialsValue" : null
-  },
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1729686212321,
+      "lastUpdateTs" : 1729686965408,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -50,9 +45,9 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "alarmFilter",
-      "lastUpdateTs" : 1729686212321,
+      "lastUpdateTs" : 1729686965408,
       "longValue" : null,
-      "strValue" : "noAlarms "
+      "strValue" : "offline noAlarms "
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -65,8 +60,16 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1729686965375,
+      "longValue" : 1729686965373,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "inactivityTimeout",
-      "lastUpdateTs" : 1729686212321,
+      "lastUpdateTs" : 1729686965408,
       "longValue" : 720000,
       "strValue" : null
     }, {
@@ -74,7 +77,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isHighTemperature",
-      "lastUpdateTs" : 1729686212321,
+      "lastUpdateTs" : 1729686965408,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -82,7 +85,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isLowBattery",
-      "lastUpdateTs" : 1729686212321,
+      "lastUpdateTs" : 1729686965408,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -90,7 +93,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isLowFuel",
-      "lastUpdateTs" : 1729686212321,
+      "lastUpdateTs" : 1729686965408,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -98,7 +101,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isLowTemperature",
-      "lastUpdateTs" : 1729686212321,
+      "lastUpdateTs" : 1729686965408,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -106,7 +109,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "isNoAlarms",
-      "lastUpdateTs" : 1729686212321,
+      "lastUpdateTs" : 1729686965408,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -114,7 +117,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1729686212321,
+      "lastUpdateTs" : 1729686965408,
       "longValue" : 1729686200874,
       "strValue" : null
     }, {
@@ -122,7 +125,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1729686212321,
+      "lastUpdateTs" : 1729686965408,
       "longValue" : 0,
       "strValue" : null
     }, {
@@ -130,7 +133,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1729686212321,
+      "lastUpdateTs" : 1729686965408,
       "longValue" : 0,
       "strValue" : null
     }, {
@@ -138,8 +141,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastInactivityAlarmTime",
-      "lastUpdateTs" : 1729686212321,
-      "longValue" : 0,
+      "lastUpdateTs" : 1729686965408,
+      "longValue" : 1729686965373,
       "strValue" : null
     }, {
       "booleanValue" : null,

@@ -30,11 +30,6 @@
     "softwareId" : null,
     "type" : "bus"
   },
-  "credentials" : {
-    "credentialsId" : "6yA87LDsa86BeVxilcdG",
-    "credentialsType" : "ACCESS_TOKEN",
-    "credentialsValue" : null
-  },
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
