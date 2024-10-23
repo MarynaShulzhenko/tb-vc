@@ -37,7 +37,6 @@
     },
     "type" : "DEVICE"
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   },

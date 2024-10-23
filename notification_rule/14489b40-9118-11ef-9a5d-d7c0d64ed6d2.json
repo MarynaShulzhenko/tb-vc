@@ -5,7 +5,10 @@
       "description" : "Send notification to tenant admins when any Rule chain or Rule node failed to start, update or stop"
     },
     "enabled" : true,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "14489b40-9118-11ef-9a5d-d7c0d64ed6d2"
+    },
     "id" : {
       "entityType" : "NOTIFICATION_RULE",
       "id" : "14489b40-9118-11ef-9a5d-d7c0d64ed6d2"
