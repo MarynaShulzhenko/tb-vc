@@ -1,0 +1,109 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "4969a050-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "49c1d270-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "label" : null,
+    "name" : "Filter PH sensor",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "PH sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "SpsRRJu9tXnFabf9tggy",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "497ba1b0-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "49c1d270-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 74265
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "49c1d270-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON",
+    "version" : 74266
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1727775675966,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1727775675966,
+      "longValue" : 1727775675953,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1727775055034,
+      "longValue" : 1727775052576,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1727774977327,
+      "longValue" : 1727774977326,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1727775052592,
+      "longValue" : 1727775052592,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

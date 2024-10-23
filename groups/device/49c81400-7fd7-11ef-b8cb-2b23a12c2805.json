@@ -1,0 +1,59 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "device_profile",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "label",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : {
+        "actionCellButton" : [ {
+          "name" : "wqe",
+          "icon" : "more_horiz",
+          "useShowWidgetActionFunction" : null,
+          "showWidgetActionFunction" : "return true;",
+          "type" : "custom",
+          "customFunction" : "var ActionNotificationShow = servicesMap.get('actionNotificationShow');\nvar store = $injector.get(servicesMap.get('store'));\n\nif (copyToClipboard(entityId.id)) {\n  store.dispatch(new ActionNotificationShow({\n    message: 'Entity Id has been copied',\n    type: 'success',\n    duration: 750,\n    verticalPosition: 'top',\n    horizontalPosition: 'left'\n  }));\n}\n\nfunction copyToClipboard(text) {\n  if (window.clipboardData && window.clipboardData.setData) {\n    return window.clipboardData.setData(\"Text\", text);\n  }\n  else if (document.queryCommandSupported && document.queryCommandSupported(\"copy\")) {\n    var textarea = document.createElement(\"textarea\");\n    textarea.textContent = text;\n    textarea.style.position = \"fixed\";\n    document.body.appendChild(textarea);\n    textarea.select();\n    try {\n      return document.execCommand(\"copy\");\n    }\n    catch (ex) {\n      console.warn(\"Copy to clipboard failed.\", ex);\n      return false;\n    }\n    document.body.removeChild(textarea);\n  }\n}\n",
+          "openInSeparateDialog" : false,
+          "openInPopover" : false,
+          "id" : "09df63f5-c7eb-2fd3-c124-d181c5363240"
+        } ]
+      }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : null,
+    "groupAll" : false,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "49c81400-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "name" : "Sensors",
+    "ownerId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "DEVICE"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "groupEntities" : true
+}

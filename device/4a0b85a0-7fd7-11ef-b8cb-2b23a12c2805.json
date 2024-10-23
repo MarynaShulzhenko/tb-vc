@@ -1,0 +1,109 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "496ea960-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "4a0b85a0-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "label" : null,
+    "name" : "Drain valve",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Valve"
+  },
+  "credentials" : {
+    "credentialsId" : "AEj3kF1K5HlABF6u4QGF",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "497ba1b0-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "4a0b85a0-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 74281
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "4980f8e0-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "4a0b85a0-7fd7-11ef-b8cb-2b23a12c2805"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON",
+    "version" : 74282
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1727775675962,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1727775675962,
+      "longValue" : 1727775675953,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1727775055035,
+      "longValue" : 1727775052576,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1727774979529,
+      "longValue" : 1727774979529,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1727775052586,
+      "longValue" : 1727775052586,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

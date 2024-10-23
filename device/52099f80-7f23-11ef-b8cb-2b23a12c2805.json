@@ -1,0 +1,128 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "51e06ca0-7f23-11ef-b8cb-2b23a12c2805"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "52099f80-7f23-11ef-b8cb-2b23a12c2805"
+    },
+    "label" : "Downtown",
+    "name" : "Air Quality Sensor 2",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "AQI Sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "XqnYkwVUlikM1wY3lrhN",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51e6d540-7f23-11ef-b8cb-2b23a12c2805"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "52099f80-7f23-11ef-b8cb-2b23a12c2805"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 63739
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1727711955787,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "alarmsCount",
+      "lastUpdateTs" : 1727711956005,
+      "longValue" : 2,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "batteryLevelThreshold",
+      "lastUpdateTs" : 1727697514908,
+      "longValue" : 30,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1727711955787,
+      "longValue" : 1727711955786,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1727697516389,
+      "longValue" : 14400000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1727697516446,
+      "longValue" : 1727697516431,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 34.05,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1727697514908,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -118.25,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1727697514908,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "state",
+      "lastUpdateTs" : 1727711956005,
+      "longValue" : null,
+      "strValue" : "critical"
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}
