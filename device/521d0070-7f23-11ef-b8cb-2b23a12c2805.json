@@ -33,7 +33,6 @@
     "softwareId" : null,
     "type" : "AQI Sensor"
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,

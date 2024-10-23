@@ -33,7 +33,6 @@
     "softwareId" : null,
     "type" : "Valve"
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,

@@ -33,7 +33,6 @@
     "softwareId" : null,
     "type" : "Water pump"
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,

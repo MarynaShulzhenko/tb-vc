@@ -33,7 +33,6 @@
     "softwareId" : null,
     "type" : "Heat pump"
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,

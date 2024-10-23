@@ -33,7 +33,6 @@
     "softwareId" : null,
     "type" : "Water sensor"
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,

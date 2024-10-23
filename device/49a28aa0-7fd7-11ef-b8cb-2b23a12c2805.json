@@ -33,7 +33,6 @@
     "softwareId" : null,
     "type" : "Sand filter"
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,

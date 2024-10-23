@@ -33,7 +33,6 @@
     "softwareId" : null,
     "type" : "sensor"
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
