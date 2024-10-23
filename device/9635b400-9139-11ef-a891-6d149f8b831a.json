@@ -30,6 +30,11 @@
     "softwareId" : null,
     "type" : "Tank"
   },
+  "credentials" : {
+    "credentialsId" : "eiqiJVdB8f20ybuC6X5P",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

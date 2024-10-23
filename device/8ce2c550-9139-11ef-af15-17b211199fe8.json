@@ -30,6 +30,11 @@
     "softwareId" : null,
     "type" : "energy-meter"
   },
+  "credentials" : {
+    "credentialsId" : "POyDgP9DwFyZtXEDMxZ2",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
   "relations" : [ {
     "additionalInfo" : null,
     "from" : {
@@ -42,7 +47,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 5258
+    "version" : 6995
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

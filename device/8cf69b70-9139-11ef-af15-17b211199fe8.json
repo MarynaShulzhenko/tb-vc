@@ -30,6 +30,11 @@
     "softwareId" : null,
     "type" : "water-meter"
   },
+  "credentials" : {
+    "credentialsId" : "O4X6yraEDpeG7Tu3Bclf",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
   "relations" : [ {
     "additionalInfo" : null,
     "from" : {
@@ -42,7 +47,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 5259
+    "version" : 6996
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

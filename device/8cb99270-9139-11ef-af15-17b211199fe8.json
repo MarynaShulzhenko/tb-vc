@@ -30,6 +30,11 @@
     "softwareId" : null,
     "type" : "smart-sensor"
   },
+  "credentials" : {
+    "credentialsId" : "jQcq63lvy5JYwx6q6O3c",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
   "relations" : [ {
     "additionalInfo" : null,
     "from" : {
@@ -42,7 +47,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 5256
+    "version" : 6993
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
