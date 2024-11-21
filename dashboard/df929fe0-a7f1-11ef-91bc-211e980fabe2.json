@@ -17817,7 +17817,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "stateId" : "default",
+              "stateId" : "Default",
               "defaultAutofillLayout" : true,
               "defaultMargin" : 0,
               "defaultBackgroundColor" : "#fff",
@@ -46347,15 +46347,27 @@
         "hideAggInterval" : false,
         "hideTimezone" : false,
         "selectedTab" : 1,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY",
+          "hideInterval" : false,
+          "hideLastInterval" : false,
+          "hideQuickInterval" : false
+        },
         "history" : {
-          "historyType" : 1,
+          "historyType" : 0,
+          "interval" : 8000,
+          "timewindowMs" : 60000,
           "fixedTimewindow" : {
             "startTimeMs" : 1731621600000,
             "endTimeMs" : 1732226399999
           },
-          "interval" : 1210000,
+          "quickInterval" : "CURRENT_DAY",
           "hideInterval" : false,
           "hideLastInterval" : false,
+          "hideFixedInterval" : false,
           "hideQuickInterval" : false
         },
         "aggregation" : {
