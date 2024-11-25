@@ -5595,16 +5595,16 @@
                   "sizeY" : 20,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 104,
-                  "col" : 0
+                  "row" : 64,
+                  "col" : 38
                 },
                 "a3520138-4415-0077-09aa-9391119ac76a" : {
                   "sizeX" : 24,
                   "sizeY" : 8,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 124,
-                  "col" : 0
+                  "row" : 84,
+                  "col" : 1
                 }
               },
               "gridSettings" : {
