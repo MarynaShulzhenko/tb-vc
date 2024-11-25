@@ -5575,11 +5575,11 @@
                   "col" : 44
                 },
                 "dc54f187-97dd-f9a7-ecf1-a12b968506b4" : {
-                  "sizeX" : 10,
-                  "sizeY" : 10,
+                  "sizeX" : 15,
+                  "sizeY" : 15,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 80,
+                  "row" : 64,
                   "col" : 0
                 },
                 "dc884a68-b63e-a764-c48d-d7960c97a121" : {
