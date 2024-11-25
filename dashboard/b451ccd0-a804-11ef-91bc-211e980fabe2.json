@@ -4977,6 +4977,72 @@
           "row" : 0,
           "col" : 0,
           "id" : "a3520138-4415-0077-09aa-9391119ac76a"
+        },
+        "2ec4b9c0-2a71-ebf5-f328-ae31da1f8036" : {
+          "typeFullFqn" : "system.scada_symbol",
+          "type" : "rpc",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "0",
+              "scadaSymbolUrl" : "tb-image;/api/images/system/left-motor-pump.svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "SCADA symbol",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0",
+            "datasources" : [ ],
+            "resizable" : true,
+            "preserveAspectRatio" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2ec4b9c0-2a71-ebf5-f328-ae31da1f8036"
         }
       },
       "states" : {
@@ -5436,14 +5502,30 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "2ec4b9c0-2a71-ebf5-f328-ae31da1f8036" : {
+                  "sizeX" : 16,
+                  "sizeY" : 13,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
-                "layoutType" : "default",
+                "layoutType" : "scada",
                 "backgroundColor" : "#eeeeee",
-                "columns" : 24,
+                "columns" : 48,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 58,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
