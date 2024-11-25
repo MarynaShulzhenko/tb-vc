@@ -5147,11 +5147,11 @@
                   "col" : 15
                 },
                 "191c3fbb-bd87-8af5-d555-01ab8f0e7932" : {
-                  "sizeX" : 10,
-                  "sizeY" : 6,
+                  "sizeX" : 21.666666666666668,
+                  "sizeY" : 13,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 51,
+                  "row" : 47,
                   "col" : 0
                 },
                 "54f3e9ff-c461-289a-6bec-25596344e887" : {
@@ -5159,8 +5159,8 @@
                   "sizeY" : 8,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 57,
-                  "col" : 0
+                  "row" : 47,
+                  "col" : 22
                 }
               },
               "gridSettings" : {
