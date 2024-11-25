@@ -5559,20 +5559,20 @@
                   "col" : 22
                 },
                 "34e16972-7ccd-7069-ee28-f06e9261a7fd" : {
-                  "sizeX" : 10,
-                  "sizeY" : 10,
+                  "sizeX" : 17,
+                  "sizeY" : 17,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 64,
-                  "col" : 0
+                  "row" : 30,
+                  "col" : 30
                 },
                 "b04c6953-9388-0aec-3880-e04fa4b724ed" : {
-                  "sizeX" : 6,
-                  "sizeY" : 6,
+                  "sizeX" : 12,
+                  "sizeY" : 12,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 74,
-                  "col" : 0
+                  "row" : 47,
+                  "col" : 44
                 },
                 "dc54f187-97dd-f9a7-ecf1-a12b968506b4" : {
                   "sizeX" : 10,
