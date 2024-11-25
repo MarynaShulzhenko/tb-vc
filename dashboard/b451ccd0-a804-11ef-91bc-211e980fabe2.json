@@ -5587,8 +5587,8 @@
                   "sizeY" : 14,
                   "preserveAspectRatio" : true,
                   "resizable" : true,
-                  "row" : 90,
-                  "col" : 0
+                  "row" : 64,
+                  "col" : 15
                 },
                 "af8c72f2-63c2-f712-bcc4-6e7fa665550c" : {
                   "sizeX" : 14,
