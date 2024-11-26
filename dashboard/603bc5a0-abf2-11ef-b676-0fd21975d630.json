@@ -11574,7 +11574,7 @@
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "a568fa60-ab18-11ef-88a7-e1a450c7ed97"
+              "id" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
             }
           }
         },
@@ -11586,7 +11586,7 @@
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "f76e9900-ab18-11ef-88a7-e1a450c7ed97"
+              "id" : "dae39d30-a735-11ef-91bc-211e980fabe2"
             }
           }
         }
