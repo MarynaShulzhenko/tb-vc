@@ -36117,7 +36117,7 @@
                 "lineHeight" : "24px"
               },
               "labelColor" : "rgba(0, 0, 0, 0.87)",
-              "showIcon" : true,
+              "showIcon" : false,
               "iconSize" : 24,
               "iconSizeUnit" : "px",
               "icon" : "thermostat",
@@ -36165,6 +36165,361 @@
           "row" : 0,
           "col" : 0,
           "id" : "01df74a3-c7f7-1b14-368c-ea8e795b663a"
+        },
+        "29ae3b10-d2a0-3786-5d5d-33ff3decee35" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Layout: Desktop (xl)",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : false,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "#5469FF",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "basic",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "29ae3b10-d2a0-3786-5d5d-33ff3decee35"
+        },
+        "e8bb4a6c-117e-5016-b08b-95ba54f5a612" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Layout: Desktop (lg)",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : false,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "#5469FF",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "basic",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e8bb4a6c-117e-5016-b08b-95ba54f5a612"
+        },
+        "04926475-177c-ba7e-97f7-0b66533bb14e" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Layout: Laptop (md)",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : false,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "#5469FF",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "basic",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "04926475-177c-ba7e-97f7-0b66533bb14e"
+        },
+        "ea083807-467e-005c-c963-07e7e28a794c" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Layout: Tablet (sm)",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : false,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "#5469FF",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "advanced",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "ea083807-467e-005c-c963-07e7e28a794c"
+        },
+        "4f0a33cc-d822-3ec9-f9fb-68d2d3410dc8" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Layout: Mobile (xs)",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : false,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "#5469FF",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "advanced",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "4f0a33cc-d822-3ec9-f9fb-68d2d3410dc8"
         }
       },
       "states" : {
@@ -36428,9 +36783,543 @@
                       "row" : 10,
                       "col" : 15
                     },
-                    "01df74a3-c7f7-1b14-368c-ea8e795b663a" : {
+                    "29ae3b10-d2a0-3786-5d5d-33ff3decee35" : {
                       "sizeX" : 25,
                       "sizeY" : 1,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "lg" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#eeeeee",
+                    "columns" : 24,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%"
+                  },
+                  "widgets" : {
+                    "92b566d8-bcac-c593-c476-692386a521c5" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 0
+                    },
+                    "e78b28c7-d369-4d27-74c1-17727bc5dc0a" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 5
+                    },
+                    "9a00a81c-e520-d9e1-5417-80d0f802b60d" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 10
+                    },
+                    "3cda76f0-c6ed-3cec-5c29-035afa017655" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 15
+                    },
+                    "2d414689-9d82-419b-c86d-f7fe1eaa5f62" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 20
+                    },
+                    "c957d70f-c1cd-553c-ab3f-3c9b53928a6b" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 5
+                    },
+                    "d6bc179e-a820-a5fa-f872-b40691429991" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 0
+                    },
+                    "70e03d47-7eb4-b3cd-8bc2-401a944781f2" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 10
+                    },
+                    "82a436c6-13bc-cf4f-81c4-7544e259c687" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 15
+                    },
+                    "052330a4-6a59-1279-f0e2-217826be5568" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 20
+                    },
+                    "20f0ff2e-3445-437b-1046-f54f711d448c" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 0
+                    },
+                    "5eebb0b8-0483-94af-94dd-5a82e029df0b" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 5
+                    },
+                    "17fbecbd-17ed-609b-d9f7-dc0968aef369" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 10
+                    },
+                    "18523687-0585-9d29-f185-d37937a10dc6" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 15
+                    },
+                    "eee3554d-737d-d450-e703-f003700f1bc5" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 8,
+                      "col" : 20
+                    },
+                    "83e6379d-0271-2a09-77fd-31f29248c864" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 0
+                    },
+                    "87b4bc87-7a86-da25-b67d-35764bd68097" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 5
+                    },
+                    "3863880b-4714-3b07-7ff8-fb88062601c2" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 10
+                    },
+                    "6542ac4f-5270-d941-07b3-1a7bbd4c9523" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 15
+                    },
+                    "e8bb4a6c-117e-5016-b08b-95ba54f5a612" : {
+                      "sizeX" : 25,
+                      "sizeY" : 1,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "md" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#eeeeee",
+                    "columns" : 24,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%"
+                  },
+                  "widgets" : {
+                    "92b566d8-bcac-c593-c476-692386a521c5" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 2,
+                      "col" : 0
+                    },
+                    "e78b28c7-d369-4d27-74c1-17727bc5dc0a" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 2,
+                      "col" : 5
+                    },
+                    "9a00a81c-e520-d9e1-5417-80d0f802b60d" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 2,
+                      "col" : 10
+                    },
+                    "3cda76f0-c6ed-3cec-5c29-035afa017655" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 2,
+                      "col" : 15
+                    },
+                    "2d414689-9d82-419b-c86d-f7fe1eaa5f62" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 2,
+                      "col" : 20
+                    },
+                    "c957d70f-c1cd-553c-ab3f-3c9b53928a6b" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 5,
+                      "col" : 5
+                    },
+                    "d6bc179e-a820-a5fa-f872-b40691429991" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 5,
+                      "col" : 0
+                    },
+                    "70e03d47-7eb4-b3cd-8bc2-401a944781f2" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 5,
+                      "col" : 10
+                    },
+                    "82a436c6-13bc-cf4f-81c4-7544e259c687" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 5,
+                      "col" : 15
+                    },
+                    "052330a4-6a59-1279-f0e2-217826be5568" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 5,
+                      "col" : 20
+                    },
+                    "20f0ff2e-3445-437b-1046-f54f711d448c" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 8,
+                      "col" : 0
+                    },
+                    "5eebb0b8-0483-94af-94dd-5a82e029df0b" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 8,
+                      "col" : 5
+                    },
+                    "17fbecbd-17ed-609b-d9f7-dc0968aef369" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 8,
+                      "col" : 10
+                    },
+                    "18523687-0585-9d29-f185-d37937a10dc6" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 8,
+                      "col" : 15
+                    },
+                    "eee3554d-737d-d450-e703-f003700f1bc5" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 9,
+                      "col" : 20
+                    },
+                    "83e6379d-0271-2a09-77fd-31f29248c864" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 11,
+                      "col" : 0
+                    },
+                    "87b4bc87-7a86-da25-b67d-35764bd68097" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 11,
+                      "col" : 5
+                    },
+                    "3863880b-4714-3b07-7ff8-fb88062601c2" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 11,
+                      "col" : 10
+                    },
+                    "6542ac4f-5270-d941-07b3-1a7bbd4c9523" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 11,
+                      "col" : 15
+                    },
+                    "04926475-177c-ba7e-97f7-0b66533bb14e" : {
+                      "sizeX" : 25,
+                      "sizeY" : 2,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "sm" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#eeeeee",
+                    "columns" : 24,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "viewFormat" : "list"
+                  },
+                  "widgets" : {
+                    "92b566d8-bcac-c593-c476-692386a521c5" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 0
+                    },
+                    "e78b28c7-d369-4d27-74c1-17727bc5dc0a" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 5
+                    },
+                    "9a00a81c-e520-d9e1-5417-80d0f802b60d" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 10
+                    },
+                    "3cda76f0-c6ed-3cec-5c29-035afa017655" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 15
+                    },
+                    "2d414689-9d82-419b-c86d-f7fe1eaa5f62" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 20
+                    },
+                    "c957d70f-c1cd-553c-ab3f-3c9b53928a6b" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 5
+                    },
+                    "d6bc179e-a820-a5fa-f872-b40691429991" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 0
+                    },
+                    "70e03d47-7eb4-b3cd-8bc2-401a944781f2" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 10
+                    },
+                    "82a436c6-13bc-cf4f-81c4-7544e259c687" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 15
+                    },
+                    "052330a4-6a59-1279-f0e2-217826be5568" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 20
+                    },
+                    "20f0ff2e-3445-437b-1046-f54f711d448c" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 0
+                    },
+                    "5eebb0b8-0483-94af-94dd-5a82e029df0b" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 5
+                    },
+                    "17fbecbd-17ed-609b-d9f7-dc0968aef369" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 10
+                    },
+                    "18523687-0585-9d29-f185-d37937a10dc6" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 15
+                    },
+                    "eee3554d-737d-d450-e703-f003700f1bc5" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 8,
+                      "col" : 20
+                    },
+                    "83e6379d-0271-2a09-77fd-31f29248c864" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 0
+                    },
+                    "87b4bc87-7a86-da25-b67d-35764bd68097" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 5
+                    },
+                    "3863880b-4714-3b07-7ff8-fb88062601c2" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 10
+                    },
+                    "6542ac4f-5270-d941-07b3-1a7bbd4c9523" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 15
+                    },
+                    "ea083807-467e-005c-c963-07e7e28a794c" : {
+                      "sizeX" : 25,
+                      "sizeY" : 1,
+                      "mobileOrder" : 0,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "xs" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#eeeeee",
+                    "columns" : 24,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "viewFormat" : "list"
+                  },
+                  "widgets" : {
+                    "92b566d8-bcac-c593-c476-692386a521c5" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 0
+                    },
+                    "e78b28c7-d369-4d27-74c1-17727bc5dc0a" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 5
+                    },
+                    "9a00a81c-e520-d9e1-5417-80d0f802b60d" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 10
+                    },
+                    "3cda76f0-c6ed-3cec-5c29-035afa017655" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 15
+                    },
+                    "2d414689-9d82-419b-c86d-f7fe1eaa5f62" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 1,
+                      "col" : 20
+                    },
+                    "c957d70f-c1cd-553c-ab3f-3c9b53928a6b" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 5
+                    },
+                    "d6bc179e-a820-a5fa-f872-b40691429991" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 0
+                    },
+                    "70e03d47-7eb4-b3cd-8bc2-401a944781f2" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 10
+                    },
+                    "82a436c6-13bc-cf4f-81c4-7544e259c687" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 15
+                    },
+                    "052330a4-6a59-1279-f0e2-217826be5568" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 4,
+                      "col" : 20
+                    },
+                    "20f0ff2e-3445-437b-1046-f54f711d448c" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 0
+                    },
+                    "5eebb0b8-0483-94af-94dd-5a82e029df0b" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 5
+                    },
+                    "17fbecbd-17ed-609b-d9f7-dc0968aef369" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 10
+                    },
+                    "18523687-0585-9d29-f185-d37937a10dc6" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 7,
+                      "col" : 15
+                    },
+                    "eee3554d-737d-d450-e703-f003700f1bc5" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 8,
+                      "col" : 20
+                    },
+                    "83e6379d-0271-2a09-77fd-31f29248c864" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 0
+                    },
+                    "87b4bc87-7a86-da25-b67d-35764bd68097" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 5
+                    },
+                    "3863880b-4714-3b07-7ff8-fb88062601c2" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 10
+                    },
+                    "6542ac4f-5270-d941-07b3-1a7bbd4c9523" : {
+                      "sizeX" : 5,
+                      "sizeY" : 3,
+                      "row" : 10,
+                      "col" : 15
+                    },
+                    "4f0a33cc-d822-3ec9-f9fb-68d2d3410dc8" : {
+                      "sizeX" : 25,
+                      "sizeY" : 1,
+                      "mobileOrder" : 0,
+                      "resizable" : true,
                       "row" : 0,
                       "col" : 0
                     }
