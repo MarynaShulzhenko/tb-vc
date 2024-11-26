@@ -97,6 +97,14 @@
       "lastUpdateTs" : 1732109136623,
       "longValue" : null,
       "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "running",
+      "lastUpdateTs" : 1732624399705,
+      "longValue" : null,
+      "strValue" : null
     } ]
   }
 }
