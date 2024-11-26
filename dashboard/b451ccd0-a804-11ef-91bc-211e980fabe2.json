@@ -5056,7 +5056,7 @@
             "padding" : "0px",
             "settings" : {
               "autoScale" : true,
-              "label" : "Layout: Mobile (xs)",
+              "label" : "Layout: Desktop (lg)",
               "labelFont" : {
                 "family" : "Roboto",
                 "size" : 20,
@@ -5114,6 +5114,432 @@
           "row" : 0,
           "col" : 0,
           "id" : "5d33617e-209c-8504-bd6a-4f595aba40b5"
+        },
+        "2676665e-a347-c096-8350-d8c169ebefb3" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Layout: Default",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : true,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "#5469FF",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "basic",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2676665e-a347-c096-8350-d8c169ebefb3"
+        },
+        "09b35310-b8dd-764b-0a95-690056e02665" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Layout: Desktop (xl)",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : true,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "#5469FF",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "basic",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "09b35310-b8dd-764b-0a95-690056e02665"
+        },
+        "305d4c18-132d-68e1-9f9a-a8ecb2e2af10" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Layout: Desktop (lg)",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : true,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "#5469FF",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "basic",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "305d4c18-132d-68e1-9f9a-a8ecb2e2af10"
+        },
+        "a2abbe26-05d2-e11b-f03d-513dc473af99" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Layout: Laptop (md)",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : true,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "#5469FF",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "basic",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a2abbe26-05d2-e11b-f03d-513dc473af99"
+        },
+        "6c466f25-2cf8-7930-0a1b-93e35d275e6e" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Layout: Tablet (sm)",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : true,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "#5469FF",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "advanced",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "6c466f25-2cf8-7930-0a1b-93e35d275e6e"
+        },
+        "f3768016-b55c-3fed-9a16-2973ddbe6336" : {
+          "typeFullFqn" : "system.label_card",
+          "type" : "static",
+          "sizeX" : 4.5,
+          "sizeY" : 1,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "autoScale" : true,
+              "label" : "Layout: Desktop (lg)",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 20,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "24px"
+              },
+              "labelColor" : "rgba(0, 0, 0, 0.87)",
+              "showIcon" : true,
+              "iconSize" : 24,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : "#5469FF",
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
+            },
+            "title" : "Label card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "actions" : { },
+            "configMode" : "advanced",
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 12,
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : null,
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f3768016-b55c-3fed-9a16-2973ddbe6336"
         }
       },
       "states" : {
@@ -5147,7 +5573,7 @@
                   "row" : 2,
                   "col" : 10
                 },
-                "5d33617e-209c-8504-bd6a-4f595aba40b5" : {
+                "2676665e-a347-c096-8350-d8c169ebefb3" : {
                   "sizeX" : 15,
                   "sizeY" : 1,
                   "row" : 0,
@@ -5197,7 +5623,7 @@
                       "row" : 2,
                       "col" : 10
                     },
-                    "5d33617e-209c-8504-bd6a-4f595aba40b5" : {
+                    "09b35310-b8dd-764b-0a95-690056e02665" : {
                       "sizeX" : 15,
                       "sizeY" : 1,
                       "row" : 0,
@@ -5239,7 +5665,7 @@
                       "row" : 2,
                       "col" : 10
                     },
-                    "5d33617e-209c-8504-bd6a-4f595aba40b5" : {
+                    "305d4c18-132d-68e1-9f9a-a8ecb2e2af10" : {
                       "sizeX" : 15,
                       "sizeY" : 1,
                       "row" : 0,
@@ -5281,7 +5707,7 @@
                       "row" : 2,
                       "col" : 10
                     },
-                    "5d33617e-209c-8504-bd6a-4f595aba40b5" : {
+                    "a2abbe26-05d2-e11b-f03d-513dc473af99" : {
                       "sizeX" : 15,
                       "sizeY" : 1,
                       "row" : 0,
@@ -5324,9 +5750,11 @@
                       "row" : 2,
                       "col" : 10
                     },
-                    "5d33617e-209c-8504-bd6a-4f595aba40b5" : {
+                    "6c466f25-2cf8-7930-0a1b-93e35d275e6e" : {
                       "sizeX" : 15,
                       "sizeY" : 1,
+                      "mobileOrder" : 0,
+                      "resizable" : true,
                       "row" : 0,
                       "col" : 0
                     }
@@ -5367,9 +5795,11 @@
                       "row" : 2,
                       "col" : 10
                     },
-                    "5d33617e-209c-8504-bd6a-4f595aba40b5" : {
+                    "f3768016-b55c-3fed-9a16-2973ddbe6336" : {
                       "sizeX" : 15,
                       "sizeY" : 1,
+                      "mobileOrder" : 0,
+                      "resizable" : true,
                       "row" : 0,
                       "col" : 0
                     }
