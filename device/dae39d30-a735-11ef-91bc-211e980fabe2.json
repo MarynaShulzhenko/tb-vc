@@ -72,6 +72,14 @@
       "lastUpdateTs" : 1732109287331,
       "longValue" : null,
       "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "tankCapacity",
+      "lastUpdateTs" : 1732621704014,
+      "longValue" : null,
+      "strValue" : "6000"
     } ],
     "SHARED_SCOPE" : [ {
       "booleanValue" : null,

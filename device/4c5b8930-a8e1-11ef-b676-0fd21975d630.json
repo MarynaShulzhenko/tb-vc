@@ -26,15 +26,15 @@
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
-      "id" : "13dc2e00-a686-11ef-91bc-211e980fabe2"
+      "id" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
     },
     "label" : "",
-    "name" : "door",
+    "name" : "pipe",
     "softwareId" : null,
     "type" : "default"
   },
   "credentials" : {
-    "credentialsId" : "5WHWXO9cSvB2oAd2n2ex",
+    "credentialsId" : "uwkXwD8DZDCNougBaMwJ",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -45,7 +45,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1732028626827,
+      "lastUpdateTs" : 1732287766753,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -53,41 +53,9 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1732028626827,
-      "longValue" : 1732028626827,
+      "lastUpdateTs" : 1732287766753,
+      "longValue" : 1732287766753,
       "strValue" : null
-    }, {
-      "booleanValue" : false,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "isOpen",
-      "lastUpdateTs" : 1732204606251,
-      "longValue" : null,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "new-attribute",
-      "lastUpdateTs" : 1732109396714,
-      "longValue" : null,
-      "strValue" : "bgybb"
-    }, {
-      "booleanValue" : false,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "state",
-      "lastUpdateTs" : 1732186873357,
-      "longValue" : null,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "test",
-      "lastUpdateTs" : 1732109396714,
-      "longValue" : null,
-      "strValue" : "vgfgfb"
     } ],
     "SHARED_SCOPE" : [ ]
   }

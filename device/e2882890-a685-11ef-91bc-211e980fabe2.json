@@ -52,6 +52,14 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "attribute",
+      "lastUpdateTs" : 1732204710990,
+      "longValue" : null,
+      "strValue" : "qweqrtt"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "inactivityAlarmTime",
       "lastUpdateTs" : 1732028566826,
       "longValue" : 1732028566826,
@@ -77,15 +85,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "slider",
-      "lastUpdateTs" : 1732112806768,
-      "longValue" : 40,
+      "lastUpdateTs" : 1732204635467,
+      "longValue" : 30,
       "strValue" : null
     }, {
       "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "state",
-      "lastUpdateTs" : 1732186872879,
+      "lastUpdateTs" : 1732204637507,
       "longValue" : null,
       "strValue" : null
     } ],
