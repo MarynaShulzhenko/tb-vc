@@ -18710,7 +18710,7 @@
                 "name" : "onClick",
                 "icon" : "more_horiz",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "Alarm widgets",
+                "targetDashboardStateId" : "alarm_widgets",
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
