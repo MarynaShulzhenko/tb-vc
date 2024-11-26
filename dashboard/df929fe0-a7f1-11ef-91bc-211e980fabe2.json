@@ -46816,27 +46816,15 @@
         "hideAggInterval" : false,
         "hideTimezone" : false,
         "selectedTab" : 1,
-        "realtime" : {
-          "realtimeType" : 0,
-          "interval" : 1000,
-          "timewindowMs" : 60000,
-          "quickInterval" : "CURRENT_DAY",
-          "hideInterval" : false,
-          "hideLastInterval" : false,
-          "hideQuickInterval" : false
-        },
         "history" : {
-          "historyType" : 0,
-          "interval" : 1000,
-          "timewindowMs" : 60000,
+          "historyType" : 1,
           "fixedTimewindow" : {
             "startTimeMs" : 1733702400000,
             "endTimeMs" : 1735516799000
           },
-          "quickInterval" : "CURRENT_DAY",
+          "interval" : 3629000,
           "hideInterval" : false,
           "hideLastInterval" : false,
-          "hideFixedInterval" : false,
           "hideQuickInterval" : false
         },
         "aggregation" : {
