@@ -4310,8 +4310,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+              "type" : "entity",
+              "entityAliasId" : "ff8d3d7c-1877-b24c-45bd-1cfda78dffbb"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4376,8 +4376,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+              "type" : "entity",
+              "entityAliasId" : "ff8d3d7c-1877-b24c-45bd-1cfda78dffbb"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4442,8 +4442,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+              "type" : "entity",
+              "entityAliasId" : "ff8d3d7c-1877-b24c-45bd-1cfda78dffbb"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4508,8 +4508,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+              "type" : "entity",
+              "entityAliasId" : "ff8d3d7c-1877-b24c-45bd-1cfda78dffbb"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4574,8 +4574,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+              "type" : "entity",
+              "entityAliasId" : "ff8d3d7c-1877-b24c-45bd-1cfda78dffbb"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4640,8 +4640,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+              "type" : "entity",
+              "entityAliasId" : "ff8d3d7c-1877-b24c-45bd-1cfda78dffbb"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4706,8 +4706,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+              "type" : "entity",
+              "entityAliasId" : "ff8d3d7c-1877-b24c-45bd-1cfda78dffbb"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4772,8 +4772,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+              "type" : "entity",
+              "entityAliasId" : "ff8d3d7c-1877-b24c-45bd-1cfda78dffbb"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4838,8 +4838,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+              "type" : "entity",
+              "entityAliasId" : "ff8d3d7c-1877-b24c-45bd-1cfda78dffbb"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4876,8 +4876,157 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/elevated-tank.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "tankCapacity" : {
+                    "action" : "GET_ATTRIBUTE",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "tankCapacity",
+                      "scope" : "SERVER_SCOPE"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "currentVolume" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "liquidVolume"
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "warning" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "critical" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "criticalAnimation" : {
+                    "action" : "DO_NOTHING",
+                    "defaultValue" : false,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "click" : {
+                    "type" : "doNothing",
+                    "targetDashboardStateId" : null,
+                    "openRightLayout" : false,
+                    "setEntityId" : false,
+                    "stateEntityParamName" : null
+                  }
+                },
+                "properties" : {
+                  "tankColor" : "#E5E5E5",
+                  "fluidColor" : "#1EC1F480",
+                  "valueBox" : true,
+                  "valueBoxColor" : "#F3F3F3",
+                  "valueUnits" : "gal",
+                  "valueTextFont" : {
+                    "size" : 36,
+                    "sizeUnit" : "px",
+                    "family" : "Roboto",
+                    "weight" : "500",
+                    "style" : "normal"
+                  },
+                  "valueTextColor" : "#0000008A",
+                  "transparent" : true,
+                  "scale" : false,
+                  "majorIntervals" : 10,
+                  "majorFont" : {
+                    "size" : 24,
+                    "sizeUnit" : "px",
+                    "family" : "Roboto",
+                    "weight" : "500",
+                    "style" : "normal"
+                  },
+                  "majorColor" : "#00000061",
+                  "majorWarningColor" : "#FAA405",
+                  "majorCriticalColor" : "#D12730",
+                  "minorIntervals" : 5,
+                  "minorColor" : "#0000001F",
+                  "minorWarningColor" : "#FAA405",
+                  "minorCriticalColor" : "#D12730"
+                }
               }
             },
             "title" : "Elevated tank",
@@ -4904,8 +5053,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+              "type" : "entity",
+              "entityAliasId" : "ff8d3d7c-1877-b24c-45bd-1cfda78dffbb"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
@@ -4942,8 +5091,75 @@
               "padding" : "0",
               "scadaSymbolUrl" : "tb-image;/api/images/system/pool.svg",
               "scadaSymbolObjectSettings" : {
-                "behavior" : { },
-                "properties" : { }
+                "behavior" : {
+                  "tankCapacity" : {
+                    "action" : "GET_ATTRIBUTE",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "tankCapacity",
+                      "scope" : "SERVER_SCOPE"
+                    },
+                    "getTimeSeries" : {
+                      "key" : "state"
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "currentVolume" : {
+                    "action" : "GET_TIME_SERIES",
+                    "defaultValue" : null,
+                    "executeRpc" : {
+                      "method" : "getState",
+                      "requestTimeout" : 5000,
+                      "requestPersistent" : false,
+                      "persistentPollingInterval" : 1000
+                    },
+                    "getAttribute" : {
+                      "key" : "state",
+                      "scope" : null
+                    },
+                    "getTimeSeries" : {
+                      "key" : "liquidVolume"
+                    },
+                    "dataToValue" : {
+                      "type" : "NONE",
+                      "compareToValue" : true,
+                      "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                    }
+                  },
+                  "click" : {
+                    "type" : "doNothing",
+                    "targetDashboardStateId" : null,
+                    "openRightLayout" : false,
+                    "setEntityId" : false,
+                    "stateEntityParamName" : null
+                  }
+                },
+                "properties" : {
+                  "tankColor" : "#E5E5E5",
+                  "fluidColor" : "#1EC1F480",
+                  "valueBox" : true,
+                  "valueBoxColor" : "#F3F3F3",
+                  "valueUnits" : "gal",
+                  "valueTextFont" : {
+                    "size" : 36,
+                    "sizeUnit" : "px",
+                    "family" : "Roboto",
+                    "weight" : "500",
+                    "style" : "normal"
+                  },
+                  "valueTextColor" : "#0000008A",
+                  "transparent" : true
+                }
               }
             },
             "title" : "Pool",
@@ -4970,8 +5186,8 @@
             "iconSize" : "24px",
             "configMode" : "basic",
             "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "4c5b8930-a8e1-11ef-b676-0fd21975d630"
+              "type" : "entity",
+              "entityAliasId" : "ff8d3d7c-1877-b24c-45bd-1cfda78dffbb"
             },
             "titleColor" : null,
             "borderRadius" : "0px",
