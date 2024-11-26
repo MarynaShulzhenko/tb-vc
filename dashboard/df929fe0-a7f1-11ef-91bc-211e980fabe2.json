@@ -36107,7 +36107,7 @@
             "padding" : "0px",
             "settings" : {
               "autoScale" : true,
-              "label" : "Layout: Thermostat",
+              "label" : "Layout: ",
               "labelFont" : {
                 "family" : "Roboto",
                 "size" : 20,
