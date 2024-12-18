@@ -8,7 +8,10 @@
     "defaultRuleChainId" : null,
     "description" : "",
     "externalId" : null,
-    "firmwareId" : null,
+    "firmwareId" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "d6ad4ce0-bd36-11ef-8e18-4705a8927f9c"
+    },
     "id" : {
       "entityType" : "DEVICE_PROFILE",
       "id" : "bcbd1780-bd35-11ef-af79-39efd3f3753a"
@@ -65,7 +68,10 @@
     },
     "provisionDeviceKey" : null,
     "provisionType" : "DISABLED",
-    "softwareId" : null,
+    "softwareId" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "82fb4050-bd42-11ef-af79-39efd3f3753a"
+    },
     "transportType" : "LWM2M",
     "type" : "DEFAULT"
   },
