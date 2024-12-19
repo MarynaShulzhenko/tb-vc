@@ -1,0 +1,106 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "d9f3bef0-a735-11ef-91bc-211e980fabe2"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "dae39d30-a735-11ef-91bc-211e980fabe2"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "dae39d30-a735-11ef-91bc-211e980fabe2"
+    },
+    "label" : "",
+    "name" : "tank",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "tanks"
+  },
+  "credentials" : {
+    "credentialsId" : "UOMdzTbMNZ9b3xdxcYML",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1734531704939,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1732104167025,
+      "longValue" : 1732104167025,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 37.7737,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1732109270567,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -122.45446,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1732109287331,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "tankCapacity",
+      "lastUpdateTs" : 1732622130668,
+      "longValue" : null,
+      "strValue" : "6000"
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : 37.7737,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1732109123525,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -122.45446,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1732109136623,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
