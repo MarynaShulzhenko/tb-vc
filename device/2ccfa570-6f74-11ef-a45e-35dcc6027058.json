@@ -24,7 +24,7 @@
       "entityType" : "DEVICE",
       "id" : "2ccfa570-6f74-11ef-a45e-35dcc6027058"
     },
-    "label" : null,
+    "label" : "fck",
     "name" : "Device A",
     "ownerId" : null,
     "softwareId" : null,
