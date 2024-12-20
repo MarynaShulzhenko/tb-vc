@@ -1,0 +1,42 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "customMenuId" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "004fc440-bb9a-11ef-af79-39efd3f3753a"
+    },
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "a3209370-bb9f-11ef-af79-39efd3f3753a"
+    },
+    "name" : "smoke subcustomer",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "004fc440-bb9a-11ef-af79-39efd3f3753a"
+    },
+    "parentCustomerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "004fc440-bb9a-11ef-af79-39efd3f3753a"
+    },
+    "phone" : null,
+    "state" : null,
+    "title" : "smoke subcustomer",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
