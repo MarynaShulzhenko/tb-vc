@@ -1,0 +1,25 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "qwe",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : ""
+    },
+    "name" : "qwe",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "60f8f1a0-c11b-11ef-b5fa-3370ec2b2ba3"
+    },
+    "ownerId" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
