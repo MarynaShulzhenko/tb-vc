@@ -133,7 +133,7 @@
               "dataKeys" : [ {
                 "name" : "temperature",
                 "type" : "timeseries",
-                "label" : "Temperature",
+                "label" : "Temperature of ${deviceName}",
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.7214215933912254
