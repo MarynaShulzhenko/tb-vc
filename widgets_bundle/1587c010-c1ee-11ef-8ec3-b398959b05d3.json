@@ -1,0 +1,21 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "tenant_test_resources",
+    "description" : "",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "1587c010-c1ee-11ef-8ec3-b398959b05d3"
+    },
+    "image" : "",
+    "name" : "tenant test resources",
+    "order" : null,
+    "scada" : true,
+    "title" : "tenant test resources"
+  },
+  "fqns" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
