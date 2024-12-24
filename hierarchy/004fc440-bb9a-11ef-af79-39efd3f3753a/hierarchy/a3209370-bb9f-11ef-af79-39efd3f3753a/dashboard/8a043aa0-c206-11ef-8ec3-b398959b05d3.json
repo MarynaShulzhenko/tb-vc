@@ -1,0 +1,31 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "dashboard for subcustomer from customer",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : ""
+    },
+    "name" : "dashboard for subcustomer from customer",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "a3209370-bb9f-11ef-af79-39efd3f3753a"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "8a043aa0-c206-11ef-8ec3-b398959b05d3"
+    },
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "a3209370-bb9f-11ef-af79-39efd3f3753a"
+    }
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
