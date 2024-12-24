@@ -14,7 +14,7 @@
     "scada" : true,
     "title" : "tenant test resources"
   },
-  "fqns" : [ "fan_svg" ],
+  "fqns" : [ "fan_svg", "vector_80_icon_icons_com_57242_svg" ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
