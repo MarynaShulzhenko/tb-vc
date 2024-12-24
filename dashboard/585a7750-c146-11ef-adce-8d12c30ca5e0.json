@@ -930,6 +930,69 @@
           "row" : 0,
           "col" : 0,
           "id" : "c45e83f3-7782-3fbc-c508-4c726a1a9998"
+        },
+        "fb98a607-553d-a9be-81ec-12b2df843449" : {
+          "typeFullFqn" : "tenant.fan_svg",
+          "type" : "rpc",
+          "sizeX" : 5,
+          "sizeY" : 5,
+          "config" : {
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "background" : {
+                "type" : "color",
+                "imageUrl" : null,
+                "color" : "rgb(255, 255, 255)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px",
+              "scadaSymbolUrl" : "tb-image;/api/images/system/fan (1).svg",
+              "scadaSymbolObjectSettings" : {
+                "behavior" : { },
+                "properties" : { }
+              }
+            },
+            "title" : "fan.svg",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "actions" : { },
+            "widgetCss" : "",
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1.6"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleStyle" : null,
+            "pageSize" : 1024,
+            "titleIcon" : "mdi:lightbulb-outline",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "configMode" : "basic",
+            "targetDevice" : {
+              "type" : "device"
+            },
+            "titleColor" : null,
+            "borderRadius" : "0px",
+            "margin" : "0px",
+            "datasources" : [ ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "fb98a607-553d-a9be-81ec-12b2df843449"
         }
       },
       "states" : {
@@ -958,6 +1021,12 @@
                   "sizeY" : 6,
                   "row" : 6,
                   "col" : 0
+                },
+                "fb98a607-553d-a9be-81ec-12b2df843449" : {
+                  "sizeX" : 7,
+                  "sizeY" : 6,
+                  "row" : 6,
+                  "col" : 12
                 }
               },
               "gridSettings" : {
