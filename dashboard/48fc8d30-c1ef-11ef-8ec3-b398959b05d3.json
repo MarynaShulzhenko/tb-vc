@@ -105,10 +105,35 @@
               "hideTimezone" : false,
               "selectedTab" : 0,
               "realtime" : {
-                "realtimeType" : 0,
+                "realtimeType" : 1,
+                "interval" : 120000,
                 "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_HOUR",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false,
+                "advancedParams" : {
+                  "quickAggIntervalsConfig" : {
+                    "CURRENT_HOUR" : {
+                      "aggIntervals" : [ 10000, 120000, 300000, 600000, 900000, 1800000, 3600000 ],
+                      "defaultAggInterval" : 120000
+                    }
+                  }
+                }
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1735123396174,
+                  "endTimeMs" : 1735209796174
+                },
                 "quickInterval" : "CURRENT_DAY",
-                "interval" : 1000
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
                 "type" : "AVG",
@@ -384,7 +409,7 @@
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
             "iconColor" : "#1F6BDD",
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "displayTimewindow" : true,
             "titleFont" : {
               "size" : 16,
