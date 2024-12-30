@@ -988,7 +988,24 @@
             "dropShadow" : true,
             "enableFullscreen" : false,
             "widgetStyle" : { },
-            "actions" : { },
+            "actions" : {
+              "headerButton" : [ {
+                "name" : " Custom action",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : {
+                  "body" : "console.log(example.circle);",
+                  "modules" : {
+                    "example" : "tb-resource;/api/resource/js_module/tenant/examples.js"
+                  }
+                },
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "2398f76a-6fec-023f-bda6-78ef320c3553"
+              } ]
+            },
             "widgetCss" : "",
             "noDataDisplayMessage" : "",
             "titleFont" : {
@@ -1006,7 +1023,7 @@
             "titleIcon" : "mdi:lightbulb-outline",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "targetDevice" : {
               "type" : "device"
             },
