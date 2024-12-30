@@ -1,0 +1,43 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : null,
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "clientConfiguration" : {
+        "baseUrl" : "https://tbqa.cloud",
+        "httpEndpoint" : "https://tbqa.cloud/api/v1/integrations/chirpstack/c42e7727-4198-411f-8972-4943687485f0",
+        "applicationServerUrl" : "qweqweqwe",
+        "applicationServerAPIToken" : "qwexvcxvbb",
+        "useAPI4Plus" : true
+      }
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1735559608688,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "96688ad0-c6a2-11ef-8ec3-b398959b05d3"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "96afcd00-c6a2-11ef-adce-8d12c30ca5e0"
+    },
+    "name" : "ChirpStack integration",
+    "remote" : false,
+    "routingKey" : "c42e7727-4198-411f-8972-4943687485f0",
+    "secret" : "vwnq8mn04oila4vvbycb",
+    "type" : "CHIRPSTACK"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
