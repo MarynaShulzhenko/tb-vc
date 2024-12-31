@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "Dashboard",
+    "title" : "Dashboard test",
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
@@ -1018,7 +1018,7 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "name" : "Dashboard",
+    "name" : "Dashboard test",
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : null,
