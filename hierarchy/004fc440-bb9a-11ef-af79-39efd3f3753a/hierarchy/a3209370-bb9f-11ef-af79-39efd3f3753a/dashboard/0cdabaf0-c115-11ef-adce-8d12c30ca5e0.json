@@ -573,9 +573,11 @@
                 "showWidgetActionFunction" : "return true;",
                 "type" : "custom",
                 "customFunction" : {
-                  "body" : "console.log(qwe.circle);",
+                  "body" : "console.log(qwe.circle);\n",
                   "modules" : {
-                    "qwe" : "tb-resource;/api/resource/js_module/tenant/test js module Maryna.js"
+                    "qwe" : "tb-resource;/api/resource/js_module/tenant/test js module Maryna.js",
+                    "_fgi3" : "tb-resource;/api/resource/js_module/tenant/examples.js",
+                    "test" : "tb-resource;/api/resource/js_module/system/test.js"
                   }
                 },
                 "openInSeparateDialog" : false,
