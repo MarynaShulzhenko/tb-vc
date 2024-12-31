@@ -802,7 +802,7 @@
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
             "iconColor" : "#1F6BDD",
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "displayTimewindow" : true,
             "titleFont" : {
               "size" : 16,
