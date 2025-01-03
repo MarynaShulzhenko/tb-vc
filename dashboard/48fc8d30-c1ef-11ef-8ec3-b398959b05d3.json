@@ -105,9 +105,9 @@
               "hideTimezone" : false,
               "selectedTab" : 0,
               "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 120000,
-                "timewindowMs" : 60000,
+                "realtimeType" : 0,
+                "interval" : 1800000,
+                "timewindowMs" : 604800000,
                 "quickInterval" : "CURRENT_HOUR",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
