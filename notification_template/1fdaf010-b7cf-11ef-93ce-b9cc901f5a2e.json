@@ -1,0 +1,32 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "people",
+              "color" : "#757575"
+            },
+            "actionButtonConfig" : {
+              "enabled" : false
+            }
+          },
+          "body" : "${userEmail} ${action} comment: ${comment}",
+          "enabled" : true,
+          "subject" : "Comment on '${alarmType}' alarm"
+        }
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "1fdaf010-b7cf-11ef-93ce-b9cc901f5a2e"
+    },
+    "name" : "Alarm comment notification",
+    "notificationType" : "ALARM_COMMENT"
+  }
+}
