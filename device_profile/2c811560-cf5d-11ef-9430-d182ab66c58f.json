@@ -225,8 +225,8 @@
         "type" : "DEFAULT"
       },
       "provisionConfiguration" : {
-        "type" : "ALLOW_CREATE_NEW_DEVICES",
-        "provisionDeviceSecret" : "ol5yiwbi5gq81d7wlphc"
+       "type" : "DISABLED",
+        "provisionDeviceSecret" : null
       },
       "transportConfiguration" : {
         "type" : "DEFAULT"
