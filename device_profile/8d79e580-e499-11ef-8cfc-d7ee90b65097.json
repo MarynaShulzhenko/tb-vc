@@ -1,0 +1,85 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "ac8b6340-e499-11ef-8cfc-d7ee90b65097"
+    },
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "8d79e580-e499-11ef-8cfc-d7ee90b65097"
+    },
+    "image" : null,
+    "name" : "TestOTA",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "LWM2M",
+        "bootstrap" : [ {
+          "securityMode" : "NO_SEC",
+          "binding" : "U",
+          "bootstrapServerAccountTimeout" : 0,
+          "bootstrapServerIs" : false,
+          "clientHoldOffTime" : 1,
+          "defaultMinPeriod" : 1,
+          "host" : "0.0.0.0",
+          "lifetime" : 300,
+          "notifIfDisabled" : true,
+          "port" : 5685,
+          "serverCertificate" : "",
+          "serverPublicKey" : "",
+          "shortServerId" : 123
+        } ],
+        "bootstrapServerUpdateEnable" : false,
+        "clientLwM2mSettings" : {
+          "clientOnlyObserveAfterConnect" : 1,
+          "defaultObjectIDVer" : "1.0",
+          "edrxCycle" : 81000,
+          "fwUpdateResource" : null,
+          "fwUpdateStrategy" : 1,
+          "pagingTransmissionWindow" : 10000,
+          "powerMode" : "DRX",
+          "psmActivityTimer" : 10000,
+          "swUpdateResource" : null,
+          "swUpdateStrategy" : 1
+        },
+        "observeAttr" : {
+          "attribute" : [ "/5_1.1/0/9", "/5_1.1/0/7", "/5_1.1/0/6", "/5_1.1/0/5", "/5_1.1/0/3" ],
+          "attributeLwm2m" : { },
+          "keyName" : {
+            "/5_1.1/0/3" : "state",
+            "/5_1.1/0/5" : "updateResult",
+            "/5_1.1/0/6" : "pkgname",
+            "/5_1.1/0/7" : "pkgversion",
+            "/5_1.1/0/9" : "firmwareUpdateDeliveryMethod"
+          },
+          "observe" : [ "/5_1.1/0/9", "/5_1.1/0/7", "/5_1.1/0/6", "/5_1.1/0/5", "/5_1.1/0/3" ],
+          "telemetry" : [ ]
+        }
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "LWM2M",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

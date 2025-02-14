@@ -1,0 +1,69 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d8e73440-d1a3-11ef-b59f-8dbd5706bb26"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "af8694d0-a672-11ef-91bc-211e980fabe2"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "ee108830-d1a3-11ef-b59f-8dbd5706bb26"
+    },
+    "label" : "",
+    "name" : "device 111111",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d8e73440-d1a3-11ef-b59f-8dbd5706bb26"
+    },
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1736769376983,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1736769376983,
+      "longValue" : 1736769376978,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ownerName",
+      "lastUpdateTs" : 1736768758669,
+      "longValue" : null,
+      "strValue" : "SFBR - BAILFT1 - LAURO ED FREITAS 1"
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

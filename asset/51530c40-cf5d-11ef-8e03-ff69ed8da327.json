@@ -1,0 +1,217 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "514ca3a0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "label" : null,
+    "name" : "Swimming pool SCADA system",
+    "ownerId" : null,
+    "type" : "Swimming pool SCADA system"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "51690540-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166912
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5177f960-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166914
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "51e0cd50-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166916
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "51efc170-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166918
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "51fd07e0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166920
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "520c2310-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166922
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "521809f0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166924
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "522b1cc0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166926
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5238b150-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166928
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5244bf40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166930
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "52511b50-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166932
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "525c8d00-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166934
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "526873e0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166936
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "527740f0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166938
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "waterPumpActive",
+      "lastUpdateTs" : 1736519141377,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

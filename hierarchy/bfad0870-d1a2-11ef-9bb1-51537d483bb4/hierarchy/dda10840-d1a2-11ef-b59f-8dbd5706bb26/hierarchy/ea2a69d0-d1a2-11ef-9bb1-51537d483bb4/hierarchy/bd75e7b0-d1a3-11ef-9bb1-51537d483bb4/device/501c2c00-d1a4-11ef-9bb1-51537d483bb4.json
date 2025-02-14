@@ -1,0 +1,69 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "bd75e7b0-d1a3-11ef-9bb1-51537d483bb4"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "af8694d0-a672-11ef-91bc-211e980fabe2"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "501c2c00-d1a4-11ef-9bb1-51537d483bb4"
+    },
+    "label" : "",
+    "name" : "device SFBR - BACBRI - BARRIS 1",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "bd75e7b0-d1a3-11ef-9bb1-51537d483bb4"
+    },
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1736769569309,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1736769569308,
+      "longValue" : 1736769569303,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ownerName",
+      "lastUpdateTs" : 1736768923426,
+      "longValue" : null,
+      "strValue" : "SFBR - BACBRI - BARRIS 1"
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

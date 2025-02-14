@@ -1,0 +1,69 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d4784160-d1a3-11ef-b59f-8dbd5706bb26"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "af8694d0-a672-11ef-91bc-211e980fabe2"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "01f57540-d1a4-11ef-9bb1-51537d483bb4"
+    },
+    "label" : "",
+    "name" : "device SFBR - BACBPIT2 - RITUBA 2",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d4784160-d1a3-11ef-b59f-8dbd5706bb26"
+    },
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1736769407875,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1736769407875,
+      "longValue" : 1736769407870,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ownerName",
+      "lastUpdateTs" : 1736768794736,
+      "longValue" : null,
+      "strValue" : "SFBR - BACBPIT2 - RITUBA 2"
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

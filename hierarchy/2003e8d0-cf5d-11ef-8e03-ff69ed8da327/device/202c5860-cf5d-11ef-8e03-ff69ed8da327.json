@@ -1,0 +1,105 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2003e8d0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "MQTT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "1ffa4be0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "202c5860-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "label" : null,
+    "name" : "Sensor C1",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2003e8d0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "softwareId" : null,
+    "type" : "Temperature Sensor"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1736519081310,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "humidityAlarmFlag",
+      "lastUpdateTs" : 1736518435111,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "humidityAlarmThreshold",
+      "lastUpdateTs" : 1736523361986,
+      "longValue" : 49,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1736519081309,
+      "longValue" : 1736519081305,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 37.74692055320709,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1736523380950,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : -122.4722487840384,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1736523390402,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "temperatureAlarmFlag",
+      "lastUpdateTs" : 1736518435111,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "temperatureAlarmThreshold",
+      "lastUpdateTs" : 1736523358789,
+      "longValue" : 26,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

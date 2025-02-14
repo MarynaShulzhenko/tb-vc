@@ -1,0 +1,80 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "5144b460-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "521809f0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "label" : null,
+    "name" : "Heat pump intake valve",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Valve"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "51530c40-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "521809f0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166924
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "515b2290-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "521809f0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON",
+    "version" : 166925
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1736519156319,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1736519156319,
+      "longValue" : 1736519156317,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

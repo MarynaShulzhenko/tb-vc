@@ -1,0 +1,31 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "17, boulevard Albert",
+    "address2" : null,
+    "city" : "Berlin",
+    "country" : "Germany",
+    "customMenuId" : {
+      "id" : "386b1450-d4dc-11ef-954d-254654ebb73e"
+    },
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2003e8d0-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "name" : "Customer D",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : null,
+    "title" : "Customer D",
+    "zip" : "98000"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

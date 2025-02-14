@@ -1,0 +1,91 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "25da8200-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "26140890-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "label" : null,
+    "name" : "Energy meter",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "energy-meter"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "25e70520-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "26140890-cf5d-11ef-8e03-ff69ed8da327"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 166748
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1736519081321,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1736519081321,
+      "longValue" : 1736519081305,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "type",
+      "lastUpdateTs" : 1736518445007,
+      "longValue" : null,
+      "strValue" : "energy-meter"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.2,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1736518445007,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.4,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1736518445007,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

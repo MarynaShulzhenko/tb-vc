@@ -1,0 +1,43 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "customMenuId" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "bfad0870-d1a2-11ef-9bb1-51537d483bb4"
+    },
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "dda10840-d1a2-11ef-b59f-8dbd5706bb26"
+    },
+    "name" : "SmartFit Latam",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "bfad0870-d1a2-11ef-9bb1-51537d483bb4"
+    },
+    "parentCustomerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "bfad0870-d1a2-11ef-9bb1-51537d483bb4"
+    },
+    "phone" : null,
+    "state" : null,
+    "title" : "SmartFit Latam",
+    "zip" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

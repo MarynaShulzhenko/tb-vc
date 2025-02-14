@@ -1,0 +1,107 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : { },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "81172e40-d19f-11ef-9bb1-51537d483bb4"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "81233c30-d19f-11ef-9bb1-51537d483bb4"
+    },
+    "label" : null,
+    "name" : "Device 212",
+    "ownerId" : null,
+    "type" : "testImport"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Data1",
+      "lastUpdateTs" : 1736766846916,
+      "longValue" : 123,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Data10",
+      "lastUpdateTs" : 1736766846916,
+      "longValue" : null,
+      "strValue" : "AbfdgrRetGF46"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Data2",
+      "lastUpdateTs" : 1736766846916,
+      "longValue" : null,
+      "strValue" : "test"
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Data3",
+      "lastUpdateTs" : 1736766846916,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Data4",
+      "lastUpdateTs" : 1736766846916,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 123.55,
+      "jsonValue" : null,
+      "key" : "Data5",
+      "lastUpdateTs" : 1736766846916,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Data6",
+      "lastUpdateTs" : 1736766846916,
+      "longValue" : null,
+      "strValue" : "test"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Data7",
+      "lastUpdateTs" : 1736766846916,
+      "longValue" : null,
+      "strValue" : "test"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Data8",
+      "lastUpdateTs" : 1736766846916,
+      "longValue" : null,
+      "strValue" : "test"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Data9",
+      "lastUpdateTs" : 1736766846916,
+      "longValue" : null,
+      "strValue" : "test"
+    } ]
+  }
+}

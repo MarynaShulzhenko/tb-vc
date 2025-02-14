@@ -1,0 +1,108 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "65c9dc40-e7cb-11ef-949c-771315c06ee1"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "65d1a470-e7cb-11ef-949c-771315c06ee1"
+    },
+    "label" : null,
+    "name" : "Los Angeles, CA",
+    "ownerId" : null,
+    "type" : "AQI City"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "65d1a470-e7cb-11ef-949c-771315c06ee1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "65f224c0-e7cb-11ef-949c-771315c06ee1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 200370
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "65d1a470-e7cb-11ef-949c-771315c06ee1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "661da190-e7cb-11ef-949c-771315c06ee1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 200371
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "65d1a470-e7cb-11ef-949c-771315c06ee1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "663ce960-e7cb-11ef-949c-771315c06ee1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 200372
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "65d1a470-e7cb-11ef-949c-771315c06ee1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "6657eb70-e7cb-11ef-949c-771315c06ee1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 200373
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "65d1a470-e7cb-11ef-949c-771315c06ee1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "66690270-e7cb-11ef-949c-771315c06ee1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 200374
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "batteryLevelThreshold",
+      "lastUpdateTs" : 1739204624504,
+      "longValue" : 30,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1739204624504,
+      "longValue" : 14400000,
+      "strValue" : null
+    } ]
+  }
+}
