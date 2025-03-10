@@ -1,0 +1,30 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "ZXhwb3J0IGNvbnN0IG5hbWUgPSAic3F1YXJlIjsKCmV4cG9ydCBmdW5jdGlvbiBkcmF3KGN0eCwgbGVuZ3RoLCB4LCB5LCBjb2xvcikgewogIGN0eC5maWxsU3R5bGUgPSBjb2xvcjsKICBjdHguZmlsbFJlY3QoeCwgeSwgbGVuZ3RoLCBsZW5ndGgpOwoKICByZXR1cm4geyBsZW5ndGgsIHgsIHksIGNvbG9yIH07Cn0K",
+    "descriptor" : null,
+    "etag" : "99bcaf0e23778c6e915d1978d88b788607e73524d918217527de66037440b61c",
+    "externalId" : null,
+    "fileName" : "gateway-management-extension (1).js",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "a3d704a0-be30-11ef-b5fa-3370ec2b2ba3"
+    },
+    "link" : "/api/resource/js_module/tenant/gateway-management-extension (1).js",
+    "name" : "my new module",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "gateway-management-extension (1).js",
+    "resourceSubType" : "MODULE",
+    "resourceType" : "JS_MODULE",
+    "title" : "my new module"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

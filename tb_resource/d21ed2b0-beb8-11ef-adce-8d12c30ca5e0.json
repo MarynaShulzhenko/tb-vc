@@ -1,0 +1,30 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "ZXhwb3J0IGNvbnN0IGNpcmNsZSA9ICcmIzExMDQ0JzsKZXhwb3J0IGNvbnN0IGludGVnZXJSZWdleCA9IC9eWy0rXT9cZCskLzsKCmV4cG9ydCBjb25zdCBnZXRTdGF0dXNTdHlsZXMgPSAodmFsdWUpID0+IHsKICBsZXQgY29sb3I7CiAgaWYgKHZhbHVlKSB7CiAgICBjb2xvciA9ICdyZ2IoMzksIDEzNCwgMzQpJzsKICB9IGVsc2UgewogICAgY29sb3IgPSAncmdiKDI1NSwgMCwgMCknOwogIH0KICByZXR1cm4gewogICAgY29sb3I6IGNvbG9yLAogICAgZm9udFNpemU6ICcxOHB4JwogIH07Cn07CgpleHBvcnQgY29uc3QgZm9ybWF0RGF0ZVRvU3RyaW5nID0gKGRhdGUpID0+IHsKICBjb25zdCBvcHRpb25zID0geyBob3VyOiAnMi1kaWdpdCcsIG1pbnV0ZTogJzItZGlnaXQnLCBzZWNvbmQ6ICcyLWRpZ2l0JyB9OwogIHJldHVybiBkYXRlLnRvTG9jYWxlVGltZVN0cmluZygnZW4tVVMnLCBvcHRpb25zKTsKfTsK",
+    "descriptor" : null,
+    "etag" : "085a4760299638b7acddf7ad66f5b50a54eed10e9f4a014876da1371243d54bf",
+    "externalId" : null,
+    "fileName" : "examples.js",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "d21ed2b0-beb8-11ef-adce-8d12c30ca5e0"
+    },
+    "link" : "/api/resource/js_module/tenant/examples.js",
+    "name" : "examples from help page",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "examples.js",
+    "resourceSubType" : "MODULE",
+    "resourceType" : "JS_MODULE",
+    "title" : "examples from help page"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

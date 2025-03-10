@@ -1,0 +1,30 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "ZXhwb3J0IGNvbnN0IGtleSA9ICJ0ZXN0IGNvbnN0IGtleSI7CgpleHBvcnQgZnVuY3Rpb24gaGkobmFtZSkgewogICAgcmV0dXJuIGBIaSwgJHtuYW1lfSFgOwp9",
+    "descriptor" : null,
+    "etag" : "c9e21557dfb1b2a1d772d2a918dd43848fbab3e80d183fe334627423d1e5abd1",
+    "externalId" : null,
+    "fileName" : "test-module.js",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "17838260-beb4-11ef-8ec3-b398959b05d3"
+    },
+    "link" : "/api/resource/js_module/tenant/test-module.js",
+    "name" : "greeting",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "test-module.js",
+    "resourceSubType" : "MODULE",
+    "resourceType" : "JS_MODULE",
+    "title" : "greeting"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

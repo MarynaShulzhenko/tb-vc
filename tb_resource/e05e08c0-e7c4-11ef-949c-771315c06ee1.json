@@ -1,0 +1,30 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "ZXhwb3J0IGNvbnN0IGdyZWV0aW5nID0gJ0hlbGxvLCB3b3JsZCEnOwo=",
+    "descriptor" : null,
+    "etag" : "8407b2b23985fb7f02e1cb7bb20d921bbee58ceae19a2e485e120759ff68b0da",
+    "externalId" : null,
+    "fileName" : "tenant-testp12.p12",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "e05e08c0-e7c4-11ef-949c-771315c06ee1"
+    },
+    "link" : "/api/resource/pkcs_12/tenant/tenant-testp12.p12",
+    "name" : "test pkcs",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "tenant-testp12.p12",
+    "resourceSubType" : null,
+    "resourceType" : "PKCS_12",
+    "title" : "test pkcs"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
