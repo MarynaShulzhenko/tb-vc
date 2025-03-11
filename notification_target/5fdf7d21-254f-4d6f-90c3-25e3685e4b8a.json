@@ -1,0 +1,19 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "PLATFORM_USERS",
+      "description" : "User mshulzhenko@thingsboard.io; used in the self registration settings",
+      "usersFilter" : {
+        "type" : "USER_LIST",
+        "usersIds" : [ "6091bbd0-907d-11ef-8530-f56b9da2508e" ]
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "5fdf7d21-254f-4d6f-90c3-25e3685e4b8a"
+    },
+    "name" : "mshulzhenko@thingsboard.io"
+  }
+}

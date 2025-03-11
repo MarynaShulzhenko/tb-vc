@@ -18,7 +18,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "475cafd0-f919-11ef-bd96-bb6e9e8bccd8"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "475fbd10-f919-11ef-bd96-bb6e9e8bccd8"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -31,7 +34,7 @@
     "type" : "Tank"
   },
   "credentials" : {
-    "credentialsId" : "wuTbbVuY8RTcUTqiQ84C",
+    "credentialsId" : "Ce0E8DzJcO1FlBkF7kzY",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -42,7 +45,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1741108001484,
+      "lastUpdateTs" : 1741683895159,
       "longValue" : null,
       "strValue" : null
     }, {

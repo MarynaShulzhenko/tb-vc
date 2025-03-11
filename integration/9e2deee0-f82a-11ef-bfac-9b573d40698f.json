@@ -36,7 +36,7 @@
     },
     "name" : "HTTP integration",
     "remote" : false,
-    "routingKey" : "83b6a125-23e0-e39f-4278-e29497d358fc",
+    "routingKey" : "a81a71e2-53d1-4a0a-b2a4-1993b7454131",
     "secret" : "ups6y9cxz6i3cskynbou",
     "type" : "HTTP"
   },
@@ -52,7 +52,7 @@
     },
     "type" : "ManagedByIntegration",
     "typeGroup" : "COMMON",
-    "version" : 604515963
+    "version" : 837336
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -65,7 +65,7 @@
     },
     "type" : "ManagedByIntegration",
     "typeGroup" : "COMMON",
-    "version" : 604515964
+    "version" : 837337
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

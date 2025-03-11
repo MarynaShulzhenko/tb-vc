@@ -10,7 +10,10 @@
       "entityType" : "CUSTOMER",
       "id" : "13814000-1dd2-11b2-8080-808080808080"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ASSET",
+      "id" : "e51c3ab0-d358-11ef-b1dc-eb5773c78de6"
+    },
     "id" : {
       "entityType" : "ASSET",
       "id" : "e51c3ab0-d358-11ef-b1dc-eb5773c78de6"
@@ -32,7 +35,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985271
+    "version" : 837315
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -45,7 +48,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985273
+    "version" : 837316
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -58,7 +61,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985275
+    "version" : 837317
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -71,7 +74,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985278
+    "version" : 837318
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -84,7 +87,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985280
+    "version" : 837319
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -97,7 +100,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985282
+    "version" : 837320
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -110,7 +113,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985284
+    "version" : 837321
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -123,7 +126,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985286
+    "version" : 837322
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -136,7 +139,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985290
+    "version" : 837323
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -149,7 +152,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985292
+    "version" : 837324
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -162,7 +165,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985294
+    "version" : 837313
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -175,7 +178,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985296
+    "version" : 837325
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -188,7 +191,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985298
+    "version" : 837326
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -201,7 +204,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985302
+    "version" : 837327
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

@@ -18,7 +18,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "e5169560-d358-11ef-b1dc-eb5773c78de6"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "e52bf220-d358-11ef-b1dc-eb5773c78de6"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -31,7 +34,7 @@
     "type" : "Water pump"
   },
   "credentials" : {
-    "credentialsId" : "kFexx9ugbAk6cWB033xs",
+    "credentialsId" : "G3F6MwteI0X2manxv61p",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -47,7 +50,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985273
+    "version" : 837316
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -60,7 +63,7 @@
     },
     "type" : "Created",
     "typeGroup" : "COMMON",
-    "version" : 369985274
+    "version" : 837341
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -68,7 +71,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1736957058849,
+      "lastUpdateTs" : 1741683895788,
       "longValue" : null,
       "strValue" : null
     }, {

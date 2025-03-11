@@ -81994,7 +81994,10 @@
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : null,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "e5890640-d358-11ef-b1dc-eb5773c78de6"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "e5890640-d358-11ef-b1dc-eb5773c78de6"

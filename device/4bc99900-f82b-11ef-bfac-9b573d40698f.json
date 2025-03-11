@@ -34,7 +34,7 @@
     "type" : "DEVICE_TYPE"
   },
   "credentials" : {
-    "credentialsId" : "ddj8hmuke9mhxuzre6ti",
+    "credentialsId" : "TiNaLrJYntUhMqQq4UHo",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -50,7 +50,7 @@
     },
     "type" : "ManagedByIntegration",
     "typeGroup" : "COMMON",
-    "version" : 604515964
+    "version" : 837337
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

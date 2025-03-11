@@ -30,7 +30,10 @@
       "actions" : { }
     },
     "edgeGroupAll" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "1705e2a0-8ada-11ef-ad3f-3ff6b31735da"
+    },
     "groupAll" : false,
     "id" : {
       "entityType" : "ENTITY_GROUP",
@@ -39,7 +42,7 @@
     "name" : "3.8.1 customer group",
     "ownerId" : {
       "entityType" : "TENANT",
-      "id" : "79f36d30-0064-11ee-bc2f-7f25383766f4"
+      "id" : "5fd17910-907d-11ef-8530-f56b9da2508e"
     },
     "type" : "CUSTOMER"
   },

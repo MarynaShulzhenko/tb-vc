@@ -37,7 +37,7 @@
     "type" : "sensor"
   },
   "credentials" : {
-    "credentialsId" : "CKyZxjWBK0HC01OiI01O",
+    "credentialsId" : "nwsHwGOyWwM5p6pAVZCb",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -48,7 +48,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1711356455101,
+      "lastUpdateTs" : 1741683896395,
       "longValue" : null,
       "strValue" : null
     }, {

@@ -18,7 +18,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "e514e7b0-d358-11ef-b1dc-eb5773c78de6"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "e53b8280-d358-11ef-b1dc-eb5773c78de6"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -31,7 +34,7 @@
     "type" : "Valve"
   },
   "credentials" : {
-    "credentialsId" : "PrSys29OMl0rLAyEOuwQ",
+    "credentialsId" : "psxzWoOONCeQsP0hjWtG",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -47,7 +50,7 @@
     },
     "type" : "Contains",
     "typeGroup" : "COMMON",
-    "version" : 369985278
+    "version" : 837318
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -60,7 +63,7 @@
     },
     "type" : "Created",
     "typeGroup" : "COMMON",
-    "version" : 369985279
+    "version" : 837338
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -68,7 +71,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1736957058841,
+      "lastUpdateTs" : 1741683895851,
       "longValue" : null,
       "strValue" : null
     }, {

@@ -39,9 +39,9 @@
     "type" : "default"
   },
   "credentials" : {
-    "credentialsId" : "e001289554b1ca6314fbde0d344ec1bde3c2ebbf7200af85fc54b3467be459f4",
-    "credentialsType" : "MQTT_BASIC",
-    "credentialsValue" : "{\"clientId\":\"zhtfm5wk6h6du1ld4loo\",\"userName\":\"7odbrbru8frt444phuoe\",\"password\":\"d9w0a23020cz6xv59eon\"}"
+    "credentialsId" : "YnTidJDueJXMCr6RHG4I",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
   },
   "relations" : [ ],
   "attributes" : {
@@ -50,7 +50,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1728985142561,
+      "lastUpdateTs" : 1741683896278,
       "longValue" : null,
       "strValue" : null
     }, {

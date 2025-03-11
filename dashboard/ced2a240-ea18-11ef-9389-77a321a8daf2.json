@@ -2006,7 +2006,10 @@
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : null,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "ced2a240-ea18-11ef-9389-77a321a8daf2"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "ced2a240-ea18-11ef-9389-77a321a8daf2"

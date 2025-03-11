@@ -17,7 +17,10 @@
       "id" : "186c5070-8ada-11ef-9277-83a4a0978900"
     },
     "email" : null,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "9c1b7210-8adb-11ef-b31e-8fb75668852d"
+    },
     "id" : {
       "entityType" : "CUSTOMER",
       "id" : "9c1b7210-8adb-11ef-b31e-8fb75668852d"

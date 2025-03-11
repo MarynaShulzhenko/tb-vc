@@ -38,7 +38,7 @@
     "name" : "Customer Users",
     "ownerId" : {
       "entityType" : "TENANT",
-      "id" : "79f36d30-0064-11ee-bc2f-7f25383766f4"
+      "id" : "5fd17910-907d-11ef-8530-f56b9da2508e"
     },
     "type" : "USER"
   },
@@ -59,16 +59,16 @@
     },
     "tenantId" : {
       "entityType" : "TENANT",
-      "id" : "79f36d30-0064-11ee-bc2f-7f25383766f4"
+      "id" : "5fd17910-907d-11ef-8530-f56b9da2508e"
     },
     "userGroupId" : {
       "entityType" : "ENTITY_GROUP",
       "id" : "51f60210-0137-11ee-a212-4d94f9e0c0b9"
     },
-    "createdTime" : 1685706802812,
+    "createdTime" : 1741683889509,
     "id" : {
       "entityType" : "GROUP_PERMISSION",
-      "id" : "13468bc0-013c-11ee-b864-d528757047e3"
+      "id" : "e2f4f950-fe57-11ef-aa33-0b201e33bb48"
     },
     "name" : "GROUP_[51f60210-0137-11ee-a212-4d94f9e0c0b9]_[00abe0c0-0072-11ee-8661-11659bb9c344]_[3c95d8f0-0132-11ee-be75-959bde3b0638]_[DASHBOARD]",
     "public" : false

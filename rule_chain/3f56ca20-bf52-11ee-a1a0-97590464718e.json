@@ -112,7 +112,7 @@
         "checkForSingleEntity" : true,
         "direction" : "TO",
         "entityType" : "DEVICE",
-        "entityId" : "79f36d30-0064-11ee-bc2f-7f25383766f4",
+        "entityId" : "5fd17910-907d-11ef-8530-f56b9da2508e",
         "relationType" : "Contains"
       },
       "configurationVersion" : 1,
@@ -1138,7 +1138,7 @@
         "layoutY" : 816
       },
       "configuration" : {
-        "ruleChainId" : "79f36d30-0064-11ee-bc2f-7f25383766f4",
+        "ruleChainId" : "5fd17910-907d-11ef-8530-f56b9da2508e",
         "forwardMsgToDefaultRuleChain" : false
       },
       "configurationVersion" : 1,
@@ -1205,7 +1205,7 @@
           "type" : "group",
           "entityGroupId" : {
             "entityType" : "ENTITY_GROUP",
-            "id" : "79f36d30-0064-11ee-bc2f-7f25383766f4"
+            "id" : "5fd17910-907d-11ef-8530-f56b9da2508e"
           }
         },
         "aggMappings" : [ {
@@ -1326,7 +1326,7 @@
           "type" : "group",
           "entityGroupId" : {
             "entityType" : "ENTITY_GROUP",
-            "id" : "79f36d30-0064-11ee-bc2f-7f25383766f4"
+            "id" : "5fd17910-907d-11ef-8530-f56b9da2508e"
           }
         },
         "alarmsCountMappings" : [ {
@@ -1689,9 +1689,9 @@
       "configuration" : {
         "templateId" : {
           "entityType" : "NOTIFICATION_TEMPLATE",
-          "id" : "79f36d30-0064-11ee-bc2f-7f25383766f4"
+          "id" : "5fd17910-907d-11ef-8530-f56b9da2508e"
         },
-        "targets" : [ "79f36d30-0064-11ee-bc2f-7f25383766f4" ]
+        "targets" : [ "5fd17910-907d-11ef-8530-f56b9da2508e" ]
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -2469,7 +2469,7 @@
         "layoutY" : 617
       },
       "configuration" : {
-        "integrationId" : "79f36d30-0064-11ee-bc2f-7f25383766f4"
+        "integrationId" : "5fd17910-907d-11ef-8530-f56b9da2508e"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,

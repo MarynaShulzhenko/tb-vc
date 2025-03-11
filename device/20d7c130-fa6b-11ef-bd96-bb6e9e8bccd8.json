@@ -22,7 +22,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "2e0666a0-ce7d-11ef-8167-a16af7bebec2"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "20d7c130-fa6b-11ef-bd96-bb6e9e8bccd8"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -35,9 +38,9 @@
     "type" : "default"
   },
   "credentials" : {
-    "credentialsId" : "eeb2d9ec1a5067d81e063cb08ee2aa5f38cba32d6a642e5d9159ef163822abd0",
-    "credentialsType" : "X509_CERTIFICATE",
-    "credentialsValue" : "MIIFrTCCA5WgAwIBAgIUfUYigmYDWxZENyQTTIkg4WEX6uYwDQYJKoZIhvcNAQELBQAwZjELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDEfMB0GA1UEAwwWbXF0dC50aGluZ3Nib2FyZC5jbG91ZDAeFw0yNTAzMDYwOTMyMThaFw0yNjAzMDYwOTMyMThaMGYxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQxHzAdBgNVBAMMFm1xdHQudGhpbmdzYm9hcmQuY2xvdWQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDR237wjK0c3rjsV02Bx44WdRYxG/sRaqtkaSc2D78OqvenF5edSJE5dNbxqG/zpxMEkdHBkB0Q+B3SYuQlhdWIHUfZbq/aqkpVndsftaA+PIr9A4OJVozs3MsNYJl5S8f0t6323qIMMbbLSiK4g8wERs7YphrAFZYruOt+ISn9VJ+YuiFwhW0XzzdzrDU0ctNyEnxpuFKbwiF+RoPhOPWcymwyJmY9qobfTcGwajjfsV0/VPO/+bgeNdbEOW+YNebtcWuJZSQNI+Bzh1mr3ei12RrtWNM5UAkZy2LY1YR4F9EMBqvGK8OQIlUPkhD3hGOKvikE5cdgShTFXogNA/AnRC3GMwB8oO7s+nH+4xD80hX42lLBTG9WVoNHK8babJrw2sxU4/EwzVqYz6aox5u4uNB7SxB211Rn/A+vsTOCOu7q9xdSt0tcqTSbXpo8WOKRuTf8g0kPJvjiFXdTiL5qFr3j9QS9pO1NNVceOg3gxDb0PauP7FPzgXYqx3xrwF2Mrz6fdHP4leY3D3iryiLUZyVq50MSXQOiPt9lphgsXy3nMfYWxuR5poEcK40SepY/8LVEaQLy4AUB3U/QHb8vlec//1FTkWknX7FwoRyVCaNn4s33zByuCfzp/niiGSVg/l9AyxY0e6jH4Zw4VyZNMIbQuGlaOKh4VUh4cLFVOwIDAQABo1MwUTAdBgNVHQ4EFgQU0ah8nGfUUA0fKiwMmqEG4QvxnqIwHwYDVR0jBBgwFoAU0ah8nGfUUA0fKiwMmqEG4QvxnqIwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAa+O3CL8CqPS+coUB3G/11lsXnW9ib/+K1WcOSM0hndpbtCpz3fx2CMFKu1h4dQ3CApTTYdKA3+KX6y1kzXps4mEEWmHrF7uFwT4FvUSV+rgAqHSH1YGsEFKAG7AhzD3oYSbfsxqQ7IvSXSZa1jVEimujDwp2kS1GBcG2qdsVldmvQi5fFBYe9o6EcWH27/0B8/XlY6Qa+Z0pGUaV0zfLg6CBFuxF2NJaCyywJXmruM1sBesZoyRkWAUee9tc3cjt5tjyejXOnegOjXB6PjmjLIGNLXFBmuB6I2aKPj+ahlFjbmDB6fpZgbt1PlGuUeTW3LkG3JlBFdc26VdX4SKfaGZJGo39nwM+AAPzYplXdIQIvc9HHerGnyWozrljA/qfM0wDRQL949k/o7K37KiAASP8444O8nD4+2JvQuZYYsK/mJsnyWnqNvg2R4OUf0E3GHJnJotlyKDkE/khLpON8lo6DL186yzVjPvbFIElXglWPAQzuwm/e3DMdLq8sosGBbMLxGUkkyF2JoJRqZLhhnprKc5XboVliW37JnNUgzpUHGQ+JTPNMo2Fq4BROB8HkDUOn8mTdPOLvxTfBIf6tebyhpsiNlWH8UtczZSiLN9tWPp8t7FqFS5bWfA4U+4LHf8BD3eyJ9aqo3uFSd3lJ1Xyf/FPKx2Iu1e+87PNuuE="
+    "credentialsId" : "T2kqwJjCMzPCR3BMh0MF",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
   },
   "relations" : [ ],
   "attributes" : {
@@ -46,7 +49,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1741254205527,
+      "lastUpdateTs" : 1741683895044,
       "longValue" : null,
       "strValue" : null
     }, {

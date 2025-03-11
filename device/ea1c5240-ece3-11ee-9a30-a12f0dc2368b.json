@@ -34,7 +34,7 @@
     "type" : "thermostat"
   },
   "credentials" : {
-    "credentialsId" : "8LDU4s8lUBhmrZb8BmRa",
+    "credentialsId" : "fZuca0XJP6ZsLfvI6Xv0",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -45,7 +45,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1713512584612,
+      "lastUpdateTs" : 1741683896255,
       "longValue" : null,
       "strValue" : null
     }, {

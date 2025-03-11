@@ -37,14 +37,17 @@
     "downlinkConverterId" : null,
     "edgeTemplate" : false,
     "enabled" : true,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "INTEGRATION",
+      "id" : "4702d580-911a-11ef-baa8-4521077809fd"
+    },
     "id" : {
       "entityType" : "INTEGRATION",
       "id" : "4702d580-911a-11ef-baa8-4521077809fd"
     },
     "name" : "MQTT integration",
     "remote" : false,
-    "routingKey" : "bd081b7c-2f01-2e8f-6e57-1a461461bc50",
+    "routingKey" : "1e5239c4-69cf-8a76-bd3d-7febc45e149d",
     "secret" : "ty1fhyed98ag1xwz5fuc",
     "type" : "MQTT"
   },
@@ -53,9 +56,9 @@
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"success\":false,\"serviceId\":\"tb-ie-main-0\",\"error\":\"java.lang.RuntimeException: Failed to connect to MQTT broker at broker.hivemq.com:1883. Result code is: CONNECTION_REFUSED_NOT_AUTHORIZED\\n\\tat org.thingsboard.integration.mqtt.AbstractMqttIntegration.initClient(AbstractMqttIntegration.java:267)\\n\\tat org.thingsboard.integration.mqtt.basic.BasicMqttIntegration.init(BasicMqttIntegration.java:93)\\n\\tat org.thingsboard.integration.mqtt.AbstractMqttIntegration.update(AbstractMqttIntegration.java:118)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.processUpdateEvent(DefaultIntegrationManagerService.java:629)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.lambda$reInitIntegrations$12(DefaultIntegrationManagerService.java:725)\\n\\tat java.base/java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4780)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.reInitIntegrations(DefaultIntegrationManagerService.java:721)\\n\\tat org.thingsboard.common.util.ThingsBoardScheduledThreadPoolExecutor$PeriodicRunnable.run(ThingsBoardScheduledThreadPoolExecutor.java:67)\\n\\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)\\n\\tat java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)\\n\\tat java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\\n\\tat java.base/java.lang.Thread.run(Thread.java:840)\\n\"}",
+      "jsonValue" : "{\"success\":false,\"serviceId\":\"tb-ie-main-0\",\"error\":\"java.lang.RuntimeException: Failed to connect to MQTT broker at broker.hivemq.com:1883. Result code is: CONNECTION_REFUSED_NOT_AUTHORIZED\\n\\tat org.thingsboard.integration.mqtt.AbstractMqttIntegration.initClient(AbstractMqttIntegration.java:267)\\n\\tat org.thingsboard.integration.mqtt.basic.BasicMqttIntegration.init(BasicMqttIntegration.java:93)\\n\\tat org.thingsboard.integration.mqtt.AbstractMqttIntegration.update(AbstractMqttIntegration.java:118)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.processUpdateEvent(DefaultIntegrationManagerService.java:629)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.update(DefaultIntegrationManagerService.java:574)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.tryUpdate(DefaultIntegrationManagerService.java:540)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.lambda$scheduleIntegrationEvent$11(DefaultIntegrationManagerService.java:714)\\n\\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)\\n\\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\\n\\tat java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\\n\\tat java.base/java.lang.Thread.run(Thread.java:840)\\n\"}",
       "key" : "integration_status_tb-ie-main-0",
-      "lastUpdateTs" : 1741683363967,
+      "lastUpdateTs" : 1741683896809,
       "longValue" : null,
       "strValue" : null
     } ]

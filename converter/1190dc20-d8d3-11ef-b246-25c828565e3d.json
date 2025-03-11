@@ -1,0 +1,34 @@
+{
+  "entityType" : "CONVERTER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "scriptLang" : "TBEL",
+      "decoder" : null,
+      "tbelDecoder" : "/** Decoder **/\n\n// decode payload to string\nvar strArray = decodeToString(payload);\nvar payloadArray = strArray.replaceAll(\"\\\"\", \"\").split(',');\n\nvar telemetryPayload = {};\nfor (var i = 2; i < payloadArray.length; i = i + 2) {\n    var telemetryKey = payloadArray[i];\n    var telemetryValue = parseFloat(payloadArray[i + 1]);\n    telemetryPayload[telemetryKey] = telemetryValue;\n}\n\n// Result object with device attributes/telemetry data\nvar result = {\n    deviceName: payloadArray[0],\n    deviceType: payloadArray[1],\n    telemetry: telemetryPayload,\n    attributes: {}\n  };\n\n/** Helper functions 'decodeToString' and 'decodeToJson' are already built-in **/\n\nreturn result;",
+      "encoder" : null,
+      "tbelEncoder" : null,
+      "updateOnlyKeys" : [ "manufacturer" ]
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1737559551618,
+      "failuresEnabled" : true
+    },
+    "edgeTemplate" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CONVERTER",
+      "id" : "1190dc20-d8d3-11ef-b246-25c828565e3d"
+    },
+    "name" : "Uplink data converter for CoAP integration with dtls",
+    "type" : "UPLINK"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

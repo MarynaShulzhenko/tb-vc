@@ -1,0 +1,87 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "70ec2d20-907e-11ef-a6fb-3ffce81534ae"
+    },
+    "image" : null,
+    "name" : "my first lwm2m",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "LWM2M",
+        "bootstrap" : [ {
+          "securityMode" : "NO_SEC",
+          "binding" : "U",
+          "bootstrapServerAccountTimeout" : 0,
+          "bootstrapServerIs" : false,
+          "clientHoldOffTime" : 1,
+          "defaultMinPeriod" : 1,
+          "host" : "0.0.0.0",
+          "lifetime" : 300,
+          "notifIfDisabled" : true,
+          "port" : 5685,
+          "serverCertificate" : "",
+          "serverPublicKey" : "",
+          "shortServerId" : 123
+        } ],
+        "bootstrapServerUpdateEnable" : false,
+        "clientLwM2mSettings" : {
+          "clientOnlyObserveAfterConnect" : 1,
+          "defaultObjectIDVer" : "1.0",
+          "edrxCycle" : 81000,
+          "fwUpdateResource" : null,
+          "fwUpdateStrategy" : 1,
+          "pagingTransmissionWindow" : 10000,
+          "powerMode" : "DRX",
+          "psmActivityTimer" : 10000,
+          "swUpdateResource" : null,
+          "swUpdateStrategy" : 1
+        },
+        "observeAttr" : {
+          "attribute" : [ "/6_1.0/0/5", "/3_1.2/0/0", "/6_1.0/0/0", "/3_1.2/0/1", "/3_1.2/0/2", "/6_1.0/0/1" ],
+          "attributeLwm2m" : { },
+          "keyName" : {
+            "/3_1.2/0/0" : "manufacturer",
+            "/3_1.2/0/1" : "modelNumber",
+            "/3_1.2/0/2" : "serialNumber",
+            "/4_1.3/0/2" : "radioSignalStrength",
+            "/4_1.3/0/3" : "linkQuality",
+            "/5_1.1/0/3" : "state",
+            "/5_1.1/0/5" : "updateResult",
+            "/6_1.0/0/0" : "latitude",
+            "/6_1.0/0/1" : "longitude",
+            "/6_1.0/0/5" : "timestamp"
+          },
+          "observe" : [ "/4_1.3/0/3", "/4_1.3/0/2", "/5_1.1/0/5", "/5_1.1/0/3" ],
+          "telemetry" : [ "/4_1.3/0/3", "/4_1.3/0/2", "/6_1.0/0/5", "/6_1.0/0/0", "/6_1.0/0/1", "/5_1.1/0/5", "/5_1.1/0/3" ]
+        }
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "LWM2M",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

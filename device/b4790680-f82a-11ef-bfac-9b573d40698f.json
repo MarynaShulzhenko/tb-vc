@@ -34,7 +34,7 @@
     "type" : "default"
   },
   "credentials" : {
-    "credentialsId" : "YAAvYgSEWdaHWE6FMGuQ",
+    "credentialsId" : "gzm5FJNtvLHZHfoicnoC",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -50,7 +50,7 @@
     },
     "type" : "ManagedByIntegration",
     "typeGroup" : "COMMON",
-    "version" : 604515963
+    "version" : 837336
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

@@ -21,7 +21,10 @@
       }
     },
     "etag" : "cf71f1bcbf14bdf2a22ea07de2aa609db65b72da7ff1741195957237d6aaee41",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "62234480-8c9c-11ef-baa8-4521077809fd"
+    },
     "fileName" : "tree-branch-svgrepo-com.svg",
     "id" : {
       "entityType" : "TB_RESOURCE",

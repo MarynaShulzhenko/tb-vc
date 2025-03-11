@@ -18,7 +18,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "ceb46be0-ea18-11ef-9389-77a321a8daf2"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "cec90550-ea18-11ef-9389-77a321a8daf2"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -34,7 +37,7 @@
     "type" : "Temperature Sensor"
   },
   "credentials" : {
-    "credentialsId" : "2LzSo6IU0xwMB63sWdBr",
+    "credentialsId" : "4CrKxpYXLpoKLhUGGN7g",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -45,7 +48,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1739458422703,
+      "lastUpdateTs" : 1741683896427,
       "longValue" : null,
       "strValue" : null
     }, {

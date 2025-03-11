@@ -1,0 +1,72 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "clientConfiguration" : {
+        "baseUrl" : "coap://int.eu.thingsboard.cloud",
+        "urlPath" : "",
+        "dtlsBaseUrl" : "coaps://int.eu.thingsboard.cloud",
+        "dtlsUrlPath" : "api/v2",
+        "securityMode" : "DTLS",
+        "coapEndpoint" : "coap://int.eu.thingsboard.cloud/i/1cbe54f4-f4dc-1e9f-c659-eb57ec329831",
+        "dtlsCoapEndpoint" : "coaps://int.eu.thingsboard.cloud/api/v2/i/1cbe54f4-f4dc-1e9f-c659-eb57ec329831"
+      },
+      "metadata" : { }
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1737559551759,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "1190dc20-d8d3-11ef-b246-25c828565e3d"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "11a65ff0-d8d3-11ef-b246-25c828565e3d"
+    },
+    "name" : "CoAP integration",
+    "remote" : false,
+    "routingKey" : "1cbe54f4-f4dc-1e9f-c659-eb57ec329831",
+    "secret" : "scep3vqckz7rskgnlmfj",
+    "type" : "COAP"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-0",
+      "lastUpdateTs" : 1741674249364,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-1",
+      "lastUpdateTs" : 1741674253902,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-2",
+      "lastUpdateTs" : 1741674253805,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
