@@ -1,0 +1,27 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "SLACK",
+      "conversation" : {
+        "email" : null,
+        "id" : "C05BZ4VKHDF",
+        "name" : "testproject",
+        "type" : "PUBLIC_CHANNEL",
+        "wholeName" : "testproject",
+        "title" : "testproject"
+      },
+      "conversationType" : "PUBLIC_CHANNEL",
+      "description" : null
+    },
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "9dfc5210-b9cc-11ee-a1be-053f95f9b401"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "9dfc5210-b9cc-11ee-a1be-053f95f9b401"
+    },
+    "name" : "mashu slack"
+  }
+}

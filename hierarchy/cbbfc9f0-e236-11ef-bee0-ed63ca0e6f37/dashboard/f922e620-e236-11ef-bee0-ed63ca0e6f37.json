@@ -266,7 +266,10 @@
       "entityType" : "CUSTOMER",
       "id" : "cbbfc9f0-e236-11ef-bee0-ed63ca0e6f37"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "f922e620-e236-11ef-bee0-ed63ca0e6f37"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "f922e620-e236-11ef-bee0-ed63ca0e6f37"

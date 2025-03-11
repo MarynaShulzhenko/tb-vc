@@ -1,0 +1,25 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "EMAIL" : {
+          "method" : "EMAIL",
+          "body" : "<p>Hi!</p>\n<p>Sorry, it's test message 01</p>",
+          "enabled" : true,
+          "subject" : "It's test message"
+        }
+      }
+    },
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "5014ee40-b9cc-11ee-a441-01b9c6b9277c"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "5014ee40-b9cc-11ee-a441-01b9c6b9277c"
+    },
+    "name" : "test temlate",
+    "notificationType" : "GENERAL"
+  }
+}

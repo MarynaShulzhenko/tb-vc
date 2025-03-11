@@ -7,7 +7,10 @@
     "defaultQueueName" : null,
     "defaultRuleChainId" : null,
     "description" : "Default device profile",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "4bc8fcc0-f82b-11ef-bfac-9b573d40698f"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE_PROFILE",

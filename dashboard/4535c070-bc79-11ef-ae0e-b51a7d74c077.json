@@ -1,0 +1,654 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "title" : "Widget Action",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "459e719f-01f8-415d-8b40-599990ccd846" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entityCount",
+              "name" : null,
+              "entityAliasId" : "150553f6-5f7e-3621-9b6a-21e617e7e682",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9944493667322047,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return parseInt(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1695983110560,
+                  "endTimeMs" : 1696069510560
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "5px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <!--<h5>Assets Monitored</h5>-->\n            \n            <div class='content' id='assets'>${#0:0}</div>\n            \n            </div>",
+              "cardCss" : ".card {\n   width: 100%;\n   /*cursor: pointer;*/\n   height: 100%;\n   border: 0px solid #ccc;\n   padding: 10px;\n   box-sizing: border-box;\n   /*display: flex;*/\n   flex-direction: row;\n   text-align: center;\n   font-size: 1.3vw;\n}\n\n.content {\n    \n    font-weight:600;\n   padding: 1px;\n   display: flex;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   padding-bottom: 15px;\n   box-sizing: border-box;\n   color: #666;\n}\n\n.content {\n   color: #0056b3 !important;\n    font-weight: 500 !important;\n    font-size: 1.8vw;\n}\n\n\n.content span {\n    display: block;\n    font-weight: 400;\n}\n\n.h1 {\n    \n    color: #999;\n    font-size: 14px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 5px;\n    line-height: 22px;\n    align-items: center;\n    justify-content: center;\n}\n\nh5 {\n    font-size: 1vw;\n    font-weight: 400;\n    line-height: 1;\n    letter-spacing: 0;\n    margin: 5px 0 0 0;\n}\n\n"
+            },
+            "title" : "Assets",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "elementClick" : [ ],
+              "headerButton" : [ {
+                "name" : "Assets",
+                "icon" : "play_circle_filled",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "root_asset_list",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "dialogTitle" : "",
+                "dialogHideDashboardToolbar" : true,
+                "dialogWidth" : 80,
+                "dialogHeight" : 90,
+                "openInSeparateDialog" : true,
+                "openInPopover" : false,
+                "id" : "1a8388ce-1e4b-98be-da4f-861a829e7b84"
+              } ]
+            },
+            "enableDataExport" : false,
+            "widgetCss" : ".tb-widget-actions.tb-widget-actions-absolute.ng-star-inserted {\r\n    position: absolute !important;\r\n    top: -11px !important;\r\n    right: -6px !important;\r\n    z-index: 150 !important;\r\n}",
+            "pageSize" : 1024,
+            "decimals" : 0,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "15px",
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : 1,
+              "sizeUnit" : "vw",
+              "family" : "Roboto",
+              "weight" : "bolder",
+              "style" : "normal"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleIcon" : "domain",
+            "iconColor" : "#0056B3",
+            "iconSize" : "1.5vw"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "459e719f-01f8-415d-8b40-599990ccd846",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "44cf0a39-52d3-8c4a-e068-2071f857a17c" : {
+          "typeFullFqn" : "system.cards.entities_table",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1734265775467,
+                  "endTimeMs" : 1734352175467
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "entitiesTitle" : "Without Filter",
+              "enableSearch" : false,
+              "enableSelectColumnDisplay" : false,
+              "enableStickyHeader" : false,
+              "enableStickyAction" : false,
+              "showCellActionsMenu" : false,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
+              "entityNameColumnTitle" : "",
+              "displayEntityLabel" : false,
+              "entityLabelColumnTitle" : "",
+              "displayEntityType" : false,
+              "displayPagination" : false,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "name",
+              "useRowStyleFunction" : false,
+              "rowStyleFunction" : ""
+            },
+            "title" : "Without Filter",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "150553f6-5f7e-3621-9b6a-21e617e7e682",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.3052626231606441
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.7127295998631691
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : false,
+            "configMode" : "advanced",
+            "actions" : { },
+            "showTitleIcon" : false,
+            "titleIcon" : "list",
+            "iconColor" : null,
+            "titleFont" : null,
+            "titleColor" : null,
+            "enableDataExport" : true,
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "44cf0a39-52d3-8c4a-e068-2071f857a17c"
+        },
+        "8b9a22c4-3c6b-a667-6378-3d7d66f0d8ad" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entityCount",
+              "name" : null,
+              "entityAliasId" : "150553f6-5f7e-3621-9b6a-21e617e7e682",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9944493667322047,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return parseInt(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1695983110560,
+                  "endTimeMs" : 1696069510560
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "5px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <!--<h5>Assets Monitored</h5>-->\n            \n            <div class='content' id='assets'>${#0:0}</div>\n            \n            </div>",
+              "cardCss" : ".card {\n   width: 100%;\n   /*cursor: pointer;*/\n   height: 100%;\n   border: 0px solid #ccc;\n   padding: 10px;\n   box-sizing: border-box;\n   /*display: flex;*/\n   flex-direction: row;\n   text-align: center;\n   font-size: 1.3vw;\n}\n\n.content {\n    \n    font-weight:600;\n   padding: 1px;\n   display: flex;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   padding-bottom: 15px;\n   box-sizing: border-box;\n   color: #666;\n}\n\n.content {\n   color: #0056b3 !important;\n    font-weight: 500 !important;\n    font-size: 1.8vw;\n}\n\n\n.content span {\n    display: block;\n    font-weight: 400;\n}\n\n.h1 {\n    \n    color: #999;\n    font-size: 14px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 5px;\n    line-height: 22px;\n    align-items: center;\n    justify-content: center;\n}\n\nh5 {\n    font-size: 1vw;\n    font-weight: 400;\n    line-height: 1;\n    letter-spacing: 0;\n    margin: 5px 0 0 0;\n}\n\n"
+            },
+            "title" : "Assets",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "elementClick" : [ ],
+              "headerButton" : [ {
+                "name" : "Assets",
+                "icon" : "play_arrow",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "root_asset_list",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "dialogTitle" : "",
+                "dialogHideDashboardToolbar" : true,
+                "dialogWidth" : 80,
+                "dialogHeight" : 90,
+                "openInSeparateDialog" : true,
+                "openInPopover" : false,
+                "id" : "1a8388ce-1e4b-98be-da4f-861a829e7b84"
+              } ]
+            },
+            "enableDataExport" : false,
+            "widgetCss" : ".tb-widget-actions.tb-widget-actions-absolute.ng-star-inserted {\r\n    position: absolute !important;\r\n    top: -11px !important;\r\n    right: -6px !important;\r\n    z-index: 150 !important;\r\n}",
+            "pageSize" : 1024,
+            "decimals" : 0,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "15px",
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : 1,
+              "sizeUnit" : "vw",
+              "family" : "Roboto",
+              "weight" : "bolder",
+              "style" : "normal"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleIcon" : "domain",
+            "iconColor" : "#0056B3",
+            "iconSize" : "1.5vw"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "8b9a22c4-3c6b-a667-6378-3d7d66f0d8ad",
+          "typeFullFqn" : "system.cards.html_value_card"
+        },
+        "00673039-8569-6a71-1a1f-10d439b8b512" : {
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entityCount",
+              "name" : null,
+              "entityAliasId" : "150553f6-5f7e-3621-9b6a-21e617e7e682",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "count",
+                "type" : "count",
+                "label" : "count",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9944493667322047,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return parseInt(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1695983110560,
+                  "endTimeMs" : 1696069510560
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "5px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <!--<h5>Assets Monitored</h5>-->\n            \n            <div class='content' id='assets'>${#0:0}</div>\n            \n            </div>",
+              "cardCss" : ".card {\n   width: 100%;\n   /*cursor: pointer;*/\n   height: 100%;\n   border: 0px solid #ccc;\n   padding: 10px;\n   box-sizing: border-box;\n   /*display: flex;*/\n   flex-direction: row;\n   text-align: center;\n   font-size: 1.3vw;\n}\n\n.content {\n    \n    font-weight:600;\n   padding: 1px;\n   display: flex;\n   align-items: center;\n   justify-content: center;\n   height: 100%;\n   padding-bottom: 15px;\n   box-sizing: border-box;\n   color: #666;\n}\n\n.content {\n   color: #0056b3 !important;\n    font-weight: 500 !important;\n    font-size: 1.8vw;\n}\n\n\n.content span {\n    display: block;\n    font-weight: 400;\n}\n\n.h1 {\n    \n    color: #999;\n    font-size: 14px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 5px;\n    line-height: 22px;\n    align-items: center;\n    justify-content: center;\n}\n\nh5 {\n    font-size: 1vw;\n    font-weight: 400;\n    line-height: 1;\n    letter-spacing: 0;\n    margin: 5px 0 0 0;\n}\n\n"
+            },
+            "title" : "Assets",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : {
+              "elementClick" : [ ],
+              "headerButton" : [ {
+                "name" : "Assets",
+                "icon" : "arrow_right",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "root_asset_list",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "dialogTitle" : "",
+                "dialogHideDashboardToolbar" : true,
+                "dialogWidth" : 80,
+                "dialogHeight" : 90,
+                "openInSeparateDialog" : true,
+                "openInPopover" : false,
+                "id" : "1a8388ce-1e4b-98be-da4f-861a829e7b84"
+              } ]
+            },
+            "enableDataExport" : false,
+            "widgetCss" : ".tb-widget-actions.tb-widget-actions-absolute.ng-star-inserted {\r\n    position: absolute !important;\r\n    top: -11px !important;\r\n    right: -6px !important;\r\n    z-index: 150 !important;\r\n}",
+            "pageSize" : 1024,
+            "decimals" : 0,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "15px",
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : 1,
+              "sizeUnit" : "vw",
+              "family" : "Roboto",
+              "weight" : "bolder",
+              "style" : "normal"
+            },
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleIcon" : "domain",
+            "iconColor" : "#0056B3",
+            "iconSize" : "1.5vw"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "00673039-8569-6a71-1a1f-10d439b8b512",
+          "typeFullFqn" : "system.cards.html_value_card"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Widget Action",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "459e719f-01f8-415d-8b40-599990ccd846" : {
+                  "sizeX" : 6,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "8b9a22c4-3c6b-a667-6378-3d7d66f0d8ad" : {
+                  "sizeX" : 6,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 6
+                },
+                "00673039-8569-6a71-1a1f-10d439b8b512" : {
+                  "sizeX" : 6,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 12
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "layoutType" : "default"
+              }
+            }
+          }
+        },
+        "root_asset_list" : {
+          "name" : "Root Asset List",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "44cf0a39-52d3-8c4a-e068-2071f857a17c" : {
+                  "sizeX" : 24,
+                  "sizeY" : 5,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70,
+                "layoutType" : "default"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "150553f6-5f7e-3621-9b6a-21e617e7e682" : {
+          "id" : "150553f6-5f7e-3621-9b6a-21e617e7e682",
+          "alias" : "Assets",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : true,
+            "entityType" : "ASSET"
+          }
+        }
+      },
+      "filters" : {
+        "2b2e0bc5-1244-03ba-cd06-d20aa98cbc4f" : {
+          "id" : "2b2e0bc5-1244-03ba-cd06-d20aa98cbc4f",
+          "filter" : "PumpType",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "type"
+            },
+            "valueType" : "STRING",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "EQUAL",
+                "value" : {
+                  "defaultValue" : "Pump",
+                  "dynamicValue" : null
+                },
+                "ignoreCase" : true,
+                "type" : "STRING"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
+        }
+      },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1734323436787,
+            "endTimeMs" : 1734409836787
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "name" : "Widget Action",
+    "resources" : null,
+    "assignedCustomers" : null,
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "4535c070-bc79-11ef-ae0e-b51a7d74c077"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

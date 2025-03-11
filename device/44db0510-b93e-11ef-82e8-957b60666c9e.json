@@ -1,0 +1,71 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "2e0666a0-ce7d-11ef-8167-a16af7bebec2"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "44db0510-b93e-11ef-82e8-957b60666c9e"
+    },
+    "label" : "",
+    "name" : "coap-test",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "7a8d24f121197dc7240409840a878865fd86bdb1bdb6c7c57dae6bcc9b4f39e9",
+    "credentialsType" : "X509_CERTIFICATE",
+    "credentialsValue" : "MIICATCCAaegAwIBAgIUMc14ocIP4VBaUdzp9QY8ACI53XEwCgYIKoZIzj0EAwIwVjELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDEPMA0GA1UEAwwGbWFyeW5hMB4XDTI0MTIxMzEwMzMxMFoXDTI1MTIxMzEwMzMxMFowVjELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDEPMA0GA1UEAwwGbWFyeW5hMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEYrxGkhyvSOgDds29uSWf2oL56cbfk2c37x5t7ztwqW8fwRPdyUH+NPRQALStKIhJZuHf+c+5TN9HYRRRz63CxqNTMFEwHQYDVR0OBBYEFGBsynxDMSJJMVHUst2aO8Qg7+4eMB8GA1UdIwQYMBaAFGBsynxDMSJJMVHUst2aO8Qg7+4eMA8GA1UdEwEB/wQFMAMBAf8wCgYIKoZIzj0EAwIDSAAwRQIgbDmxkE6QEMmT14MIn3OUF5XP4ZpZjUqhIQlhv5iTaJICIQCDnWph8ry0IthPfUn4Eg5Q7VD8f5S1pa16oxuSxHKIXw=="
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1734694812378,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1734694812378,
+      "longValue" : 1734694812373,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1734694193856,
+      "longValue" : 1734694193028,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

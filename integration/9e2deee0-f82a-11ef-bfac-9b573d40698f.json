@@ -26,14 +26,17 @@
     "downlinkConverterId" : null,
     "edgeTemplate" : false,
     "enabled" : true,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "INTEGRATION",
+      "id" : "9e2deee0-f82a-11ef-bfac-9b573d40698f"
+    },
     "id" : {
       "entityType" : "INTEGRATION",
       "id" : "9e2deee0-f82a-11ef-bfac-9b573d40698f"
     },
     "name" : "HTTP integration",
     "remote" : false,
-    "routingKey" : "8bf72186-df7b-dde3-1004-ee791fcc3998",
+    "routingKey" : "83b6a125-23e0-e39f-4278-e29497d358fc",
     "secret" : "ups6y9cxz6i3cskynbou",
     "type" : "HTTP"
   },
@@ -49,7 +52,7 @@
     },
     "type" : "ManagedByIntegration",
     "typeGroup" : "COMMON",
-    "version" : 18599
+    "version" : 604515963
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -62,7 +65,7 @@
     },
     "type" : "ManagedByIntegration",
     "typeGroup" : "COMMON",
-    "version" : 18601
+    "version" : 604515964
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -79,6 +82,30 @@
       "jsonValue" : "{\"success\":true}",
       "key" : "integration_status_d4368536b317",
       "lastUpdateTs" : 1741276356371,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-0",
+      "lastUpdateTs" : 1741682259660,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-1",
+      "lastUpdateTs" : 1741682259653,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-2",
+      "lastUpdateTs" : 1741682259660,
       "longValue" : null,
       "strValue" : null
     } ]

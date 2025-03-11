@@ -1,0 +1,46 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "customer aa",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : "Kyiv",
+    "country" : "Ukraine",
+    "customMenuId" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "00ae3b40-be9f-11ee-a1a0-97590464718e"
+    },
+    "email" : "customerAa@test.io",
+    "externalId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "62ea64f0-be9f-11ee-a1a0-97590464718e"
+    },
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "62ea64f0-be9f-11ee-a1a0-97590464718e"
+    },
+    "name" : "customer aa",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "00ae3b40-be9f-11ee-a1a0-97590464718e"
+    },
+    "parentCustomerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "00ae3b40-be9f-11ee-a1a0-97590464718e"
+    },
+    "phone" : "+380507415483",
+    "state" : null,
+    "title" : "customer aa",
+    "zip" : "01002"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

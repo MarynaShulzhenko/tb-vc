@@ -1,0 +1,25 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "tes_widgets_bundle",
+    "description" : null,
+    "externalId" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "b01417a0-bf5b-11ee-a1a0-97590464718e"
+    },
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "b01417a0-bf5b-11ee-a1a0-97590464718e"
+    },
+    "image" : "tb-image;/api/images/tenant/icons8-iot-65 (1).png",
+    "name" : "tes widgets bundle",
+    "order" : null,
+    "scada" : false,
+    "title" : "tes widgets bundle"
+  },
+  "fqns" : [ "test_widget", "my_new_test" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

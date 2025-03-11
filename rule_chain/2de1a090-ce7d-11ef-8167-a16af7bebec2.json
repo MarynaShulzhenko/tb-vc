@@ -4,7 +4,10 @@
     "additionalInfo" : null,
     "configuration" : null,
     "debugMode" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "2de1a090-ce7d-11ef-8167-a16af7bebec2"
+    },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
       "id" : "2de3c370-ce7d-11ef-8167-a16af7bebec2"
@@ -275,7 +278,7 @@
         "persistAlarmRulesState" : false,
         "fetchAlarmRulesStateOnStart" : false
       },
-      "configurationVersion" : 0,
+      "configurationVersion" : 1,
       "createdTime" : 0,
       "debugSettings" : null,
       "externalId" : null,
@@ -295,9 +298,10 @@
         "layoutY" : 690
       },
       "configuration" : {
-        "ruleChainId" : "2dc3b850-ce7d-11ef-8167-a16af7bebec2"
+        "ruleChainId" : "2dc3b850-ce7d-11ef-8167-a16af7bebec2",
+        "forwardMsgToDefaultRuleChain" : false
       },
-      "configurationVersion" : 0,
+      "configurationVersion" : 1,
       "createdTime" : 0,
       "debugSettings" : null,
       "externalId" : null,

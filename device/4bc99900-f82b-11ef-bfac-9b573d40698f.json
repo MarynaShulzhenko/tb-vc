@@ -18,7 +18,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "4bc8fcc0-f82b-11ef-bfac-9b573d40698f"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "4bc99900-f82b-11ef-bfac-9b573d40698f"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -31,7 +34,7 @@
     "type" : "DEVICE_TYPE"
   },
   "credentials" : {
-    "credentialsId" : "eEKsfF3fXXPkZeM16qbt",
+    "credentialsId" : "ddj8hmuke9mhxuzre6ti",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -47,7 +50,7 @@
     },
     "type" : "ManagedByIntegration",
     "typeGroup" : "COMMON",
-    "version" : 18601
+    "version" : 604515964
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -55,7 +58,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1741008557752,
+      "lastUpdateTs" : 1741682406487,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -63,8 +66,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1741008557752,
-      "longValue" : 1741008557752,
+      "lastUpdateTs" : 1741682406487,
+      "longValue" : 1741682406484,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -73,6 +76,22 @@
       "key" : "lastActivityTime",
       "lastUpdateTs" : 1741007906060,
       "longValue" : 1741007904756,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1741681723887,
+      "longValue" : 1741681723887,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1741681724134,
+      "longValue" : 1741681724134,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

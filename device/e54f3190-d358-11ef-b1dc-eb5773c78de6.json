@@ -1,0 +1,85 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "e514e7b0-d358-11ef-b1dc-eb5773c78de6"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "e54f3190-d358-11ef-b1dc-eb5773c78de6"
+    },
+    "label" : null,
+    "name" : "Heat pump intake valve",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Valve"
+  },
+  "credentials" : {
+    "credentialsId" : "pKIN4D0Hlw2oxu9l002F",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "e51c3ab0-d358-11ef-b1dc-eb5773c78de6"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "e54f3190-d358-11ef-b1dc-eb5773c78de6"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 369985284
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "e51fe430-d358-11ef-b1dc-eb5773c78de6"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "e54f3190-d358-11ef-b1dc-eb5773c78de6"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON",
+    "version" : 369985285
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1736957058751,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1736957058751,
+      "longValue" : 1736957058749,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

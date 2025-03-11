@@ -1,0 +1,59 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "2de1a090-ce7d-11ef-8167-a16af7bebec2"
+    },
+    "description" : "",
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "eefcc260-4358-11ef-86ad-337f063d8218"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "eefcc260-4358-11ef-86ad-337f063d8218"
+    },
+    "image" : null,
+    "name" : "ttttt",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "SNMP",
+        "communicationConfigs" : [ {
+          "spec" : "CLIENT_ATTRIBUTES_QUERYING",
+          "mappings" : [ {
+            "dataType" : "STRING",
+            "key" : "test",
+            "oid" : "1.2.3.4.5.6"
+          } ],
+          "queryingFrequencyMs" : 5000,
+          "spec" : "CLIENT_ATTRIBUTES_QUERYING"
+        } ],
+        "retries" : 0,
+        "timeoutMs" : 500
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "SNMP",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

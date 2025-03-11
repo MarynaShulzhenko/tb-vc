@@ -1,0 +1,86 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "SNMP",
+        "authenticationPassphrase" : "test",
+        "authenticationProtocol" : "MD5",
+        "community" : "public",
+        "contextName" : "test",
+        "engineId" : "test",
+        "host" : "localhost",
+        "port" : 161,
+        "privacyPassphrase" : "test",
+        "privacyProtocol" : "DES",
+        "protocolVersion" : "V3",
+        "securityName" : "test",
+        "username" : "test"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "eefcc260-4358-11ef-86ad-337f063d8218"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "e8013000-45af-11ef-b153-c96e4ed11f6f"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "e8013000-45af-11ef-b153-c96e4ed11f6f"
+    },
+    "label" : "",
+    "name" : "snmp",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "ttttt"
+  },
+  "credentials" : {
+    "credentialsId" : "HrMA4CUHjmwWxMcbtuOR",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1721381386091,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1721381386091,
+      "longValue" : 1721381386083,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1721380730124,
+      "longValue" : 1721380728697,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

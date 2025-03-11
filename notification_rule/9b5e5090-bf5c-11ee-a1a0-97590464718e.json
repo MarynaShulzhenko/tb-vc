@@ -1,0 +1,35 @@
+{
+  "entityType" : "NOTIFICATION_RULE",
+  "entity" : {
+    "additionalConfig" : {
+      "description" : ""
+    },
+    "enabled" : true,
+    "externalId" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "9b5e5090-bf5c-11ee-a1a0-97590464718e"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "9b5e5090-bf5c-11ee-a1a0-97590464718e"
+    },
+    "name" : "test",
+    "recipientsConfig" : {
+      "targets" : [ "2e0f6750-ce7d-11ef-8167-a16af7bebec2" ],
+      "triggerType" : "INTEGRATION_LIFECYCLE_EVENT"
+    },
+    "templateId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "2e1a63d0-ce7d-11ef-8167-a16af7bebec2"
+    },
+    "triggerConfig" : {
+      "triggerType" : "INTEGRATION_LIFECYCLE_EVENT",
+      "integrationTypes" : [ ],
+      "integrations" : null,
+      "notifyOn" : [ "STOPPED" ],
+      "onlyOnError" : false,
+      "triggerType" : "INTEGRATION_LIFECYCLE_EVENT"
+    },
+    "triggerType" : "INTEGRATION_LIFECYCLE_EVENT"
+  }
+}
