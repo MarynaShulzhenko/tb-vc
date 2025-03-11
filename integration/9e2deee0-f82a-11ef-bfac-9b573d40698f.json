@@ -1,0 +1,86 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "baseUrl" : "http://10.7.0.21:8390",
+      "httpEndpoint" : "http://10.7.0.21:8390/api/v1/integrations/http/8bf72186-df7b-dde3-1004-ee791fcc3998",
+      "enableSecurity" : false,
+      "headersFilter" : { },
+      "replaceNoContentToOk" : false
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1741008726954,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "9e273820-f82a-11ef-bfac-9b573d40698f"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "9e2deee0-f82a-11ef-bfac-9b573d40698f"
+    },
+    "name" : "HTTP integration",
+    "remote" : false,
+    "routingKey" : "8bf72186-df7b-dde3-1004-ee791fcc3998",
+    "secret" : "ups6y9cxz6i3cskynbou",
+    "type" : "HTTP"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "9e2deee0-f82a-11ef-bfac-9b573d40698f"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "b4790680-f82a-11ef-bfac-9b573d40698f"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 18599
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "9e2deee0-f82a-11ef-bfac-9b573d40698f"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "4bc99900-f82b-11ef-bfac-9b573d40698f"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 18601
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_790ede8f4a19",
+      "lastUpdateTs" : 1741007826980,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_d4368536b317",
+      "lastUpdateTs" : 1741276356371,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

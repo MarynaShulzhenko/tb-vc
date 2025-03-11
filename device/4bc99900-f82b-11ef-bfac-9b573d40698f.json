@@ -1,0 +1,80 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "4bc8fcc0-f82b-11ef-bfac-9b573d40698f"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "4bc99900-f82b-11ef-bfac-9b573d40698f"
+    },
+    "label" : null,
+    "name" : "DEVICE_NAME",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "DEVICE_TYPE"
+  },
+  "credentials" : {
+    "credentialsId" : "eEKsfF3fXXPkZeM16qbt",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "9e2deee0-f82a-11ef-bfac-9b573d40698f"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "4bc99900-f82b-11ef-bfac-9b573d40698f"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 18601
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1741008557752,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1741008557752,
+      "longValue" : 1741008557752,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1741007906060,
+      "longValue" : 1741007904756,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}
