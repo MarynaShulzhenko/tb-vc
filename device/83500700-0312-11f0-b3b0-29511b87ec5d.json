@@ -22,18 +22,27 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "7b2b44e0-661e-11ef-8d09-f75c78fbd9a9"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "83500700-0312-11f0-b3b0-29511b87ec5d"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
       "id" : "83500700-0312-11f0-b3b0-29511b87ec5d"
     },
     "label" : "",
-    "name" : "resultCF",
+    "name" : "result CF",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "default"
   },
+  "credentials" : {
+    "credentialsId" : "qCsxF13vpKBjHRNHQ11U",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
