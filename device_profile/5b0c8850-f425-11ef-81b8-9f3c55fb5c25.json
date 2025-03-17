@@ -1,0 +1,54 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "5b0c8850-f425-11ef-81b8-9f3c55fb5c25"
+    },
+    "image" : null,
+    "name" : "coap",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "COAP",
+        "clientSettings" : {
+          "edrxCycle" : null,
+          "pagingTransmissionWindow" : null,
+          "powerMode" : "DRX",
+          "psmActivityTimer" : null
+        },
+        "coapDeviceTypeConfiguration" : {
+          "coapDeviceType" : "DEFAULT",
+          "transportPayloadTypeConfiguration" : {
+            "transportPayloadType" : "JSON"
+          }
+        }
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "COAP",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

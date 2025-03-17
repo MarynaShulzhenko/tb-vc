@@ -1,0 +1,37 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f5f9a710-030e-11f0-b156-ff5c2c462d19"
+    },
+    "name" : "customer a",
+    "phone" : null,
+    "state" : null,
+    "title" : "customer a",
+    "zip" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "customer-att",
+      "lastUpdateTs" : 1742202455825,
+      "longValue" : null,
+      "strValue" : "7.256863854"
+    } ]
+  }
+}

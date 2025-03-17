@@ -1,0 +1,191 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "54bc7420-84ad-11ef-b1ec-fbb894068fb0"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "05202270-84af-11ef-b1ec-fbb894068fb0"
+    },
+    "label" : "",
+    "name" : "device",
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "jAhZcE9WjQ6jhVQNfHJ6",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Horizontal-2:1-Elliptical",
+      "lastUpdateTs" : 1739284609485,
+      "longValue" : null,
+      "strValue" : "2:1 Elliptical"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Horizontal-Capsule",
+      "lastUpdateTs" : 1739283937066,
+      "longValue" : null,
+      "strValue" : "Horizontal Capsule"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Horizontal-Cylinder",
+      "lastUpdateTs" : 1739283927874,
+      "longValue" : null,
+      "strValue" : "Horizontal Cylinder"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Horizontal-Dish-Ends",
+      "lastUpdateTs" : 1739283916263,
+      "longValue" : null,
+      "strValue" : "Horizontal Dish Ends"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Horizontal-Ellipse",
+      "lastUpdateTs" : 1739283903375,
+      "longValue" : null,
+      "strValue" : "Horizontal Ellipse"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Horizontal-Oval",
+      "lastUpdateTs" : 1739283876427,
+      "longValue" : null,
+      "strValue" : "Horizontal Oval"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Rectangle",
+      "lastUpdateTs" : 1739283866890,
+      "longValue" : null,
+      "strValue" : "Rectangle"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Vertical-Capsule",
+      "lastUpdateTs" : 1739283858127,
+      "longValue" : null,
+      "strValue" : "Vertical Capsule"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Vertical-Cylinder",
+      "lastUpdateTs" : 1739283848278,
+      "longValue" : null,
+      "strValue" : "Vertical Cylinder"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Vertical-Oval",
+      "lastUpdateTs" : 1739283836135,
+      "longValue" : null,
+      "strValue" : "Vertical Oval"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1742206642026,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1742206642026,
+      "longValue" : 1742206642026,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1742206035500,
+      "longValue" : 1742206033468,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1739265879530,
+      "longValue" : 1739265879530,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1739266615840,
+      "longValue" : 1739266615840,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "serverAtt",
+      "lastUpdateTs" : 1742206195424,
+      "longValue" : null,
+      "strValue" : "0"
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "sharedAtt",
+      "lastUpdateTs" : 1742206339582,
+      "longValue" : null,
+      "strValue" : "1111"
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "state",
+      "lastUpdateTs" : 1728307570924,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

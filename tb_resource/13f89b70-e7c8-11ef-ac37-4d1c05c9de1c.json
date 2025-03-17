@@ -1,0 +1,24 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "data" : "ZXhwb3J0IGNvbnN0IGdldFN0YXR1c1N0eWxlcyA9ICh2YWx1ZSkgPT4gewogIGxldCBjb2xvcjsKICBpZiAodmFsdWUpIHsKICAgIGNvbG9yID0gJ3JnYigzOSwgMTM0LCAzNCknOwogIH0gZWxzZSB7CiAgICBjb2xvciA9ICdyZ2IoMjU1LCAwLCAwKSc7CiAgfQogIHJldHVybiB7CiAgICBjb2xvcjogY29sb3IsCiAgICBmb250U2l6ZTogJzE4cHgnCiAgfTsKfTsK",
+    "descriptor" : null,
+    "etag" : "4ba72c762e20755f7cfd20f64918ed8a9f991b157763bc08594eb83f1e8b01d2",
+    "externalId" : null,
+    "fileName" : "qwe.js",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "13f89b70-e7c8-11ef-ac37-4d1c05c9de1c"
+    },
+    "link" : "/api/resource/js_module/tenant/qwe.js",
+    "name" : "qwe",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "qwe.js",
+    "resourceSubType" : "MODULE",
+    "resourceType" : "JS_MODULE",
+    "title" : "qwe"
+  }
+}

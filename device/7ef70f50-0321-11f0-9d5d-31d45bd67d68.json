@@ -1,0 +1,247 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "54bc7420-84ad-11ef-b1ec-fbb894068fb0"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "7ef70f50-0321-11f0-9d5d-31d45bd67d68"
+    },
+    "label" : "",
+    "name" : "result CF 2",
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "T1N0g5qgWmaJhPb9SFu5",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1742210926832,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1742210926832,
+      "longValue" : 1742210926831,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "temperature" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "05202270-84af-11ef-b1ec-fbb894068fb0"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"temperatureC\": (temperatureF - 32) / 1.8\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742211301888,
+      "failuresEnabled" : true
+    },
+    "name" : "PROD-5763",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "54895630-84ad-11ef-b1ec-fbb894068fb0"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "altitude" : {
+          "defaultValue" : "4000",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "05202270-84af-11ef-b1ec-fbb894068fb0"
+          },
+          "refEntityKey" : {
+            "key" : "altitude",
+            "type" : "TS_LATEST"
+          }
+        },
+        "pressure" : {
+          "defaultValue" : "95",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "05202270-84af-11ef-b1ec-fbb894068fb0"
+          },
+          "refEntityKey" : {
+            "key" : "pressure",
+            "type" : "TS_LATEST"
+          }
+        },
+        "temperature" : {
+          "limit" : 500,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "05202270-84af-11ef-b1ec-fbb894068fb0"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "function calculate(ctx, altitude, temperature) {\n  var avgTemperature = temperature.mean(); // Get average temperature\n  var temperatureK = (avgTemperature - 32) * (5 / 9) + 273.15; // Convert Fahrenheit to Kelvin\n\n  // Estimate air pressure based on altitude\n  var pressure = 101325 * Math.pow((1 - 2.25577e-5 * altitude), 5.25588);\n\n  // Air density formula\n  var airDensity = pressure / (287.05 * temperatureK);\n\n  return {\n    \"airDensity\": toFixed(airDensity, 2)\n  };\n}",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742214670627,
+      "failuresEnabled" : true
+    },
+    "name" : "PROD-5783",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "54895630-84ad-11ef-b1ec-fbb894068fb0"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "altitude" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "05202270-84af-11ef-b1ec-fbb894068fb0"
+          },
+          "refEntityKey" : {
+            "key" : "altitude",
+            "type" : "TS_LATEST"
+          }
+        },
+        "pressure" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "05202270-84af-11ef-b1ec-fbb894068fb0"
+          },
+          "refEntityKey" : {
+            "key" : "pressure",
+            "type" : "TS_LATEST"
+          }
+        },
+        "temperature" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "05202270-84af-11ef-b1ec-fbb894068fb0"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "var avgTemperature = temperature.mean(); // Get average temperature\n  var temperatureK = (avgTemperature - 32) * (5 / 9) + 273.15; // Convert Fahrenheit to Kelvin\n\n  // Estimate air pressure based on altitude\n  var pressure = 101325 * Math.pow((1 - 2.25577e-5 * altitude), 5.25588);\n\n  // Air density formula\n  var airDensity = pressure / (287.05 * temperatureK);\n\n  return {\n    \"airDensity\": toFixed(airDensity, 2)\n  };",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742215042216,
+      "failuresEnabled" : true
+    },
+    "name" : "airDensity",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "54895630-84ad-11ef-b1ec-fbb894068fb0"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "temperature" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "05202270-84af-11ef-b1ec-fbb894068fb0"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "var avgTemp = temperature.mean(); // Returns 72.92\nvar tempMax = temperature.max(); // Returns 73.58\nvar valueCount = temperature.count(); // Returns 3\n\nvar avgTempNaN = temperature.mean(false);  // Returns NaN\nvar tempMaxNaN = temperature.max(false);   // Returns NaN\nvar valueCountNaN = temperature.count(false); // Returns 4\n\nreturn {\"resultRolling\": toFixed(avgTempNaN, 2)};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742214481347,
+      "failuresEnabled" : true
+    },
+    "name" : "resultRolling",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "54895630-84ad-11ef-b1ec-fbb894068fb0"
+    },
+    "type" : "SCRIPT"
+  } ]
+}
