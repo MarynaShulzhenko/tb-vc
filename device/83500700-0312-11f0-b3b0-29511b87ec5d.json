@@ -1,0 +1,137 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "7b2b44e0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "83500700-0312-11f0-b3b0-29511b87ec5d"
+    },
+    "label" : "",
+    "name" : "resultCF",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1742204490865,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1742204490865,
+      "longValue" : 1742204490860,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : 13.1,
+      "jsonValue" : null,
+      "key" : "resultCustomerAttShared",
+      "lastUpdateTs" : 1742203952417,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "att" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "CUSTOMER",
+            "id" : "3f475720-7f3c-11ef-8c74-6f3493be18f7"
+          },
+          "refEntityKey" : {
+            "key" : "customer att",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        }
+      },
+      "expression" : "att + 8",
+      "output" : {
+        "decimalsByDefault" : 1,
+        "name" : "resultCustomerAttShared",
+        "scope" : "SHARED_SCOPE",
+        "type" : "ATTRIBUTES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742203340837,
+      "failuresEnabled" : true
+    },
+    "name" : "customer att check",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "telemetry" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+          },
+          "refEntityKey" : {
+            "key" : "tenant-telemetry",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "telemetry + 2",
+      "output" : {
+        "name" : "resultTenantTelemetry",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742201967507,
+      "failuresEnabled" : true
+    },
+    "name" : "tenant telemetry",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SIMPLE"
+  } ]
+}
