@@ -1,0 +1,73 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "a0c92820-032b-11f0-ab84-e557326372df"
+    },
+    "image" : null,
+    "name" : "CF",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "temperature" : {
+          "limit" : 100,
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"temperatureC\": (temperature.last - 32) / 1.8\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742215809376,
+      "failuresEnabled" : true
+    },
+    "name" : "rolling",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "54895630-84ad-11ef-b1ec-fbb894068fb0"
+    },
+    "type" : "SCRIPT"
+  } ]
+}
