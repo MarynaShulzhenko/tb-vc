@@ -243,7 +243,7 @@
           "timeWindow" : 3600000
         }
       },
-      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"tenantResult\": at+lt+tr.first\n};",
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"tenantResult\": tr.first() +lt+at\n};",
       "output" : {
         "name" : "",
         "type" : "TIME_SERIES"
@@ -252,7 +252,7 @@
     "configurationVersion" : 0,
     "debugSettings" : {
       "allEnabled" : false,
-      "allEnabledUntil" : 1742386918442,
+      "allEnabledUntil" : 1742391766484,
       "failuresEnabled" : true
     },
     "name" : "device",
