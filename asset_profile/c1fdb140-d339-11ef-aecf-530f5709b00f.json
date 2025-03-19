@@ -10,7 +10,10 @@
       "id" : "c1226c70-d339-11ef-aecf-530f5709b00f"
     },
     "description" : "Smart Irrigation Field",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "c1fdb140-d339-11ef-aecf-530f5709b00f"
+    },
     "id" : {
       "entityType" : "ASSET_PROFILE",
       "id" : "c1fdb140-d339-11ef-aecf-530f5709b00f"

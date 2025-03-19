@@ -4,7 +4,10 @@
     "additionalInfo" : null,
     "configuration" : null,
     "debugMode" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "7afe1a60-661e-11ef-8d09-f75c78fbd9a9"
+    },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
       "id" : "7b014eb0-661e-11ef-8d09-f75c78fbd9a9"
@@ -399,7 +402,7 @@
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "tbelScript" : "var temperature = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\ntemperature = Math.round( temperature * 100 ) / 100;\nvar msg = { temperature: temperature };\nreturn { msg: msg, metadata: {}, msgType: \"POST_TELEMETRY_REQUEST\" };\n",
-        "originatorId" : "dc1fa440-70fe-11ef-ac33-1586d7baa77c",
+        "originatorId" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9",
         "originatorType" : "DEVICE"
       },
       "configurationVersion" : 2,
@@ -427,7 +430,7 @@
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "tbelScript" : "var temperature = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\ntemperature = Math.round( temperature * 100 ) / 100;\nvar msg = { temperature: temperature };\nreturn { msg: msg, metadata: {}, msgType: \"POST_TELEMETRY_REQUEST\" };\n",
-        "originatorId" : "dfcb2010-70fe-11ef-ac33-1586d7baa77c",
+        "originatorId" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9",
         "originatorType" : "DEVICE"
       },
       "configurationVersion" : 2,
@@ -455,7 +458,7 @@
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "tbelScript" : "var temperature = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\ntemperature = Math.round( temperature * 100 ) / 100;\nvar msg = { temperature: temperature };\nreturn { msg: msg, metadata: {}, msgType: \"POST_TELEMETRY_REQUEST\" };\n",
-        "originatorId" : "e7810090-70fe-11ef-a45e-35dcc6027058",
+        "originatorId" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9",
         "originatorType" : "DEVICE"
       },
       "configurationVersion" : 2,
@@ -635,6 +638,5 @@
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  },
-  "calculatedFields" : [ ]
+  }
 }

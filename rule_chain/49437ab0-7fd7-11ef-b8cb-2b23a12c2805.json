@@ -6,7 +6,10 @@
     },
     "configuration" : null,
     "debugMode" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "49437ab0-7fd7-11ef-b8cb-2b23a12c2805"
+    },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
       "id" : "4946af00-7fd7-11ef-b8cb-2b23a12c2805"
@@ -578,6 +581,5 @@
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  },
-  "calculatedFields" : [ ]
+  }
 }

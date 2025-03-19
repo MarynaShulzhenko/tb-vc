@@ -12,7 +12,10 @@
       "entityType" : "CUSTOMER",
       "id" : "13814000-1dd2-11b2-8080-808080808080"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ASSET",
+      "id" : "5add67a0-04b0-11f0-8d79-3135e1e9338c"
+    },
     "id" : {
       "entityType" : "ASSET",
       "id" : "5add67a0-04b0-11f0-8d79-3135e1e9338c"
@@ -20,7 +23,7 @@
     "label" : null,
     "name" : "asset CF from profile",
     "ownerId" : null,
-    "type" : "asset profile CF wdawdw"
+    "type" : "asset profile CF"
   },
   "relations" : [ ],
   "attributes" : {

@@ -22,7 +22,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "7b2b44e0-661e-11ef-8d09-f75c78fbd9a9"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "f3985a20-de51-11ef-aab5-2fb2155d3aff"
+    },
     "firmwareId" : {
       "entityType" : "OTA_PACKAGE",
       "id" : "f6706510-ab27-11ef-8fce-29014852ad39"

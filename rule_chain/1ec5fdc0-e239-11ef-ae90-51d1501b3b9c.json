@@ -6,7 +6,10 @@
     },
     "configuration" : null,
     "debugMode" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "1ec5fdc0-e239-11ef-ae90-51d1501b3b9c"
+    },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
       "id" : "1ef32840-e239-11ef-ae90-51d1501b3b9c"
@@ -321,7 +324,7 @@
         "layoutY" : 690
       },
       "configuration" : {
-        "ruleChainId" : "d2df2760-d4af-11ef-86f9-59fd9eeeaad9",
+        "ruleChainId" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9",
         "forwardMsgToDefaultRuleChain" : false
       },
       "configurationVersion" : 1,
@@ -401,6 +404,5 @@
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  },
-  "calculatedFields" : [ ]
+  }
 }
