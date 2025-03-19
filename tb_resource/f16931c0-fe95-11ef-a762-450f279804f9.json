@@ -1,0 +1,25 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "ZXhwb3J0IGNvbnN0IGNpcmNsZSA9ICcmIzExMDQ0Oyc7Cg==",
+    "descriptor" : null,
+    "etag" : "ffed1d1eada35ffcbde19596c3145ac43a280a57ffdce75f07aac32688827306",
+    "externalId" : null,
+    "fileName" : "circle.js",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "f16931c0-fe95-11ef-a762-450f279804f9"
+    },
+    "link" : "/api/resource/js_module/tenant/circle.js",
+    "name" : "circle",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "circle.js",
+    "resourceSubType" : "MODULE",
+    "resourceType" : "JS_MODULE",
+    "title" : "circle"
+  }
+}

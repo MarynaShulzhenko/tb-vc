@@ -1,0 +1,203 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "cfd6fd20-03e6-11f0-add1-21b45dfe256b"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "719b9900-03d7-11f0-8d79-3135e1e9338c"
+    },
+    "label" : "",
+    "name" : "result CF 2",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "test CF 2"
+  },
+  "credentials" : {
+    "credentialsId" : "MkEp49QQ2MVj0rdsMdm8",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1742289085709,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1742289085709,
+      "longValue" : 1742289085703,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "c" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "CUSTOMER",
+            "id" : "3f475720-7f3c-11ef-8c74-6f3493be18f7"
+          },
+          "refEntityKey" : {
+            "key" : "customer att",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        }
+      },
+      "expression" : "c + 1",
+      "output" : {
+        "name" : "customerAtt",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742295961070,
+      "failuresEnabled" : true
+    },
+    "name" : "customer attribute",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "temperature" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "temperature +2",
+      "output" : {
+        "name" : "deviceTs",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742295963687,
+      "failuresEnabled" : true
+    },
+    "name" : "device ts",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "t" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+          },
+          "refEntityKey" : {
+            "key" : "tenantAttStr",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        }
+      },
+      "expression" : "t + 1",
+      "output" : {
+        "name" : "tenantAtt",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742295958368,
+      "failuresEnabled" : true
+    },
+    "name" : "tenant attribute",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "str" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "ASSET",
+            "id" : "74884100-fe9a-11ef-9a14-a1017d5725c7"
+          },
+          "refEntityKey" : {
+            "key" : "asset str att",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"resultStrAsset\": (str - 32) / 1.8\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742296420557,
+      "failuresEnabled" : true
+    },
+    "name" : "test str asset att",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SCRIPT"
+  } ]
+}

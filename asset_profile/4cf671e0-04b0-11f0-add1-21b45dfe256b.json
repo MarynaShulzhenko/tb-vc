@@ -1,0 +1,67 @@
+{
+  "entityType" : "ASSET_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : null,
+    "externalId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "4cf671e0-04b0-11f0-add1-21b45dfe256b"
+    },
+    "id" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "4cf671e0-04b0-11f0-add1-21b45dfe256b"
+    },
+    "image" : null,
+    "name" : "asset profile CF"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "temperature" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_LATEST"
+          }
+        },
+        "test" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "test",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "test+temperature",
+      "output" : {
+        "name" : "resultAsset+Device",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742383472396,
+      "failuresEnabled" : true
+    },
+    "name" : "current asset",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SIMPLE"
+  } ]
+}

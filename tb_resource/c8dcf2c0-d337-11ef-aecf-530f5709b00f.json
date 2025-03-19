@@ -1,0 +1,25 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "ZXhwb3J0IGNvbnN0IGNvbG9yID0gJ3JlZCc7",
+    "descriptor" : null,
+    "etag" : "71fbc23a14742505d0f8a99ab750256a740e7a523252302baa050467fdc64439",
+    "externalId" : null,
+    "fileName" : "color.js",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "c8dcf2c0-d337-11ef-aecf-530f5709b00f"
+    },
+    "link" : "/api/resource/js_module/tenant/color.js",
+    "name" : "color",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "color.js",
+    "resourceSubType" : "MODULE",
+    "resourceType" : "JS_MODULE",
+    "title" : "color"
+  }
+}

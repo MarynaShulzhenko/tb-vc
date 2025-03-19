@@ -1,0 +1,68 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : null,
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "clientConfiguration" : {
+        "baseUrl" : "https://tbqa.cloud",
+        "httpEndpoint" : "https://tbqa.cloud/api/v1/integrations/chirpstack/a790fb41-fb2b-4aec-0e9c-aa499827df21",
+        "applicationServerUrl" : "hdfh",
+        "applicationServerAPIToken" : "bdzfbzdb",
+        "useAPI4Plus" : true
+      }
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742226957237,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "1f80ce80-0344-11f0-b3b0-29511b87ec5d"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "1fa9da50-0344-11f0-b3b0-29511b87ec5d"
+    },
+    "name" : "ChirpStack integration",
+    "remote" : false,
+    "routingKey" : "a790fb41-fb2b-4aec-0e9c-aa499827df21",
+    "secret" : "y7podcxg972ddi8qlty6",
+    "type" : "CHIRPSTACK"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-0",
+      "lastUpdateTs" : 1742294719903,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-1",
+      "lastUpdateTs" : 1742294721038,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-2",
+      "lastUpdateTs" : 1742294720997,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

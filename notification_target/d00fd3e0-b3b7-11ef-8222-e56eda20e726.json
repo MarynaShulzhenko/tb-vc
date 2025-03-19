@@ -1,0 +1,23 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "MICROSOFT_TEAMS",
+      "channelName" : "qwe",
+      "description" : null,
+      "email" : null,
+      "firstName" : null,
+      "id" : "qwe",
+      "lastName" : null,
+      "title" : "qwe",
+      "useOldApi" : false,
+      "webhookUrl" : "qwe"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "d00fd3e0-b3b7-11ef-8222-e56eda20e726"
+    },
+    "name" : "teams invalid"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "PLATFORM_USERS",
+      "description" : null,
+      "usersFilter" : {
+        "type" : "USER_LIST",
+        "usersIds" : [ "7ba68f60-661e-11ef-8d09-f75c78fbd9a9" ]
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "e70e07c0-7fd6-11ef-8c74-6f3493be18f7"
+    },
+    "name" : "mshulzhenko"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "entityType" : "ENTITY_GROUP",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "columns" : [ {
+        "type" : "ENTITY_FIELD",
+        "key" : "created_time",
+        "sortOrder" : "DESC"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "name",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "device_profile",
+        "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "label",
+        "sortOrder" : "NONE"
+      } ],
+      "settings" : { },
+      "actions" : {
+        "actionCellButton" : [ {
+          "name" : "test custm action",
+          "icon" : "more_horiz",
+          "useShowWidgetActionFunction" : null,
+          "showWidgetActionFunction" : "return true;",
+          "type" : "openDashboard",
+          "targetDashboardStateId" : "",
+          "setEntityId" : true,
+          "stateEntityParamName" : null,
+          "openNewBrowserTab" : true,
+          "targetDashboardId" : "04d6f3b0-7736-11ef-9ea7-33df9ae71f6b",
+          "openInSeparateDialog" : false,
+          "openInPopover" : false,
+          "id" : "d981156a-b013-78c9-21ea-96f5ad116a69"
+        } ]
+      }
+    },
+    "edgeGroupAll" : false,
+    "externalId" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "2ce85d90-6f74-11ef-a45e-35dcc6027058"
+    },
+    "groupAll" : false,
+    "id" : {
+      "entityType" : "ENTITY_GROUP",
+      "id" : "2ce85d90-6f74-11ef-a45e-35dcc6027058"
+    },
+    "name" : "thermostat devices",
+    "ownerId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "DEVICE"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ],
+  "groupEntities" : true
+}

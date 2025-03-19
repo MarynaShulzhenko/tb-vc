@@ -1,0 +1,237 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "cfd6fd20-03e6-11f0-add1-21b45dfe256b"
+    },
+    "image" : null,
+    "name" : "test CF 2",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "a" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "customerAtt",
+            "type" : "TS_LATEST"
+          }
+        },
+        "a1" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+          },
+          "refEntityKey" : {
+            "key" : "test",
+            "type" : "TS_LATEST"
+          }
+        },
+        "t" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+          },
+          "refEntityKey" : {
+            "key" : "tenant-telemetry",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"temperatureC\": (temperatureF - 32) / 1.8\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742386924490,
+      "failuresEnabled" : true
+    },
+    "name" : "current tenant",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "at" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+          },
+          "refEntityKey" : {
+            "key" : "tenantAttStr",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "lt" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+          },
+          "refEntityKey" : {
+            "key" : "tenant-telemetry",
+            "type" : "TS_LATEST"
+          }
+        },
+        "tr" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+          },
+          "refEntityKey" : {
+            "key" : "tenant-telemetry",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 3600000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"tenantResult\": at+lt+tr.first\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742386918442,
+      "failuresEnabled" : true
+    },
+    "name" : "tenant",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "temperature" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "var startOfInterval = temperature.timeWindow.startTs;\nvar endOfInterval = temperature.timeWindow.endTs;\nvar firstItem = temperature.values[0];\nvar firstItemTs = firstItem.ts;\nvar firstItemValue = firstItem.value;\nvar sum = 0.0;\n// iterate through all values and calculate the sum using foreach:\nforeach(t: temperature) {\n    if (!isNaN(t.value)) { // check that the value is a valid number;\n        sum += t.value;\n    }\n}\n// iterate through all values and calculate the sum using for loop:\nvar sum1 = 0.0;\nfor (var i = 0; i < temperature.values.size; i++) {\n    sum1 += temperature.values[i].value;\n}\n// use built-in function to calculate the sum\nvar sum2 = temperature.sum();\n\n\nreturn {\n    \"sum\": sum,\n    \"sum1\": sum1,\n    \"sum2\": sum2\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742297155377,
+      "failuresEnabled" : true
+    },
+    "name" : "test",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "altitude" : {
+          "defaultValue" : "400",
+          "refEntityKey" : {
+            "key" : "altitude",
+            "type" : "TS_LATEST"
+          }
+        },
+        "pressure" : {
+          "defaultValue" : "90",
+          "refEntityKey" : {
+            "key" : "pressure",
+            "type" : "TS_LATEST"
+          }
+        },
+        "temperature" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "var avgTemperature = temperature.mean(); // Get average temperature\n  var temperatureK = (avgTemperature - 32) * (5 / 9) + 273.15; // Convert Fahrenheit to Kelvin\n\n  // Estimate air pressure based on altitude\n  var pressure = 101325 * Math.pow((1 - 2.25577e-5 * altitude), 5.25588);\n\n  // Air density formula\n  var airDensity = pressure / (287.05 * temperatureK);\n\n  return {\n    \"airDensity\": toFixed(airDensity, 2)\n  };",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742297155377,
+      "failuresEnabled" : true
+    },
+    "name" : "test script",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SCRIPT"
+  } ]
+}

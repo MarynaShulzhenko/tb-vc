@@ -1,0 +1,31 @@
+{
+  "entityType" : "ROLE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "name" : "Dasboard  and widgets",
+    "permissions" : {
+      "DASHBOARD" : [ "ALL" ],
+      "DASHBOARD_GROUP" : [ "ALL" ],
+      "WIDGET_TYPE" : [ "ALL" ],
+      "WIDGETS_BUNDLE" : [ "ALL" ],
+      "WHITE_LABELING" : [ "ALL" ]
+    },
+    "type" : "GENERIC",
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "id" : {
+      "entityType" : "ROLE",
+      "id" : "cb231020-fd92-11ef-af0a-ffb590a88a19"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

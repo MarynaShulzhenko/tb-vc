@@ -1,0 +1,70 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "clientConfiguration" : {
+        "host" : "broker.hivemq.com",
+        "port" : 1883,
+        "cleanSession" : true,
+        "retainedMessage" : false,
+        "ssl" : false,
+        "connectTimeoutSec" : 10,
+        "clientId" : "",
+        "maxBytesInMessage" : 32368,
+        "credentials" : {
+          "type" : "anonymous"
+        }
+      },
+      "topicFilters" : [ {
+        "filter" : "tb/mqtt-integration-tutorial/sensors/+/temperature",
+        "qos" : 1
+      } ],
+      "downlinkTopicPattern" : "${topic}"
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1739283633107,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "420ce020-e881-11ef-b4e8-9fd15a4a6141"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "42368830-e881-11ef-b4e8-9fd15a4a6141"
+    },
+    "name" : "MQTT integration",
+    "remote" : false,
+    "routingKey" : "7ff0d81b-8997-109b-22a8-d0e7b64e6313",
+    "secret" : "f5ynebgkv1r7dyyg93o0",
+    "type" : "MQTT"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "42368830-e881-11ef-b4e8-9fd15a4a6141"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "788391f0-ecbc-11ef-b779-7ff0dd3d39ea"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 211339
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

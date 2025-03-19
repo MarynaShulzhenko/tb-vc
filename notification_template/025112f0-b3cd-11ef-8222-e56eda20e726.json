@@ -1,0 +1,34 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : false
+            },
+            "actionButtonConfig" : null
+          },
+          "body" : "${custom.WEBmessage.title:translate}",
+          "enabled" : true,
+          "subject" : "${custom.WEBmessage.title:translate}"
+        },
+        "EMAIL" : {
+          "method" : "EMAIL",
+          "body" : "<p>${custom.WEBmessage.title:translate}</p>",
+          "enabled" : true,
+          "subject" : "${custom.WEBmessage.title:translate}"
+        }
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "025112f0-b3cd-11ef-8222-e56eda20e726"
+    },
+    "name" : "test localizathion",
+    "notificationType" : "GENERAL"
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "d08276f0-04b8-11f0-9a64-25c6dfbee102"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "d08276f0-04b8-11f0-9a64-25c6dfbee102"
+    },
+    "image" : null,
+    "name" : "test CF VC",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "at" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "ASSET",
+            "id" : "3481fdd0-fe5e-11ef-a762-450f279804f9"
+          },
+          "refEntityKey" : {
+            "key" : "test",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "lt" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "ASSET",
+            "id" : "3481fdd0-fe5e-11ef-a762-450f279804f9"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_LATEST"
+          }
+        },
+        "tr" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "ASSET",
+            "id" : "3481fdd0-fe5e-11ef-a762-450f279804f9"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 3600000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"tenantResult\": at+lt+tr.first\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742386918442,
+      "failuresEnabled" : true
+    },
+    "name" : "asset",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "at" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "test",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "lt" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "test",
+            "type" : "TS_LATEST"
+          }
+        },
+        "tr" : {
+          "limit" : 100,
+          "refEntityKey" : {
+            "key" : "test",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 3600000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"tenantResult\": at+lt+tr.first\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742386918442,
+      "failuresEnabled" : true
+    },
+    "name" : "curent entity",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "at" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "CUSTOMER",
+            "id" : "3f475720-7f3c-11ef-8c74-6f3493be18f7"
+          },
+          "refEntityKey" : {
+            "key" : "customer att",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "lt" : {
+          "defaultValue" : "10",
+          "refEntityId" : {
+            "entityType" : "CUSTOMER",
+            "id" : "3f475720-7f3c-11ef-8c74-6f3493be18f7"
+          },
+          "refEntityKey" : {
+            "key" : "test",
+            "type" : "TS_LATEST"
+          }
+        },
+        "tr" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "CUSTOMER",
+            "id" : "3f475720-7f3c-11ef-8c74-6f3493be18f7"
+          },
+          "refEntityKey" : {
+            "key" : "test",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 3600000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"tenantResult\": at+lt+tr.first\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742386918442,
+      "failuresEnabled" : true
+    },
+    "name" : "customer",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "at" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "lt" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_LATEST"
+          }
+        },
+        "tr" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 3600000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"tenantResult\": at+lt+tr.first\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742386918442,
+      "failuresEnabled" : true
+    },
+    "name" : "device",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "at" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+          },
+          "refEntityKey" : {
+            "key" : "tenantAttStr",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "lt" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+          },
+          "refEntityKey" : {
+            "key" : "tenant-telemetry",
+            "type" : "TS_LATEST"
+          }
+        },
+        "tr" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+          },
+          "refEntityKey" : {
+            "key" : "tenant-telemetry",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 3600000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"tenantResult\": at+lt+tr.first\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742386918442,
+      "failuresEnabled" : true
+    },
+    "name" : "tenant",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "7ae402b0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "type" : "SCRIPT"
+  } ]
+}

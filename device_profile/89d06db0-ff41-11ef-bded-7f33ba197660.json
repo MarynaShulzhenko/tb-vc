@@ -1,0 +1,44 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "89d06db0-ff41-11ef-bded-7f33ba197660"
+    },
+    "image" : null,
+    "name" : "test x 509",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "X509_CERTIFICATE_CHAIN",
+        "allowCreateNewDevicesByX509Certificate" : true,
+        "certificateRegExPattern" : "mshulzhenko.thingsboard.space",
+        "provisionDeviceSecret" : "MIIFZTCCA00CFFkFUw5/OqnYJPFVsx6cK0QZmvxSMA0GCSqGSIb3DQEBCwUAMG0xCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQxJjAkBgNVBAMMHW1zaHVsemhlbmtvLnRoaW5nc2JvYXJkLnNwYWNlMB4XDTI1MDMxMjEyNDU1MloXDTI2MDMxMjEyNDU1MlowcTELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDEqMCgGA1UEAwwhc3NsLm1zaHVsemhlbmtvLnRoaW5nc2JvYXJkLnNwYWNlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA4dGa3LmUONRSdZ/tg1p/NBBeDCZWWMk2BMf2NQ3Lq/eP1Leln+/obhF/TNEiBw4hJqWUecQXPOcj2H2q8hlTa9HiE6m2LDxgaqYxLojXseb4CW6cJV07msjNc/gQ0Ii6bDL5FvabQFFisL5QcKy/1Sl2e8BnTlv1ymHBZBgbz1wF5Ch3+elBj6Rq7+1RkgVk6ISvQZDR4venOAKDNxyuGklT62SVdVGeThdGRe9lwEVel2tfH4kigIIqX1KZtkAcEDEI3Oii1cs0N2pV3z8PxD5aWxlWgU/LL+VNkOe757VBXYgX8qRcGhpTenYWKo8Egaw+IX0hfvrZERtAlhgTALcXZZck+YZtPM+3tvG3HFjIlLKU0HFAFXACt5D5Nnpf91QkSfuIToU0qAKSjk18MKZgPdBbHgmYv/1zjKXh4h9iJArxcUgCaxXytE/djg4jshXimWn1TcVXHEp0kkWzmC9q9IXA/rty+LmJjHNxDRIcL8CdKUumvrBQMzZzLVpfyCguVMSMPImdVrX5w6y7Mn+Jf4rjhx7qw776QGsQBzD6GQicT+Yuv7pWRKoAK1vo1eXef506yfnH6DXqpHl4qG4gZBbqRE5jlmEeJxVa4rwQ8L2XK6AH+DfY7esTmC5sVPGgbLCoddcmflgIDAw89j19l1zPrFvl7bKAkdj0lYkCAwEAATANBgkqhkiG9w0BAQsFAAOCAgEAcEdSNR35ULHNFzPfxpVr2nBgHFFc/bdfTufDP/cS66c98swN3NXEEKEmvOL/s2+T6qK4Q4wHItMyik6KjNL6QQkXbaIU53C3X8xaLPXX5Te8ViAxmXZybMgXjNJ6MYACWj7iVR15EEjkp/gb0n9lLOxUsyel5XqkeehXOk3sqJuYF/HyU9ih+WvMd50j3Qv4vQiv0cXvSfCdnhLZUv40iBVFvmlDmYtiRT9fyDLLDZrxACzVhuoAezH7fhtJ+VNqSYZyu4ZzTOS+4L6g/TDwV7hiu26G2flg0633TU9eRcQv1eaOOT51cSOCuVKqWIP1ybJ7Objinu7p818yAwp5VLKgvWb9kblky0tGbQVn1DlWR3zlTgpHmlwQzqRxBq9yFOfG2LqnoL7K9q3YSAi/5cPQeQz0kH2ocKdCk5gCrvH3I+enCtTM/sCqttTOIE1rlzc2hWMlsoMOKjWjiO4sagp2NSSTMjKJQCSSjfY4AxNRsm6GjHfPCkDAd/J4U/UxA+EBrRwcFJTQwr8meTLT8ffNWBtTV48vmBtKAaz9LoWDhRUDoND4SioQFSxioYjc9ow/Aa+nZRgciIY9JSYzQD+UhYL4N4zsXvWPxqJU8CDOt/Dp2J/PSziNd/0y1oaGsTT0I4aKrDH6gxpbL7I0onfKYewCa99z6mdJDo5Kq78="
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : "aa94054dc7562a7b448c323f1de3a10c2329ae7a5bbbeaa2d23aea086841e36b",
+    "provisionType" : "X509_CERTIFICATE_CHAIN",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

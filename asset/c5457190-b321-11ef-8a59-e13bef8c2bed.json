@@ -1,0 +1,88 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "693ea2e0-b321-11ef-bdbd-3345780c04d1"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "c5457190-b321-11ef-8a59-e13bef8c2bed"
+    },
+    "label" : null,
+    "name" : "Building A",
+    "ownerId" : null,
+    "type" : "building"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "c5457190-b321-11ef-8a59-e13bef8c2bed"
+    },
+    "type" : "Manages",
+    "typeGroup" : "COMMON",
+    "version" : 189772
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "c5457190-b321-11ef-8a59-e13bef8c2bed"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "b8367190-b3ab-11ef-bdbd-3345780c04d1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 136426
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1733414335676,
+      "longValue" : null,
+      "strValue" : "645 5th Ave, New York"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "buildingImage",
+      "lastUpdateTs" : 1733415698880,
+      "longValue" : null,
+      "strValue" : "/api/images/public/QIsHBY2Inag9pQbVIcgvk3cG1Yly4Dt5"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1733414828365,
+      "longValue" : null,
+      "strValue" : "40.759120435473115"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1733414841706,
+      "longValue" : null,
+      "strValue" : "-73.97600476568911"
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -1,0 +1,28 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : false
+            },
+            "actionButtonConfig" : null
+          },
+          "body" : "telemetry from default device profile",
+          "enabled" : true,
+          "subject" : "test"
+        }
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "848f4c80-ab28-11ef-8fce-29014852ad39"
+    },
+    "name" : "test device profile",
+    "notificationType" : "RULE_NODE"
+  }
+}

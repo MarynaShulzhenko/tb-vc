@@ -1,0 +1,22 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "deliveryMethodsTemplates" : {
+        "EMAIL" : {
+          "method" : "EMAIL",
+          "body" : "<p>&nbsp;${custom.WEBmessage.title:translate}</p>",
+          "enabled" : true,
+          "subject" : "${custom.WEBmessage.title:translate}"
+        }
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "362f1410-b3cc-11ef-8222-e56eda20e726"
+    },
+    "name" : "test localization",
+    "notificationType" : "RULE_NODE"
+  }
+}

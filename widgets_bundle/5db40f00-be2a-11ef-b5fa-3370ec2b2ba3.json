@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "smoke_widgets_bundles2",
+    "description" : "Widgets bundles",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "5db40f00-be2a-11ef-b5fa-3370ec2b2ba3"
+    },
+    "image" : "tb-image;/api/images/tenant/building.png",
+    "name" : "smoke Widgets bundles",
+    "order" : null,
+    "scada" : false,
+    "title" : "smoke Widgets bundles"
+  },
+  "fqns" : [ "time_series", "static_save_as" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

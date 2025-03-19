@@ -1,0 +1,43 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "customMenuId" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "8de87b00-b945-11ef-af79-39efd3f3753a"
+    },
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4402d3e0-b946-11ef-8e18-4705a8927f9c"
+    },
+    "name" : "SFBR 1",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "8de87b00-b945-11ef-af79-39efd3f3753a"
+    },
+    "parentCustomerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "8de87b00-b945-11ef-af79-39efd3f3753a"
+    },
+    "phone" : null,
+    "state" : null,
+    "title" : "SFBR 1",
+    "zip" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

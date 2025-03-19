@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "test_scada",
+    "description" : "",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "d7329180-7500-11ef-a80a-fd087c7234cc"
+    },
+    "image" : "",
+    "name" : "test-scada",
+    "order" : null,
+    "scada" : true,
+    "title" : "test-scada"
+  },
+  "fqns" : [ "pipeline_process_svg" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

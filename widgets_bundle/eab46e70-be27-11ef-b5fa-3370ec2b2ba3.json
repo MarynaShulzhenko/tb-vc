@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "smoke_widgets_bundle_scada",
+    "description" : "smoke widgets bundle scada",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "eab46e70-be27-11ef-b5fa-3370ec2b2ba3"
+    },
+    "image" : "tb-image;/api/images/tenant/Дизайн без назви (1).png",
+    "name" : "smoke widgets bundle scada",
+    "order" : null,
+    "scada" : true,
+    "title" : "smoke widgets bundle scada"
+  },
+  "fqns" : [ "time_series2", "latest_values", "control_widget", "static_widget" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

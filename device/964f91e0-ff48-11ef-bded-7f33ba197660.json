@@ -1,0 +1,64 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "7b2b44e0-661e-11ef-8d09-f75c78fbd9a9"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "964f91e0-ff48-11ef-bded-7f33ba197660"
+    },
+    "label" : "",
+    "name" : "checkx509",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "7e45ce7096f4ab6e15585911a89fd4bec62b2b2d5a2c9d1c91f953fb761b1863",
+    "credentialsType" : "X509_CERTIFICATE",
+    "credentialsValue" : "MIIFczCCA1sCFA02QSkJuawFLi5CkYWKBB/ZyI3BMA0GCSqGSIb3DQEBCwUAMHExCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQxKjAoBgNVBAMMIXNzbC5tc2h1bHpoZW5rby50aGluZ3Nib2FyZC5zcGFjZTAeFw0yNTAzMTIxMjQ2MzhaFw0yNjAzMTIxMjQ2MzhaMHsxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQxNDAyBgNVBAMMK2NoZWNreDUwOS5zc2wubXNodWx6aGVua28udGhpbmdzYm9hcmQuc3BhY2UwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDghdOPEs7NhW7b6w9l7+1oq7UjCqVckuIlxeOPXo6o9LoLDGKxaHOC0LU+MFPjKVx4zYnXFL64JIB0h61kV6M5/zq+MMxMZWFCsfO+H1grw9vhrH9K253SU+Adl9oXti2VhDl/GgHNiGYqhnvQH03fXumY8ON9Orl2e1t92XEYQ1jmgTHoNfcX2QvfChvlTDcjNeQpw79BYFjZHLRpJTESjLZl8f8mMRVz2ODvftFXYVb4VKR+w3goIo+ZyebIdEgNAc8/Fz9RwQKwitV5zd2tvWMOx6OITlADw97nBTR8tKrhq2PBTpJgLx78QJ+5c6k/pQkFpqyavbMaOlW6GHGrCaEYYomxbGK0qGdQ7OR7JhYC5YjfnMwvt/0OMSt86a5xyXyuMAMDk7OYnp3G4LMKKqbCfminszpimkge8yUcMlHCEU8g3kgwCWWpZf74QteFdQrsOgO0PAmeFWnbJMxmvhbfLQPEtvZGkdRZxE6zAuGkhT/yHEqt2My04Bnsa94m1Ng0HWbiS52lTV9PYSALptWXFTu0pPEgbSt34irR1bjzzU3uso8O8mjAsOcWCYclpXEcRc1XQCgmy6vDrmZf7JC476UqiyN+7rpkGY8GkzaRknxKaYj/LYqBPM/WD1jhKDV2sNRCyvGT5i3Cp3UylNIsThx7ZUkWubTdAcGipwIDAQABMA0GCSqGSIb3DQEBCwUAA4ICAQC3+yKrh2kSFh5FQWZgkXaUy4vf1+PGHXcO8B0UUXu2ZhrWHi47LVNaFau0wRY4xTVl4egiYHGGTgDIue5Xn243yuicYcO44WT8x9kccTSmQY/r1nSr1P0k2pbSZmXUngHV4mAuTDi+1jkPLGynFsAWZxR+o6Zl53j7i26CxTd23rQ7RhyOx+5fQThp8SUb30Tt+kzzHgmfekTKUSNFIK1zbqnyNx9Q16pxhGlc9rX9nn+NzuKVPtowA2NeRtw/Hqxsvd03e33jpbMpR+CJDXRZjvGA5z7/69g7JTG6BJkXt9szN6ecUlGHmitsKf6byej8k6Lt3tvX8kXOSMFAT1buOii2l5DejN+BfS5Np75tmTHifXog2BpcMRYCZt4PIUij4SRyA6IImGgTngZw+UVF6qx6Otvb4I7nihM775lfSz8BYsv4MpDpza4qlddKBz8DOsdhqq+K6qDT84fh/4MDcB4om0HJfub9We/FWTNSjv6wV4pdJb3AbJ7xx7grmLb8C91aQ8qUpMeJRFnqyMY14+Plj9j+cBmU4acRdr3qzpRg85uOEF8QgmzpWI0/1RCBuw5jOitBs2bNSE+wXYd3nUBf6IpgBGrCV4J4dVdQb6Z+lspjwavotFBKcjLzpHmAzD/KcoQ233KYEvqH+51JJHk967/dGIg6WHoTRmzxYQ=="
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1741787908576,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1741787908575,
+      "longValue" : 1741787908568,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

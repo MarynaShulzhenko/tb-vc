@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "test_bundle",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "93a55010-e486-11ef-9517-8973b2c87cf2"
+    },
+    "image" : null,
+    "name" : "test bundle",
+    "order" : null,
+    "scada" : false,
+    "title" : "test bundle"
+  },
+  "fqns" : [ "test_widget" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "entityType" : "CONVERTER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "scriptLang" : "TBEL",
+      "decoder" : null,
+      "tbelDecoder" : "var data = decodeToJson(payload);\n\nvar deviceName = data.deviceId != null ? data.deviceId : \"MarynaDevice\";\nvar deviceType = data.deviceType != null ? data.deviceType : \"default\";\nvar groupName = \"Control room\";\n// var customerName = 'Customer A';\n// use assetName and assetType instead of deviceName and deviceType\n// to automatically create assets instead of devices.\n// var assetName = 'Asset A';\n// var assetType = 'building';\nvar dateString = data.timestamp != null ? data.timestamp : \"\";\n\n// --- attributes and telemetry objects ---\nvar telemetry = {};\nvar attributes = {};\n// --- attributes and telemetry objects ---\n\n// --- Timestamp parsing\nvar timestamp = -1;\nif (dateString != null) {\n  timestamp = new Date(dateString).getTime();\n  if (timestamp == -1) {\n      var secondsSeparatorIndex = dateString.lastIndexOf('.') + 1;\n      var millisecondsEndIndex = dateString.lastIndexOf('+');\n      if (millisecondsEndIndex == -1) {\n          millisecondsEndIndex = dateString.lastIndexOf('Z');\n      }\n      if (millisecondsEndIndex == -1) {\n          millisecondsEndIndex = dateString.lastIndexOf('-');\n      }\n      if (millisecondsEndIndex == -1) {\n          if (dateString.length >= secondsSeparatorIndex + 3) {\n              dateString = dateString.substring(0, secondsSeparatorIndex + 3);\n          }\n      } else {\n          dateString = dateString.substring(0, secondsSeparatorIndex + 3) +\n              dateString.substring(millisecondsEndIndex, dateString.length);\n      }\n      timestamp = new Date(dateString).getTime();\n  }\n}\n// If we cannot parse timestamp - we will use the current timestamp\nif (timestamp == -1) {\n    timestamp = Date.now();\n}\n// --- Timestamp parsing\n\n// You can add some keys manually to attributes or telemetry\ntelemetry.receivedAlarms = data.alarms;\n\n// You can exclude some keys from the result\nvar excludeFromTelemetryList = [\"deviceId\", \"deviceType\", \"alarms\", \"location\", \"timestamp\", \"version\", \"manufacturer\"];\nvar excludeFromAttributesList = [\"batteryLevel\", \"batteryStatus\"];\n\n// Message parsing\nvar telemetryData = {};\nvar attributesData = {};\n// To avoid paths in the decoded objects we passing false value to function as \"pathInKey\" argument.\n// Warning: pathInKey can cause already found fields to be overwritten with the last value found, e.g. receive_at from uplink_message will be written receive_at in the root.\ntelemetryData.putAll(toFlatMap(data, excludeFromTelemetryList, false));\nattributesData.putAll(toFlatMap(data.?metadata, excludeFromAttributesList, false));\n\nif (!telemetryData.isEmpty()) {\n    telemetry.putAll(telemetryData);\n}\nif (!attributesData.isEmpty()) {\n    attributes.putAll(attributesData);\n}\n\nvar result = {\n    deviceName: deviceName,\n    deviceType: deviceType,\n//  assetName: assetName,\n//  assetType: assetType,\n//  customerName: customerName,\n    groupName: groupName,\n    attributes: attributes,\n    telemetry: {\n        ts: timestamp,\n        values: telemetry\n    }\n};\n\nreturn result;",
+      "encoder" : null,
+      "tbelEncoder" : null,
+      "updateOnlyKeys" : [ "manufacturer", "receivedAlarms", "status", "batteryLevel", "batteryStatus", "version" ]
+    },
+    "converterVersion" : 1,
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1740054349171,
+      "failuresEnabled" : true
+    },
+    "edgeTemplate" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CONVERTER",
+      "id" : "585b3ea0-ef7d-11ef-b779-7ff0dd3d39ea"
+    },
+    "integrationType" : null,
+    "name" : "Uplink data converter for Azure Event Hub integration",
+    "type" : "UPLINK"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

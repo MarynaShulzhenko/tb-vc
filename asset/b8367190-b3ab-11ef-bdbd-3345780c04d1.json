@@ -1,0 +1,72 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "ad8b1ed0-b3ab-11ef-bdbd-3345780c04d1"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "b8367190-b3ab-11ef-bdbd-3345780c04d1"
+    },
+    "label" : null,
+    "name" : "Office A",
+    "ownerId" : null,
+    "type" : "office"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "b8367190-b3ab-11ef-bdbd-3345780c04d1"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "ec53a920-b3ab-11ef-8222-e56eda20e726"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 136428
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "c5457190-b321-11ef-8a59-e13bef8c2bed"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "b8367190-b3ab-11ef-bdbd-3345780c04d1"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 136426
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1733473799129,
+      "longValue" : null,
+      "strValue" : "645 5th Ave, New York"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "office-plan",
+      "lastUpdateTs" : 1733475968762,
+      "longValue" : null,
+      "strValue" : "/api/images/public/QIsHBY2Inag9pQbVIcgvk3cG1Yly4Dt5"
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

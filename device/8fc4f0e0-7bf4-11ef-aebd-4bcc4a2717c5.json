@@ -1,0 +1,184 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "6be1a000-d339-11ef-aecf-530f5709b00f"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+    },
+    "label" : "",
+    "name" : "device",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "thermometer"
+  },
+  "credentials" : {
+    "credentialsId" : "Fy5kgBJ0RRbrbS4VmgyO",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "8fc4f0e0-7bf4-11ef-aebd-4bcc4a2717c5"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "c5457190-b321-11ef-8a59-e13bef8c2bed"
+    },
+    "type" : "Manages",
+    "typeGroup" : "COMMON",
+    "version" : 189772
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1737385912042,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "booleanValue",
+      "lastUpdateTs" : 1737633804649,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "device",
+      "lastUpdateTs" : 1737365940123,
+      "longValue" : null,
+      "strValue" : "qwe"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1737385912041,
+      "longValue" : 1737385912040,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1737385312870,
+      "longValue" : 1737385311484,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1737383206348,
+      "longValue" : 1737383206348,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1737385311496,
+      "longValue" : 1737385311496,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lat",
+      "lastUpdateTs" : 1737021119688,
+      "longValue" : null,
+      "strValue" : "234324"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lon",
+      "lastUpdateTs" : 1737021127533,
+      "longValue" : null,
+      "strValue" : "46576"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[0.8019843357125935,-0.15380859374999994],[0.09332834072345803,0.9331521574698611]]",
+      "key" : "perimeters",
+      "lastUpdateTs" : 1736942941212,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "temperature",
+      "lastUpdateTs" : 1733995365313,
+      "longValue" : 1111111,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "test-str-server-att",
+      "lastUpdateTs" : 1732276592994,
+      "longValue" : null,
+      "strValue" : "test"
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "rpc",
+      "lastUpdateTs" : 1736174669794,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "running",
+      "lastUpdateTs" : 1727347708136,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "state",
+      "lastUpdateTs" : 1728309953801,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

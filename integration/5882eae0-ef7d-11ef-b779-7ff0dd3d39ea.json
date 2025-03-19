@@ -1,0 +1,48 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "clientConfiguration" : {
+        "connectTimeoutSec" : 10,
+        "connectionString" : "Endpoint=sb://iothub-ns-tb-iot-hub-20824235-c5576b070d.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=dGRe0AwlesvGRSr7Gi7mgzvr+beOKddJQGv1bidiyyA=;EntityPath=tb-iot-hub-integrations",
+        "consumerGroup" : "",
+        "iotHubName" : "",
+        "storageConnectionString" : "",
+        "containerName" : "",
+        "enablePersistentCheckpoints" : false
+      },
+      "metadata" : { }
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1740054357703,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "585b3ea0-ef7d-11ef-b779-7ff0dd3d39ea"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "5882eae0-ef7d-11ef-b779-7ff0dd3d39ea"
+    },
+    "name" : "Azure Event Hub integration",
+    "remote" : false,
+    "routingKey" : "f91ced05-5ebf-6c21-4d0f-3ea12b589088",
+    "secret" : "u5btxw2speexyrlepn36",
+    "type" : "AZURE_EVENT_HUB"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
