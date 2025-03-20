@@ -1,0 +1,53 @@
+{
+  "entityType" : "ASSET_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "9dfc9310-057a-11f0-b337-c97ab0900455"
+    },
+    "image" : null,
+    "name" : "AS CF"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "t" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "t - 1",
+      "output" : {
+        "name" : "result",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742470478217,
+      "failuresEnabled" : true
+    },
+    "name" : "test",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "3c8a2a60-056c-11f0-b337-c97ab0900455"
+    },
+    "type" : "SIMPLE"
+  } ]
+}

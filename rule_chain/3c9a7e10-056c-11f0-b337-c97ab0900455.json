@@ -66,6 +66,30 @@
       "fromIndex" : 9,
       "toIndex" : 6,
       "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 9,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 9,
     "nodes" : [ {
@@ -282,7 +306,7 @@
         "persistAlarmRulesState" : false,
         "fetchAlarmRulesStateOnStart" : false
       },
-      "configurationVersion" : 0,
+      "configurationVersion" : 1,
       "createdTime" : 0,
       "debugSettings" : null,
       "externalId" : null,
@@ -302,9 +326,10 @@
         "layoutY" : 690
       },
       "configuration" : {
-        "ruleChainId" : "3c8dfaf0-056c-11f0-b337-c97ab0900455"
+        "ruleChainId" : "3c8dfaf0-056c-11f0-b337-c97ab0900455",
+        "forwardMsgToDefaultRuleChain" : false
       },
-      "configurationVersion" : 0,
+      "configurationVersion" : 1,
       "createdTime" : 0,
       "debugSettings" : null,
       "externalId" : null,
@@ -317,6 +342,194 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 131,
+        "layoutY" : 597
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 60,
+        "scriptLang" : "TBEL",
+        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var temperature = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\ntemperature = toFixed(temperature, 2);\n\n\nvar humidity = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\nhumidity = toFixed(humidity, 2);\nvar msg = {temperature: temperature, humidity: humidity };\n\nreturn { msg: msg, metadata: {}, msgType: \"POST_TELEMETRY_REQUEST\" };\n",
+        "originatorId" : "77596700-056c-11f0-b337-c97ab0900455",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "35b8a7b0-0572-11f0-9515-a768e50bf14c"
+      },
+      "name" : "device",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 117,
+        "layoutY" : 648
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 60,
+        "scriptLang" : "TBEL",
+        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var temperature = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\ntemperature = toFixed(temperature, 2);\n\n\nvar humidity = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\nhumidity = toFixed(humidity, 2);\nvar msg = {temperature: temperature, humidity: humidity };\n\nreturn { msg: msg, metadata: {}, msgType: \"POST_TELEMETRY_REQUEST\" };\n",
+        "originatorId" : "ba2f49f0-0571-11f0-9515-a768e50bf14c",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "35b8a7b1-0572-11f0-9515-a768e50bf14c"
+      },
+      "name" : "result DP CF",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 115,
+        "layoutY" : 710
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 60,
+        "scriptLang" : "TBEL",
+        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var temperature = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\ntemperature = toFixed(temperature, 2);\n\n\nvar humidity = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\nhumidity = toFixed(humidity, 2);\nvar msg = {temperature: temperature, humidity: humidity };\n\nreturn { msg: msg, metadata: {}, msgType: \"POST_TELEMETRY_REQUEST\" };\n",
+        "originatorId" : "ceca8eb0-0571-11f0-965f-bdf8d70d4e1d",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "35b8cec0-0572-11f0-9515-a768e50bf14c"
+      },
+      "name" : "result DP CF 2",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 355,
+        "layoutY" : 613
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 60,
+        "scriptLang" : "TBEL",
+        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var temperature = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\ntemperature = toFixed(temperature, 2);\n\n\nvar humidity = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\nhumidity = toFixed(humidity, 2);\nvar msg = {temperature: temperature, humidity: humidity };\n\nreturn { msg: msg, metadata: {}, msgType: \"POST_TELEMETRY_REQUEST\" };\n",
+        "originatorId" : "575583e0-0575-11f0-b337-c97ab0900455",
+        "originatorType" : "ASSET"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "88d4b800-0575-11f0-965f-bdf8d70d4e1d"
+      },
+      "name" : "target asset",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 353,
+        "layoutY" : 686
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 60,
+        "scriptLang" : "TBEL",
+        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var temperature = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\ntemperature = toFixed(temperature, 2);\n\n\nvar humidity = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\nhumidity = toFixed(humidity, 2);\nvar msg = {temperature: temperature, humidity: humidity };\n\nreturn { msg: msg, metadata: {}, msgType: \"POST_TELEMETRY_REQUEST\" };\n",
+        "originatorId" : "10774900-0579-11f0-9515-a768e50bf14c",
+        "originatorType" : "CUSTOMER"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "636572e0-0579-11f0-9515-a768e50bf14c"
+      },
+      "name" : "customer",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 359,
+        "layoutY" : 759
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 60,
+        "scriptLang" : "TBEL",
+        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var temperature = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\ntemperature = toFixed(temperature, 2);\n\n\nvar humidity = 18 + Math.random() * (32 - 18);\n// Round to at most 2 decimal places (optional)\nhumidity = toFixed(humidity, 2);\nvar msg = {temperature: temperature, humidity: humidity };\n\nreturn { msg: msg, metadata: {}, msgType: \"POST_TELEMETRY_REQUEST\" };\n",
+        "originatorId" : "b19fbc30-057a-11f0-965f-bdf8d70d4e1d",
+        "originatorType" : "ASSET"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "de221550-057a-11f0-9515-a768e50bf14c"
+      },
+      "name" : "cf test",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
     } ],
     "ruleChainConnections" : null
   },

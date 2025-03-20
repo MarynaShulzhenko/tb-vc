@@ -20,22 +20,22 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "3cbc36e0-056c-11f0-b337-c97ab0900455"
+      "id" : "acd5a010-0571-11f0-b337-c97ab0900455"
     },
     "externalId" : null,
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
-      "id" : "77596700-056c-11f0-b337-c97ab0900455"
+      "id" : "ba2f49f0-0571-11f0-9515-a768e50bf14c"
     },
     "label" : "",
-    "name" : "device",
+    "name" : "result DP CF",
     "ownerId" : null,
     "softwareId" : null,
-    "type" : "default"
+    "type" : "DP CF"
   },
   "credentials" : {
-    "credentialsId" : "tbWGIQ8R8kQ7IwGzRoF6",
+    "credentialsId" : "q7NDNkDyUTzyx481ftbF",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -46,7 +46,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1742466655255,
+      "lastUpdateTs" : 1742466063906,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -54,24 +54,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "deviceServer",
-      "lastUpdateTs" : 1742466074042,
+      "lastUpdateTs" : 1742465382772,
       "longValue" : null,
-      "strValue" : "10"
+      "strValue" : "1"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1742466655254,
-      "longValue" : 1742466655249,
+      "lastUpdateTs" : 1742466063906,
+      "longValue" : 1742466063906,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1742466037473,
-      "longValue" : 1742466037301,
+      "lastUpdateTs" : 1742465465004,
+      "longValue" : 1742465462450,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ {
@@ -79,40 +79,10 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "deviceShared",
-      "lastUpdateTs" : 1742466087328,
+      "lastUpdateTs" : 1742465394036,
       "longValue" : null,
       "strValue" : "2"
     } ]
   },
-  "calculatedFields" : [ {
-    "configuration" : {
-      "type" : "SIMPLE",
-      "arguments" : {
-        "t" : {
-          "defaultValue" : "",
-          "refEntityKey" : {
-            "key" : "temperature",
-            "type" : "TS_LATEST"
-          }
-        }
-      },
-      "expression" : "t+1",
-      "output" : {
-        "name" : "resultCurrent",
-        "type" : "TIME_SERIES"
-      }
-    },
-    "configurationVersion" : 0,
-    "debugSettings" : {
-      "allEnabled" : false,
-      "allEnabledUntil" : 1742464216192,
-      "failuresEnabled" : true
-    },
-    "name" : "current",
-    "tenantId" : {
-      "entityType" : "TENANT",
-      "id" : "3c8a2a60-056c-11f0-b337-c97ab0900455"
-    },
-    "type" : "SIMPLE"
-  } ]
+  "calculatedFields" : [ ]
 }

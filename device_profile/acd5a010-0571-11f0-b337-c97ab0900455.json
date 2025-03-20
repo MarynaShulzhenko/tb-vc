@@ -1,0 +1,380 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "acd5a010-0571-11f0-b337-c97ab0900455"
+    },
+    "image" : null,
+    "name" : "DP CF",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "ac" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "dviceClient",
+            "scope" : "CLIENT_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "aserver" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "deviceServer",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "ashared" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "deviceShared",
+            "scope" : "SHARED_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "h" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "humidity",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "h +ashared*aserver-ac",
+      "output" : {
+        "name" : "resultCurrentDeviceSimple",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742467388204,
+      "failuresEnabled" : true
+    },
+    "name" : "Current entity",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "3c8a2a60-056c-11f0-b337-c97ab0900455"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "ac" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "dviceClient",
+            "scope" : "CLIENT_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "aserver" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "deviceServer",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "ashared" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "deviceShared",
+            "scope" : "SHARED_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "h" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "humidity",
+            "type" : "TS_LATEST"
+          }
+        },
+        "temp_r" : {
+          "limit" : 100,
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"resultCurrentDeviceScript\": (temp_r.median() + h - aserver * ashared /ac)\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742467388204,
+      "failuresEnabled" : true
+    },
+    "name" : "Current entity script",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "3c8a2a60-056c-11f0-b337-c97ab0900455"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "ac" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "ba2f49f0-0571-11f0-9515-a768e50bf14c"
+          },
+          "refEntityKey" : {
+            "key" : "dviceClient",
+            "scope" : "CLIENT_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "aserver" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "ba2f49f0-0571-11f0-9515-a768e50bf14c"
+          },
+          "refEntityKey" : {
+            "key" : "deviceServer",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "ashared" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "ba2f49f0-0571-11f0-9515-a768e50bf14c"
+          },
+          "refEntityKey" : {
+            "key" : "deviceShared",
+            "scope" : "SHARED_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "h" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "ba2f49f0-0571-11f0-9515-a768e50bf14c"
+          },
+          "refEntityKey" : {
+            "key" : "humidity",
+            "type" : "TS_LATEST"
+          }
+        },
+        "temp_r" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "ba2f49f0-0571-11f0-9515-a768e50bf14c"
+          },
+          "refEntityKey" : {
+            "key" : "humidity",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"resultDevice0Script\": (temp_r.median() + h - aserver * ashared /ac)\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742469569093,
+      "failuresEnabled" : true
+    },
+    "name" : "Current entity script device 0",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "3c8a2a60-056c-11f0-b337-c97ab0900455"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "ac" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "77596700-056c-11f0-b337-c97ab0900455"
+          },
+          "refEntityKey" : {
+            "key" : "deviceClient",
+            "scope" : "CLIENT_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "aserver" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "77596700-056c-11f0-b337-c97ab0900455"
+          },
+          "refEntityKey" : {
+            "key" : "deviceServer",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "ashared" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "77596700-056c-11f0-b337-c97ab0900455"
+          },
+          "refEntityKey" : {
+            "key" : "deviceShared",
+            "scope" : "SHARED_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "h" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "77596700-056c-11f0-b337-c97ab0900455"
+          },
+          "refEntityKey" : {
+            "key" : "humidity",
+            "type" : "TS_LATEST"
+          }
+        },
+        "temp_r" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "77596700-056c-11f0-b337-c97ab0900455"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"resultDeviceDefaultScript\": (temp_r.median() + h - aserver * ashared /ac)\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742467388204,
+      "failuresEnabled" : true
+    },
+    "name" : "Current entity script device default",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "3c8a2a60-056c-11f0-b337-c97ab0900455"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "a" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "ASSET",
+            "id" : "575583e0-0575-11f0-b337-c97ab0900455"
+          },
+          "refEntityKey" : {
+            "key" : "assetAtt",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "hr" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "ASSET",
+            "id" : "575583e0-0575-11f0-b337-c97ab0900455"
+          },
+          "refEntityKey" : {
+            "key" : "humidity",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        },
+        "t" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "ASSET",
+            "id" : "575583e0-0575-11f0-b337-c97ab0900455"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"resultAsset\": (hr.min/a) *t \n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742468242387,
+      "failuresEnabled" : true
+    },
+    "name" : "asset",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "3c8a2a60-056c-11f0-b337-c97ab0900455"
+    },
+    "type" : "SCRIPT"
+  } ]
+}
