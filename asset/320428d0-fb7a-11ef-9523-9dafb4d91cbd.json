@@ -1,0 +1,60 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "d51da450-f90f-11ef-a811-9f3b411f0bc9"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "320428d0-fb7a-11ef-9523-9dafb4d91cbd"
+    },
+    "label" : null,
+    "name" : "asset",
+    "ownerId" : null,
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "s" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "str",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "s + 'qwe'",
+      "output" : {
+        "name" : "output",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1741372552441,
+      "failuresEnabled" : true
+    },
+    "name" : "str",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d4ec3410-f90f-11ef-a811-9f3b411f0bc9"
+    },
+    "type" : "SIMPLE"
+  } ]
+}

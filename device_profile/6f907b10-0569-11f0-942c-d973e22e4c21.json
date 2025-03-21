@@ -1,0 +1,176 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "6f907b10-0569-11f0-942c-d973e22e4c21"
+    },
+    "image" : null,
+    "name" : "CF",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "sum" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "sum",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "sum +1",
+      "output" : {
+        "name" : "resultCurrent",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742465488640,
+      "failuresEnabled" : true
+    },
+    "name" : "current",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d4ec3410-f90f-11ef-a811-9f3b411f0bc9"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "tatt" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "d4ec3410-f90f-11ef-a811-9f3b411f0bc9"
+          },
+          "refEntityKey" : {
+            "key" : "tenantAtt",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        }
+      },
+      "expression" : "tatt +1",
+      "output" : {
+        "name" : "resultTenantAtt",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742464834912,
+      "failuresEnabled" : true
+    },
+    "name" : "tenant att",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d4ec3410-f90f-11ef-a811-9f3b411f0bc9"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "tts" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "d4ec3410-f90f-11ef-a811-9f3b411f0bc9"
+          },
+          "refEntityKey" : {
+            "key" : "tenantTs",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "tts + 10",
+      "output" : {
+        "name" : "resultTenantAtt",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742464834912,
+      "failuresEnabled" : true
+    },
+    "name" : "tenant ts",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d4ec3410-f90f-11ef-a811-9f3b411f0bc9"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "temperature" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "a90d0300-fa73-11ef-be68-3d02eef1e795"
+          },
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "var startOfInterval = temperature.timeWindow.startTs;\nvar endOfInterval = temperature.timeWindow.endTs;\nvar firstItem = temperature.values[0];\nvar firstItemTs = firstItem.ts;\nvar firstItemValue = firstItem.value;\nvar sum = 0.0;\n// iterate through all values and calculate the sum using foreach:\nforeach(t: temperature) {\n    if (!isNaN(t.value)) { // check that the value is a valid number;\n        sum += t.value;\n    }\n}\n// iterate through all values and calculate the sum using for loop:\nvar sum1 = 0.0;\nfor (var i = 0; i < temperature.values.size; i++) {\n    sum1 += temperature.values[i].value;\n}\n// use built-in function to calculate the sum\nvar sum2 = temperature.sum();\n\n\nreturn {\n    \"sum\": sum,\n    \"sum1\": sum1,\n    \"sum2\": sum2\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742464740554,
+      "failuresEnabled" : true
+    },
+    "name" : "test",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d4ec3410-f90f-11ef-a811-9f3b411f0bc9"
+    },
+    "type" : "SCRIPT"
+  } ]
+}

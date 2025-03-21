@@ -1,0 +1,104 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "baseUrl" : "http://localhost:8081",
+      "httpEndpoint" : "http://localhost:8081/api/v1/integrations/http/fa4bfc4f-8416-7b87-ca89-78e10d953ca4",
+      "enableSecurity" : false,
+      "headersFilter" : { },
+      "replaceNoContentToOk" : false,
+      "metadata" : { }
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742311253203,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "f2cf35d0-fda2-11ef-8242-370e2dd767ff"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f2d661c0-fda2-11ef-8242-370e2dd767ff"
+    },
+    "name" : "HTTP integration",
+    "remote" : false,
+    "routingKey" : "fa4bfc4f-8416-7b87-ca89-78e10d953ca4",
+    "secret" : "sawv61u0qpqrn9ujs0ww",
+    "type" : "HTTP"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f2d661c0-fda2-11ef-8242-370e2dd767ff"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "8d1cb6d0-0023-11f0-9e48-211d81613902"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 1117
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f2d661c0-fda2-11ef-8242-370e2dd767ff"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "d8a75300-0030-11f0-92da-dba1bffcd014"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 2108
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f2d661c0-fda2-11ef-8242-370e2dd767ff"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "f3f7b040-fda2-11ef-8242-370e2dd767ff"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 648
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f2d661c0-fda2-11ef-8242-370e2dd767ff"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "44b4d070-00b0-11f0-92da-dba1bffcd014"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 2238
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_mshulzhenko-host",
+      "lastUpdateTs" : 1742574351163,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

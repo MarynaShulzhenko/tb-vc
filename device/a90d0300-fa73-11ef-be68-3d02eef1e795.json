@@ -1,0 +1,219 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "d5189b40-f90f-11ef-a811-9f3b411f0bc9"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "a90d0300-fa73-11ef-be68-3d02eef1e795"
+    },
+    "label" : "",
+    "name" : "device",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "xeSRJHTRLP2IPtrRmDIP",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1741712399329,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "altitude",
+      "lastUpdateTs" : 1741727459245,
+      "longValue" : null,
+      "strValue" : "251"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1741712399329,
+      "longValue" : 1741712399329,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "input_y",
+      "lastUpdateTs" : 1741627839566,
+      "longValue" : null,
+      "strValue" : "2"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1741711769067,
+      "longValue" : 1741711767335,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "altitude" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "altitude",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        },
+        "temperature" : {
+          "limit" : 100,
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "var avgTemperature = temperature.mean(); // Get average temperature\n  var temperatureK = (avgTemperature - 32) * (5 / 9) + 273.15; // Convert Fahrenheit to Kelvin\n\n  // Estimate air pressure based on altitude\n  var pressure = 101325 * Math.pow((1 - 2.25577e-5 * altitude), 5.25588);\n\n  // Air density formula\n  var airDensity = pressure / (287.05 * temperatureK);\n\n  return {\n    \"airDensity\": airDensity\n  };",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1741731242191,
+      "failuresEnabled" : true
+    },
+    "name" : "airDensity",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d4ec3410-f90f-11ef-a811-9f3b411f0bc9"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "temperature" : {
+          "limit" : 100,
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "var startOfInterval = temperature.timeWindow.startTs;\nvar endOfInterval = temperature.timeWindow.endTs;\nvar firstItem = temperature.values[0];\nvar firstItemTs = firstItem.ts;\nvar firstItemValue = firstItem.value;\nvar sumForeach = 0.0;\nvar sumLoop = 0.0;\nvar sum = 0.0;\n// iterate through all values and calculate the sum using foreach:\nforeach(t: temperature) {\n    if (!isNaN(t.value)) { // check that the value is a valid number;\n        sumForeach += t.value;\n    }\n}\n// iterate through all values and calculate the sum using for loop:\nsumLoop = 0.0;\nfor (var i = 0; i < temperature.values.size; i++) {\n    sumLoop += temperature.values[i].value;\n}\n// use built-in function to calculate the sum\nsum = temperature.sum();\n\n\nreturn {\n    // Convert Fahrenheit to Celsius\n    \"sum foreach\": (sumForeach - 32) / 1.8,\n    \"sum loop\": (sumLoop - 32) / 1.8,\n    \"sum\": (sum - 32) / 1.8\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1741727749652,
+      "failuresEnabled" : true
+    },
+    "name" : "test help page",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d4ec3410-f90f-11ef-a811-9f3b411f0bc9"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "temperatureF" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "var temperatureC = (temperatureF - 32) / 1.8;\nreturn {\n  \"temperatureC\": toFixed(temperatureC, 2)\n}",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1741726358425,
+      "failuresEnabled" : true
+    },
+    "name" : "test help page F to C",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d4ec3410-f90f-11ef-a811-9f3b411f0bc9"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "temperature" : {
+          "limit" : 100,
+          "refEntityKey" : {
+            "key" : "temperature",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 900000
+        }
+      },
+      "expression" : "var avgTemp = temperature.mean(); // Returns 72.92\nvar tempMax = temperature.max(); // Returns 73.58\nvar valueCount = temperature.count(); // Returns 3\n\nvar avgTempNaN = temperature.mean(false);  // Returns NaN\nvar tempMaxNaN = temperature.max(false);   // Returns NaN\nvar valueCountNaN = temperature.count(false); // Returns 4\n\nreturn {\n    // Convert Fahrenheit to Celsius\n    \"avgTemp\": avgTemp,\n    \"tempMax\": tempMax,\n    \"valueCount\": valueCount,\n    \"avgTempNaN\": avgTempNaN,\n    \"tempMaxNaN\": tempMaxNaN\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1741729069031,
+      "failuresEnabled" : true
+    },
+    "name" : "test help page methods",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "d4ec3410-f90f-11ef-a811-9f3b411f0bc9"
+    },
+    "type" : "SCRIPT"
+  } ]
+}

@@ -1,0 +1,52 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : null,
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "clientConfiguration" : {
+        "baseUrl" : "coap://localhost",
+        "dtlsBaseUrl" : "coaps://localhost",
+        "securityMode" : "NO_SECURE",
+        "coapEndpoint" : "coap://localhost/i/fb6b5fc3-69cb-3dd5-09c3-29528ab3197d",
+        "dtlsCoapEndpoint" : "coaps://localhost/i/fb6b5fc3-69cb-3dd5-09c3-29528ab3197d"
+      }
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742578276074,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "e9125810-0671-11f0-a0fa-bb89dbc6502b"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "e91feca0-0671-11f0-a0fa-bb89dbc6502b"
+    },
+    "name" : "CoAP integration",
+    "remote" : false,
+    "routingKey" : "fb6b5fc3-69cb-3dd5-09c3-29528ab3197d",
+    "secret" : "rve7k2tl3moj76aaldfd",
+    "type" : "COAP"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_mshulzhenko-host",
+      "lastUpdateTs" : 1742574676085,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
