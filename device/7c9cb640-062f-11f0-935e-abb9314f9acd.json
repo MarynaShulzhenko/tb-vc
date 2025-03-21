@@ -1,0 +1,248 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "5a082c40-062f-11f0-935e-abb9314f9acd"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "7c9cb640-062f-11f0-935e-abb9314f9acd"
+    },
+    "label" : "",
+    "name" : "result 0",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "cSbgDpb6G6whjRAHHacE",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1742546765749,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "d0as",
+      "lastUpdateTs" : 1742546191188,
+      "longValue" : null,
+      "strValue" : "1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1742546765749,
+      "longValue" : 1742546765745,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "d0ash",
+      "lastUpdateTs" : 1742546202263,
+      "longValue" : null,
+      "strValue" : "2"
+    } ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "a" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "ASSET",
+            "id" : "93017af0-0630-11f0-a3b6-2d87f3c32b94"
+          },
+          "refEntityKey" : {
+            "key" : "a",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "a+900",
+      "output" : {
+        "name" : "a900",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742549223306,
+      "failuresEnabled" : true
+    },
+    "name" : "asset",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "59af5de0-062f-11f0-935e-abb9314f9acd"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "a" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "ASSET",
+            "id" : "93017af0-0630-11f0-a3b6-2d87f3c32b94"
+          },
+          "refEntityKey" : {
+            "key" : "a",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 2592000000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"a.min\": (a.min - 32) / 1.8\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742549220647,
+      "failuresEnabled" : true
+    },
+    "name" : "asset rolling",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "59af5de0-062f-11f0-935e-abb9314f9acd"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "d" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "d",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "d+1000",
+      "output" : {
+        "name" : "cd1000",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742549230619,
+      "failuresEnabled" : true
+    },
+    "name" : "cdt",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "59af5de0-062f-11f0-935e-abb9314f9acd"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "d2" : {
+          "limit" : 10,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "e26a9230-062f-11f0-935e-abb9314f9acd"
+          },
+          "refEntityKey" : {
+            "key" : "d2",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 86400000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"drolling\": (d2.min - 32) / 1.8\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742549225588,
+      "failuresEnabled" : true
+    },
+    "name" : "d2 r",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "59af5de0-062f-11f0-935e-abb9314f9acd"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "d2" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "e26a9230-062f-11f0-935e-abb9314f9acd"
+          },
+          "refEntityKey" : {
+            "key" : "d2",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "d2+500",
+      "output" : {
+        "name" : "ld500",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742549228297,
+      "failuresEnabled" : true
+    },
+    "name" : "link device",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "59af5de0-062f-11f0-935e-abb9314f9acd"
+    },
+    "type" : "SIMPLE"
+  } ]
+}

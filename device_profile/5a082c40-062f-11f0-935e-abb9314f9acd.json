@@ -1,0 +1,176 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : true,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "Default device profile",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "5a082c40-062f-11f0-935e-abb9314f9acd"
+    },
+    "image" : null,
+    "name" : "default",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "a" : {
+          "limit" : 100,
+          "refEntityId" : {
+            "entityType" : "ASSET",
+            "id" : "93017af0-0630-11f0-a3b6-2d87f3c32b94"
+          },
+          "refEntityKey" : {
+            "key" : "a",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 2592000000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"df-a.min\": (a.min - 32) / 1.8\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742549220647,
+      "failuresEnabled" : true
+    },
+    "name" : "asset rolling",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "59af5de0-062f-11f0-935e-abb9314f9acd"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SCRIPT",
+      "arguments" : {
+        "d2" : {
+          "limit" : 10,
+          "refEntityId" : {
+            "entityType" : "DEVICE",
+            "id" : "e26a9230-062f-11f0-935e-abb9314f9acd"
+          },
+          "refEntityKey" : {
+            "key" : "d2",
+            "type" : "TS_ROLLING"
+          },
+          "timeWindow" : 86400000
+        }
+      },
+      "expression" : "// Sample script to convert temperature readings from Fahrenheit to Celsius\nreturn {\n    \"df-drolling\": (d2.min - 32) / 1.8\n};",
+      "output" : {
+        "name" : "",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742549225588,
+      "failuresEnabled" : true
+    },
+    "name" : "d2 r",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "59af5de0-062f-11f0-935e-abb9314f9acd"
+    },
+    "type" : "SCRIPT"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "d" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "d",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "d+1000",
+      "output" : {
+        "name" : "df-current",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742549338842,
+      "failuresEnabled" : true
+    },
+    "name" : "df-current",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "59af5de0-062f-11f0-935e-abb9314f9acd"
+    },
+    "type" : "SIMPLE"
+  }, {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "t" : {
+          "defaultValue" : "",
+          "refEntityId" : {
+            "entityType" : "TENANT",
+            "id" : "59af5de0-062f-11f0-935e-abb9314f9acd"
+          },
+          "refEntityKey" : {
+            "key" : "t",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "t +70000",
+      "output" : {
+        "name" : "df-t+70000",
+        "type" : "TIME_SERIES"
+      }
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1742549136870,
+      "failuresEnabled" : true
+    },
+    "name" : "tenant",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "59af5de0-062f-11f0-935e-abb9314f9acd"
+    },
+    "type" : "SIMPLE"
+  } ]
+}
